@@ -68,9 +68,9 @@ def build():
         full = sh_labels[code]
         name_part = full.split(" - ", 1)[-1] if " - " in full else full
         epu_items_html += (
-            f'<label class="epu-item">'
+            f'<label class="cb-item" title="{esc(full)}">'
             f'<input type="checkbox" class="epu-cb" value="{esc(code)}"> '
-            f'<code>{esc(code)}</code> {esc(name_part)}'
+            f'<code>{esc(code)}</code> <span class="cb-text">{esc(name_part)}</span>'
             f'</label>\n'
         )
 
@@ -78,8 +78,8 @@ def build():
     grade_items_html = ""
     for g in grades_sorted:
         grade_items_html += (
-            f'<label class="grade-item">'
-            f'<input type="checkbox" class="grade-cb" value="{esc(g)}"> {esc(g)}'
+            f'<label class="cb-item">'
+            f'<input type="checkbox" class="grade-cb" value="{esc(g)}"> <span class="cb-text">{esc(g)}</span>'
             f'</label>\n'
         )
 
@@ -263,12 +263,14 @@ body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .epu-panel-top{{padding:8px 10px;border-bottom:1px solid var(--border)}}
 .epu-search{{width:100%;padding:5px 9px;border:1.5px solid var(--border);border-radius:6px;font-size:.8rem;outline:none}}
 .epu-search:focus{{border-color:var(--primary)}}
-.epu-dd{{width:360px}}
+.epu-dd{{width:400px}}
+.grade-dd{{width:130px}}
 
-.cb-item{{display:flex;align-items:baseline;gap:7px;padding:5px 12px;cursor:pointer;font-size:.82rem;transition:background .1s}}
+.cb-item{{display:flex;align-items:center;gap:8px;padding:6px 13px;cursor:pointer;font-size:.82rem;line-height:1.35;transition:background .1s}}
 .cb-item:hover{{background:#f1f5f9}}
-.cb-item input{{flex-shrink:0;cursor:pointer;accent-color:var(--primary)}}
-.cb-item code{{font-size:.75rem;color:var(--muted);flex-shrink:0}}
+.cb-item input{{flex-shrink:0;cursor:pointer;accent-color:var(--primary);width:15px;height:15px;margin:0}}
+.cb-item code{{font-size:.74rem;color:var(--primary);flex-shrink:0;font-weight:600;min-width:88px}}
+.cb-item .cb-text{{color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 .cb-item.hidden{{display:none}}
 
 /* Year buttons */
@@ -389,7 +391,7 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
           <span id="grade-lbl">All</span>
           <span id="grade-badge" class="badge" style="display:none">0</span> ▾
         </button>
-        <div class="dd-panel" id="grade-panel">
+        <div class="dd-panel grade-dd" id="grade-panel">
           <div class="dd-actions">
             <button onclick="selectAllGrades()">Select all</button>
             <button onclick="clearGrades()">Clear</button>
