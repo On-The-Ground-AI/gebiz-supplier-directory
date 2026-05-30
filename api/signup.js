@@ -1,6 +1,6 @@
 // POST /api/signup  { email, name? }
 // Adds an email to the mailing list (idempotent on email).
-import { getSql, cors, readBody } from "./_db.js";
+import { getSql, cors, readBody, notify } from "./_db.js";
 
 export default async function handler(req, res) {
   if (cors(req, res)) return;
@@ -24,11 +24,21 @@ export default async function handler(req, res) {
 
   try {
     const sql = getSql();
-    await sql`
+    const rows = await sql`
       INSERT INTO signups (email, name, user_agent, referrer)
       VALUES (${email}, ${name}, ${ua}, ${ref})
       ON CONFLICT (email) DO NOTHING
+      RETURNING id
     `;
+    // Only notify for a genuinely new signup (not a repeat)
+    if (rows.length > 0) {
+      const [{ n }] = await sql`SELECT count(*)::int AS n FROM signups`;
+      await notify(
+        "New GeBIZ directory signup",
+        `${name ? name + " — " : ""}${email}\nTotal subscribers: ${n}`,
+        "tada"
+      );
+    }
     res.status(200).json({ ok: true });
   } catch (e) {
     console.error("signup error", e);

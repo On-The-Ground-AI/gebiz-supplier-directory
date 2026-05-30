@@ -336,6 +336,9 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
 .btn-expand:hover{{background:#f1f5f9}}
 .no-results{{text-align:center;padding:60px 20px;color:var(--muted)}}
 .no-results h2{{font-size:1.1rem;margin-bottom:8px;color:var(--text)}}
+.site-footer{{margin-top:28px;padding:18px 4px 8px;border-top:1px solid var(--border);font-size:.76rem;color:var(--muted);line-height:1.5;text-align:center}}
+.site-footer a{{color:var(--primary);text-decoration:none}}
+.site-footer a:hover{{text-decoration:underline}}
 
 /* ── Email gate modal ── */
 .modal-overlay{{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}}
@@ -465,6 +468,10 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
     <h2>No suppliers match your filters</h2>
     <p>Try broadening your search or removing some filters.</p>
   </div>
+  <footer class="site-footer">
+    Data sourced from the public <a href="https://www.gebiz.gov.sg/ptn/supplier/directory/index.xhtml" target="_blank" rel="noopener">GeBIZ Supplier Directory</a>.
+    Downloading a CSV requires an email and records which filters/data sets were exported, to help us improve the directory.
+  </footer>
 </div>
 
 <!-- Email gate modal -->
@@ -479,7 +486,7 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
       <div class="modal-err" id="modal-err"></div>
       <button type="submit" class="modal-submit" id="modal-submit">Download CSV →</button>
     </form>
-    <p class="modal-fine">Your email is stored privately and never shared.</p>
+    <p class="modal-fine">Your email is stored privately and never shared. For analytics, we record which filters and data sets are downloaded.</p>
   </div>
 </div>
 

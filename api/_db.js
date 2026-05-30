@@ -25,6 +25,41 @@ export function cors(req, res) {
   return false;
 }
 
+// Fire-and-forget push notification. Supports:
+//   - ntfy.sh  (env NOTIFY_NTFY_TOPIC) — zero-setup push, subscribe at ntfy.sh/<topic>
+//   - Slack/Discord incoming webhook (env NOTIFY_WEBHOOK)
+// Never throws; failures are swallowed so they can't break the main request.
+export async function notify(title, message, tag = "bell") {
+  const tasks = [];
+  const topic = process.env.NOTIFY_NTFY_TOPIC;
+  if (topic) {
+    tasks.push(
+      fetch(`https://ntfy.sh/${topic}`, {
+        method: "POST",
+        headers: { Title: title, Tags: tag },
+        body: message,
+      }).catch(() => {})
+    );
+  }
+  const hook = process.env.NOTIFY_WEBHOOK;
+  if (hook) {
+    // Slack & Discord both accept a JSON body with a "text"/"content" field.
+    const payload = hook.includes("discord")
+      ? { content: `**${title}**\n${message}` }
+      : { text: `*${title}*\n${message}` };
+    tasks.push(
+      fetch(hook, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      }).catch(() => {})
+    );
+  }
+  try {
+    await Promise.all(tasks);
+  } catch {}
+}
+
 export function readBody(req) {
   // Vercel parses JSON bodies automatically when Content-Type is application/json,
   // but guard for string bodies just in case.
