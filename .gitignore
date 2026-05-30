@@ -4,3 +4,11 @@ listing_cache.json
 __pycache__/
 *.log
 *.pyc
+
+# build output (copied to index.html for serving)
+gebiz_suppliers.html
+.claude/
+.DS_Store
+node_modules/
+.vercel/
+.env*

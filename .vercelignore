@@ -1,0 +1,11 @@
+# Dev / build artefacts — not needed in the deployment
+scrape_gebiz.py
+build_html.py
+generate_summaries.py
+listing_cache.json
+gebiz_suppliers.html
+suppliers.json
+db/
+__pycache__/
+.claude/
+*.log

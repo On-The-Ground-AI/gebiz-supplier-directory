@@ -13,6 +13,12 @@ from collections import Counter
 JSON_PATH = "/Users/seehaojun/Desktop/OTG/BD/suppliers.json"
 HTML_PATH = "/Users/seehaojun/Desktop/OTG/BD/gebiz_suppliers.html"
 
+# API base for tracking + signup. Empty string = same origin (relative /api),
+# which is correct when served from Vercel. Set to an absolute URL (e.g.
+# "https://your-app.vercel.app") if hosting the HTML elsewhere (GitHub Pages).
+import os
+API_BASE = os.environ.get("GEBIZ_API_BASE", "")
+
 
 def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
@@ -116,6 +122,7 @@ def build():
             "years_arr":         s["_years"],
         })
     csv_data_js = json.dumps(csv_data, ensure_ascii=False)
+    api_base_js = json.dumps(API_BASE)
 
     # Build cards HTML
     cards_html = ""
@@ -330,6 +337,23 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
 .no-results{{text-align:center;padding:60px 20px;color:var(--muted)}}
 .no-results h2{{font-size:1.1rem;margin-bottom:8px;color:var(--text)}}
 
+/* ── Email gate modal ── */
+.modal-overlay{{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}}
+.modal{{background:#fff;border-radius:14px;max-width:420px;width:100%;padding:28px 26px 22px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3);animation:modalIn .18s ease-out}}
+@keyframes modalIn{{from{{opacity:0;transform:translateY(10px) scale(.98)}}to{{opacity:1;transform:none}}}}
+.modal-close{{position:absolute;top:12px;right:14px;background:none;border:none;font-size:1.1rem;color:var(--muted);cursor:pointer;line-height:1}}
+.modal-close:hover{{color:var(--text)}}
+.modal h2{{font-size:1.25rem;margin-bottom:6px;color:var(--text)}}
+.modal-sub{{font-size:.86rem;color:var(--muted);line-height:1.5;margin-bottom:18px}}
+.modal form{{display:flex;flex-direction:column;gap:10px}}
+.modal input{{padding:10px 13px;border:1.5px solid var(--border);border-radius:8px;font-size:.92rem;outline:none;width:100%}}
+.modal input:focus{{border-color:var(--primary)}}
+.modal-err{{color:#dc2626;font-size:.8rem;min-height:1em}}
+.modal-submit{{background:var(--primary);color:#fff;border:none;border-radius:8px;padding:11px;font-size:.95rem;font-weight:700;cursor:pointer;transition:background .15s}}
+.modal-submit:hover{{background:#1d4ed8}}
+.modal-submit:disabled{{opacity:.6;cursor:default}}
+.modal-fine{{font-size:.74rem;color:var(--muted);text-align:center;margin-top:12px}}
+
 @media(max-width:640px){{
   .grid{{grid-template-columns:1fr}}
   .top-bar-inner{{flex-direction:column;align-items:stretch}}
@@ -443,7 +467,24 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
   </div>
 </div>
 
+<!-- Email gate modal -->
+<div class="modal-overlay" id="email-modal" style="display:none">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    <h2>Download supplier data</h2>
+    <p class="modal-sub">Enter your email to download the CSV and get occasional updates to the directory. We'll only ask once.</p>
+    <form id="email-form" onsubmit="return submitEmail(event)">
+      <input type="text" id="modal-name" placeholder="Name (optional)" autocomplete="name">
+      <input type="email" id="modal-email" placeholder="you@company.com" required autocomplete="email">
+      <div class="modal-err" id="modal-err"></div>
+      <button type="submit" class="modal-submit" id="modal-submit">Download CSV →</button>
+    </form>
+    <p class="modal-fine">Your email is stored privately and never shared.</p>
+  </div>
+</div>
+
 <script>
+const API_BASE = {api_base_js};
 const ALL_DATA = {csv_data_js};
 const cards = Array.from(document.querySelectorAll('.card'));
 
@@ -643,21 +684,86 @@ function sortCards() {{
   filterCards();
 }}
 
-// ── CSV export ────────────────────────────────────────────────
-function exportCSV() {{
+// ── Tracking ──────────────────────────────────────────────────
+function apiPost(path, payload) {{
+  // Fire-and-forget; never block the UI if the API is unreachable.
+  try {{
+    fetch(API_BASE + path, {{
+      method: 'POST',
+      headers: {{ 'Content-Type': 'application/json' }},
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }}).catch(() => {{}});
+  }} catch (e) {{}}
+}}
+
+const STORE_KEY = 'gebiz_email';
+function savedEmail() {{ try {{ return localStorage.getItem(STORE_KEY) || ''; }} catch {{ return ''; }} }}
+
+// Track the visit once per page load
+apiPost('/api/track', {{ type: 'visit' }});
+
+// ── Current filter state (for download logging + CSV) ─────────
+function currentFilter() {{
   const q        = document.getElementById('search-input').value.toLowerCase().trim();
   const activity = document.getElementById('activity-input').value.toLowerCase().trim();
-
   const filtered = ALL_DATA.filter(row => {{
-    const txt = (row.name+' '+row.uen+' '+row.summary+' '+row.description).toLowerCase();
+    const txt  = (row.name+' '+row.uen+' '+row.summary+' '+row.description).toLowerCase();
     const desc = (row.summary+' '+row.description).toLowerCase();
     if (q && !txt.includes(q)) return false;
     if (activity && !desc.includes(activity)) return false;
-    if (selectedEpu.size   && !row.sh_codes_arr.some(c => selectedEpu.has(c)))    return false;
-    if (selectedGrades.size && !row.grades_arr.some(g => selectedGrades.has(g)))  return false;
-    if (selectedYears.size  && !row.years_arr.some(y => selectedYears.has(y)))    return false;
+    if (selectedEpu.size    && !row.sh_codes_arr.some(c => selectedEpu.has(c)))  return false;
+    if (selectedGrades.size && !row.grades_arr.some(g => selectedGrades.has(g))) return false;
+    if (selectedYears.size  && !row.years_arr.some(y => selectedYears.has(y)))   return false;
     return true;
   }});
+  return {{ q, activity, filtered }};
+}}
+
+// ── CSV export with email gate ────────────────────────────────
+let pendingExport = false;
+
+function exportCSV() {{
+  const email = savedEmail();
+  if (email) {{ doExport(email); }}
+  else {{ openModal(); }}
+}}
+
+function openModal() {{
+  pendingExport = true;
+  document.getElementById('modal-err').textContent = '';
+  document.getElementById('email-modal').style.display = 'flex';
+  setTimeout(() => document.getElementById('modal-email').focus(), 50);
+}}
+function closeModal() {{
+  pendingExport = false;
+  document.getElementById('email-modal').style.display = 'none';
+}}
+
+function submitEmail(e) {{
+  e.preventDefault();
+  const email = document.getElementById('modal-email').value.trim().toLowerCase();
+  const name  = document.getElementById('modal-name').value.trim();
+  const errEl = document.getElementById('modal-err');
+  if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {{
+    errEl.textContent = 'Please enter a valid email address.';
+    return false;
+  }}
+  const btn = document.getElementById('modal-submit');
+  btn.disabled = true; btn.textContent = 'Saving…';
+
+  // Save email to mailing list (fire-and-forget) and remember locally
+  apiPost('/api/signup', {{ email, name }});
+  try {{ localStorage.setItem(STORE_KEY, email); }} catch {{}}
+
+  document.getElementById('email-modal').style.display = 'none';
+  btn.disabled = false; btn.textContent = 'Download CSV →';
+  if (pendingExport) {{ pendingExport = false; doExport(email); }}
+  return false;
+}}
+
+function doExport(email) {{
+  const {{ q, activity, filtered }} = currentFilter();
 
   const cols = ['uen','name','summary','description','phone','fax','email','website',
                 'address','postal_code','city','supply_heads','supply_heads_full','grades','expiry_years'];
@@ -683,7 +789,22 @@ function exportCSV() {{
   a.download = `gebiz-suppliers${{parts.length ? '-'+parts.join('-') : ''}}.csv`;
   a.click();
   URL.revokeObjectURL(url);
+
+  // Log what was downloaded
+  apiPost('/api/track', {{
+    type: 'download',
+    email,
+    detail: {{
+      epu: [...selectedEpu], grades: [...selectedGrades], years: [...selectedYears],
+      search: q || null, activity: activity || null, rows: filtered.length,
+    }},
+  }});
 }}
+
+// Close modal on overlay click
+document.getElementById('email-modal').addEventListener('click', e => {{
+  if (e.target.id === 'email-modal') closeModal();
+}});
 
 // ── Card expand ───────────────────────────────────────────────
 function toggleCard(btn) {{
