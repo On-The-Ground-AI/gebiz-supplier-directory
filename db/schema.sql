@@ -21,6 +21,12 @@ CREATE TABLE IF NOT EXISTS events (
   referrer    TEXT
 );
 
+-- Small key/value store (tracks last visit-digest timestamp, etc.)
+CREATE TABLE IF NOT EXISTS meta (
+  key   TEXT PRIMARY KEY,
+  value TEXT
+);
+
 CREATE INDEX IF NOT EXISTS idx_events_type    ON events (type);
 CREATE INDEX IF NOT EXISTS idx_events_created ON events (created_at);
 CREATE INDEX IF NOT EXISTS idx_signups_created ON signups (created_at);

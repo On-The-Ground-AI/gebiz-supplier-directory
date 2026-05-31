@@ -1,0 +1,17 @@
+name: Hourly visit digest
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # top of every hour (UTC); GitHub may delay a few min
+  workflow_dispatch:        # allows manual run from the Actions tab
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger digest endpoint
+        run: |
+          curl -fsS "https://gebiz-supplier-directory.vercel.app/api/digest?token=${DIGEST_TOKEN}" \
+            -o /dev/null -w "digest HTTP %{http_code}\n"
+        env:
+          DIGEST_TOKEN: ${{ secrets.DIGEST_TOKEN }}
