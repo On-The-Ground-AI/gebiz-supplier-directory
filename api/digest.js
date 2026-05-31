@@ -38,8 +38,8 @@ export default async function handler(req, res) {
     // Only push when there were visits — keeps quiet hours silent.
     if (n > 0) {
       await notify(
-        "Hourly visit digest",
-        `👁 ${n} visit${n === 1 ? "" : "s"} in the last hour\nTotal visits: ${total}`,
+        "Daily visit digest",
+        `👁 ${n} visit${n === 1 ? "" : "s"} in the last 24h\nTotal visits: ${total}`,
         "eyes"
       );
     }

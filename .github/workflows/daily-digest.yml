@@ -1,8 +1,8 @@
-name: Hourly visit digest
+name: Daily visit digest
 
 on:
   schedule:
-    - cron: '0 * * * *'   # top of every hour (UTC); GitHub may delay a few min
+    - cron: '0 1 * * *'   # 01:00 UTC daily = 09:00 SGT; GitHub may delay a few min
   workflow_dispatch:        # allows manual run from the Actions tab
 
 jobs:
