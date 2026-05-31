@@ -41,6 +41,22 @@ export async function notify(title, message, tag = "bell") {
       }).catch(() => {})
     );
   }
+  const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+  const tgChat = process.env.TELEGRAM_CHAT_ID;
+  if (tgToken && tgChat) {
+    tasks.push(
+      fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: tgChat,
+          text: `*${title}*\n${message}`,
+          parse_mode: "Markdown",
+          disable_web_page_preview: true,
+        }),
+      }).catch(() => {})
+    );
+  }
   const hook = process.env.NOTIFY_WEBHOOK;
   if (hook) {
     // Slack & Discord both accept a JSON body with a "text"/"content" field.
