@@ -27,7 +27,6 @@ export default async function handler(req, res) {
       INSERT INTO events (type, email, detail, user_agent, referrer)
       VALUES (${type}, ${email}, ${detail ? JSON.stringify(detail) : null}, ${ua}, ${ref})
     `;
-    // Notify on downloads (visits are too frequent to push)
     if (type === "download") {
       const epu = detail && Array.isArray(detail.epu) && detail.epu.length ? detail.epu.join(", ") : "all supply heads";
       const rowsN = detail && detail.rows != null ? detail.rows : "?";
@@ -36,6 +35,10 @@ export default async function handler(req, res) {
         `${email || "anonymous"}\n${rowsN} rows · ${epu}`,
         "inbox_tray"
       );
+    } else if (type === "visit") {
+      const [{ n }] = await sql`SELECT count(*)::int AS n FROM events WHERE type='visit'`;
+      const where = ref ? `\nfrom: ${ref}` : "";
+      await notify("GeBIZ directory visit", `Total visits: ${n}${where}`, "eyes");
     }
     res.status(200).json({ ok: true });
   } catch (e) {

@@ -25,6 +25,18 @@ export function cors(req, res) {
   return false;
 }
 
+// Build the secret dashboard link (token embedded). Returns "" if not configured.
+export function dashboardUrl() {
+  const token = process.env.STATS_TOKEN;
+  if (!token) return "";
+  let base = process.env.PUBLIC_BASE_URL || "";
+  if (!base && process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    base = "https://" + process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  }
+  if (!base) base = "https://gebiz-supplier-directory.vercel.app";
+  return `${base.replace(/\/$/, "")}/dashboard.html?token=${token}`;
+}
+
 // Fire-and-forget push notification. Supports:
 //   - ntfy.sh  (env NOTIFY_NTFY_TOPIC) — zero-setup push, subscribe at ntfy.sh/<topic>
 //   - Slack/Discord incoming webhook (env NOTIFY_WEBHOOK)
@@ -44,16 +56,24 @@ export async function notify(title, message, tag = "bell") {
   const tgToken = process.env.TELEGRAM_BOT_TOKEN;
   const tgChat = process.env.TELEGRAM_CHAT_ID;
   if (tgToken && tgChat) {
+    const body = {
+      chat_id: tgChat,
+      text: `*${title}*\n${message}`,
+      parse_mode: "Markdown",
+      disable_web_page_preview: true,
+    };
+    // Attach a tappable "Open Dashboard" button (secret tokenised link)
+    const dash = dashboardUrl();
+    if (dash) {
+      body.reply_markup = {
+        inline_keyboard: [[{ text: "📊 Open Dashboard", url: dash }]],
+      };
+    }
     tasks.push(
       fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: tgChat,
-          text: `*${title}*\n${message}`,
-          parse_mode: "Markdown",
-          disable_web_page_preview: true,
-        }),
+        body: JSON.stringify(body),
       }).catch(() => {})
     );
   }
