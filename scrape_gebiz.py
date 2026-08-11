@@ -186,7 +186,7 @@ def scrape_listings_and_profiles(
     time.sleep(1.5)
     dismiss_dialogs(page)
 
-    dropdown_btn = page.query_selector("#contentForm\\:j_idt156_BUTTON")
+    dropdown_btn = page.query_selector("input.selectOneMenuSearchable_BUTTON")
     if not dropdown_btn:
         print("  ERROR: dropdown button not found")
         dump_debug(page, f"{supply_head_code.replace('/', '-')}_dropdown_not_found")
