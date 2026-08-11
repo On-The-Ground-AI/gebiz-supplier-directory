@@ -1,5 +1,3 @@
-scrape_gebiz.py
-generate_summaries.py
 listing_cache.json
 __pycache__/
 *.log
@@ -12,3 +10,4 @@ gebiz_suppliers.html
 node_modules/
 .vercel/
 .env*
+venv/
