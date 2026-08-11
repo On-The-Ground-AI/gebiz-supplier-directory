@@ -134,7 +134,11 @@ def discover_supply_heads(page) -> list[str]:
         dump_debug(page, "discovery_dropdown_not_found")
         return []
     dropdown_btn.click()
-    time.sleep(0.8)
+    try:
+        page.wait_for_selector("button.selectOneMenuSearchable_LIST-BUTTON", timeout=8000)
+    except Exception:
+        pass
+    time.sleep(0.5)
 
     labels = page.eval_on_selector_all(
         "button.selectOneMenuSearchable_LIST-BUTTON",
@@ -147,6 +151,8 @@ def discover_supply_heads(page) -> list[str]:
             codes.append(m.group(1))
 
     print(f"  Found {len(codes)} Supply Head categories")
+    if not codes:
+        dump_debug(page, "discovery_no_labels")
     return codes
 
 
