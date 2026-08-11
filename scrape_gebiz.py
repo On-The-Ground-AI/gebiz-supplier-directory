@@ -37,8 +37,8 @@ SUPPLY_HEADS = [
 
 OUTPUT_DIR = Path(__file__).parent
 JSON_OUT = OUTPUT_DIR / "suppliers.json"
-HTML_OUT = OUTPUT_DIR / "gebiz_suppliers.html"
 LISTING_CACHE = OUTPUT_DIR / "listing_cache.json"
+DEBUG_DIR = OUTPUT_DIR / "debug"
 
 PROFILE_WORKERS = 1   # MUST be 1 — server session is stateful, concurrent requests corrupt results
 PROFILE_DELAY = 0.15  # seconds between profile requests
@@ -67,6 +67,42 @@ def extract_listing_page(html: str) -> list[dict]:
             # Try to get UEN + phone from the page text near this link
             entries.append({"code": code, "name": name})
     return entries
+
+
+def dump_debug(page, tag: str) -> None:
+    """Save the page's HTML + a screenshot, and print candidate elements that
+    look like the Supply Head dropdown, so a failed selector can be fixed
+    from the artifacts instead of guessing blind."""
+    DEBUG_DIR.mkdir(exist_ok=True)
+    html_path = DEBUG_DIR / f"{tag}.html"
+    png_path = DEBUG_DIR / f"{tag}.png"
+    try:
+        html_path.write_text(page.content(), encoding="utf-8")
+    except Exception as e:
+        print(f"  (debug dump: could not save HTML: {e})")
+    try:
+        page.screenshot(path=str(png_path), full_page=True)
+    except Exception as e:
+        print(f"  (debug dump: could not save screenshot: {e})")
+    print(f"  DEBUG: saved {html_path} and {png_path}")
+
+    try:
+        candidates = page.eval_on_selector_all(
+            "button, [role='button'], .ui-selectonemenu, select, [id*='BUTTON'], [id*='button']",
+            """els => els.map(el => ({
+                tag: el.tagName,
+                id: el.id,
+                cls: el.className,
+                text: (el.innerText || el.textContent || '').trim().slice(0, 60),
+            })).filter(c => c.id || c.text)"""
+        )
+        print(f"  DEBUG: {len(candidates)} candidate button/select elements found. Top matches:")
+        # Surface anything that mentions "supply" first, since that's most likely relevant
+        candidates.sort(key=lambda c: 0 if "supply" in (c["text"] or "").lower() else 1)
+        for c in candidates[:25]:
+            print(f"    <{c['tag']} id={c['id']!r} class={c['cls']!r}> {c['text']!r}")
+    except Exception as e:
+        print(f"  (debug dump: could not enumerate candidates: {e})")
 
 
 def dismiss_dialogs(page) -> None:
@@ -153,6 +189,7 @@ def scrape_listings_and_profiles(
     dropdown_btn = page.query_selector("#contentForm\\:j_idt156_BUTTON")
     if not dropdown_btn:
         print("  ERROR: dropdown button not found")
+        dump_debug(page, f"{supply_head_code.replace('/', '-')}_dropdown_not_found")
         return 0
     dropdown_btn.click()
     time.sleep(0.8)
@@ -160,6 +197,7 @@ def scrape_listings_and_profiles(
     btn = page.query_selector(f'button[label*="{supply_head_code}"]')
     if not btn:
         print(f"  ERROR: no button for {supply_head_code}")
+        dump_debug(page, f"{supply_head_code.replace('/', '-')}_option_not_found")
         return 0
     btn.click()
     time.sleep(1.2)
@@ -167,6 +205,7 @@ def scrape_listings_and_profiles(
     search_btn = page.query_selector("input[name='contentForm:search']")
     if not search_btn:
         print("  ERROR: search button not found")
+        dump_debug(page, f"{supply_head_code.replace('/', '-')}_search_btn_not_found")
         return 0
     search_btn.click()
     wait_for_page_ready(page, timeout=30000)
@@ -233,79 +272,6 @@ def scrape_listings_and_profiles(
         page_num += 1
 
     return new_fetched
-
-
-def scrape_listings(supply_head_code: str, page, ctx) -> list[dict]:
-    """Use an existing Playwright page to search a supply head and collect all entries."""
-    print(f"\n  Loading search page for {supply_head_code}...")
-    page.goto(SEARCH_URL, wait_until="networkidle", timeout=60000)
-    time.sleep(1.5)
-    dismiss_dialogs(page)
-
-    # Open the Supply Head dropdown
-    dropdown_btn = page.query_selector("#contentForm\\:j_idt156_BUTTON")
-    if not dropdown_btn:
-        print("  ERROR: dropdown button not found")
-        return []
-    dropdown_btn.click()
-    time.sleep(0.8)
-
-    # Click the matching supply head
-    btn = page.query_selector(f'button[label*="{supply_head_code}"]')
-    if not btn:
-        print(f"  ERROR: no button found for {supply_head_code}")
-        return []
-    btn.click()
-    time.sleep(1.2)
-
-    # Click Search
-    search_btn = page.query_selector("input[name='contentForm:search']")
-    if not search_btn:
-        print("  ERROR: search button not found")
-        return []
-    search_btn.click()
-    wait_for_page_ready(page, timeout=30000)
-    time.sleep(0.5)
-
-    # Check result count
-    body = page.inner_text("body")
-    m = re.search(r"(\d[\d,]*)\s+results?\s+found", body)
-    total = int(m.group(1).replace(",", "")) if m else 0
-    print(f"  Found {total} suppliers for {supply_head_code}")
-    if total == 0:
-        return []
-
-    all_entries = []
-    page_num = 1
-    empty_pages = 0
-    max_pages = (total // 10) + 2  # slightly over to handle edge cases
-
-    while page_num <= max_pages:
-        html = page.content()
-        entries = extract_listing_page(html)
-
-        if not entries:
-            empty_pages += 1
-            if empty_pages >= 3:
-                print(f"\n  3 consecutive empty pages — stopping.")
-                break
-        else:
-            empty_pages = 0
-
-        all_entries.extend(entries)
-        print(f"  Page {page_num}/{max_pages}: +{len(entries)} entries ({len(all_entries)} total)", end="\r", flush=True)
-
-        # Click Next (will return False when no button or click fails)
-        if not click_next_btn(page):
-            print(f"\n  No more pages. Done at page {page_num}.")
-            break
-
-        wait_for_page_ready(page, timeout=30000)
-        time.sleep(PAGE_DELAY)
-        page_num += 1
-
-    print(f"  Collected {len(all_entries)} entries for {supply_head_code}")
-    return all_entries
 
 
 # ── Profile parsing ───────────────────────────────────────────────────────────
@@ -520,572 +486,6 @@ def fetch_profile(code: str, session: requests.Session, existing: dict = None) -
         return existing or {"code": code, "name": "", "error": str(e)}
 
 
-# ── HTML builder ──────────────────────────────────────────────────────────────
-
-def build_html(suppliers: list[dict]) -> str:
-    """Build a single-file searchable HTML database."""
-
-    def esc(s):
-        return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
-
-    # Collect unique supply head codes
-    all_sh_codes = sorted(set(
-        sh["code"]
-        for s in suppliers
-        for sh in s.get("supply_heads", [])
-        if sh.get("code")
-    ))
-
-    # Determine label for each supply head code
-    sh_labels = {}
-    for s in suppliers:
-        for sh in s.get("supply_heads", []):
-            if sh.get("code") and sh["code"] not in sh_labels:
-                sh_labels[sh["code"]] = sh.get("full") or sh.get("name") or sh["code"]
-
-    # Build EPU filter checkbox list HTML (for multi-select dropdown panel)
-    epu_checkboxes_html = ""
-    for code in all_sh_codes:
-        label = sh_labels.get(code, code)
-        epu_checkboxes_html += (
-            f'<label class="epu-item" title="{esc(label)}">'
-            f'<input type="checkbox" class="epu-cb" value="{esc(code)}"> '
-            f'<span class="epu-code">{esc(code)}</span>'
-            f'<span class="epu-label">{esc(label.split(" - ", 1)[-1] if " - " in label else label)}</span>'
-            f'</label>\n'
-        )
-
-    # Build supplier cards
-    cards_html = ""
-    for s in suppliers:
-        sh_codes = [sh["code"] for sh in s.get("supply_heads", []) if sh.get("code")]
-        sh_attr = " ".join(sh_codes)
-        sh_tags = ""
-        for sh in s.get("supply_heads", []):
-            status_cls = "tag-approved" if sh.get("status") == "APPROVED" else "tag-other"
-            sh_tags += (
-                f'<span class="sh-tag {status_cls}" title="{esc(sh.get("financial_grade",""))} | '
-                f'Exp: {esc(sh.get("expiry_date",""))} | {esc(sh.get("status",""))}">'
-                f'{esc(sh.get("code","") or sh.get("name",""))}</span>'
-            )
-
-        desc_full = esc(s.get("description", ""))
-        ai_summary = s.get("description_short", "")
-        # Card face: show AI summary if available, otherwise nothing (no raw truncation)
-        has_ai_summary = bool(ai_summary)
-        desc_short = esc(ai_summary)
-
-        addr_parts = [s.get("address_1"), s.get("address_2"), s.get("address_3")]
-        addr_parts = [a for a in addr_parts if a]
-        address_str = ", ".join(addr_parts)
-        if s.get("postal_code"):
-            address_str += f" {s.get('postal_code')}"
-        if s.get("city"):
-            address_str = address_str or s.get("city")
-
-        contact_items = ""
-        if s.get("phone"):
-            contact_items += f'<span class="contact-item">📞 {esc(s.get("phone",""))}</span>'
-        if s.get("fax"):
-            contact_items += f'<span class="contact-item">🖷 {esc(s.get("fax",""))}</span>'
-        if s.get("email"):
-            contact_items += f'<span class="contact-item"><a href="mailto:{esc(s.get("email",""))}">{esc(s.get("email",""))}</a></span>'
-        if s.get("company_url"):
-            url_display = s.get("company_url", "")
-            url_href = url_display if url_display.startswith("http") else "https://" + url_display
-            contact_items += f'<span class="contact-item"><a href="{esc(url_href)}" target="_blank" rel="noopener">{esc(url_display)}</a></span>'
-
-        # Build supply heads detail table
-        sh_table = ""
-        if s.get("supply_heads"):
-            sh_table = '<table class="sh-table"><thead><tr><th>Supply Head</th><th>Grade</th><th>Expiry</th><th>Status</th></tr></thead><tbody>'
-            for sh in s.get("supply_heads", []):
-                status_cls = "status-approved" if sh.get("status") == "APPROVED" else "status-other"
-                sh_table += (
-                    f'<tr><td>{esc(sh.get("full") or sh.get("name",""))}</td>'
-                    f'<td>{esc(sh.get("financial_grade",""))}</td>'
-                    f'<td>{esc(sh.get("expiry_date",""))}</td>'
-                    f'<td class="{status_cls}">{esc(sh.get("status",""))}</td></tr>'
-                )
-            sh_table += "</tbody></table>"
-
-        # Expanded address block
-        addr_detail = ""
-        if address_str:
-            addr_detail += f'<div class="detail-row"><span class="detail-label">Address</span><span>{esc(address_str)}</span></div>'
-        if s.get("city"):
-            addr_detail += f'<div class="detail-row"><span class="detail-label">City</span><span>{esc(s.get("city",""))}</span></div>'
-
-        cards_html += f"""
-<div class="card" data-sh="{esc(sh_attr)}"
-     data-name="{esc(s.get('name','').lower())}"
-     data-uen="{esc(s.get('uen','').lower())}"
-     data-desc="{esc((s.get('description') or '').lower())}">
-  <div class="card-header">
-    <div class="card-title-row">
-      <span class="uen-badge">{esc(s.get("uen",""))}</span>
-      <h3 class="company-name">{esc(s.get("name",""))}</h3>
-    </div>
-    <div class="sh-tags">{sh_tags}</div>
-  </div>
-  <div class="card-body">
-    {"" if not has_ai_summary else f'<p class="ai-summary">{desc_short}</p>'}
-    <div class="contact-bar">{contact_items}</div>
-  </div>
-  <div class="card-expanded" style="display:none">
-    {addr_detail}
-    {"" if not desc_full else f'<div class="detail-row detail-desc"><span class="detail-label">About</span><span>{desc_full}</span></div>'}
-    {sh_table}
-  </div>
-  <button class="btn-expand" onclick="toggleCard(this)">▼ Details</button>
-</div>
-"""
-
-    # Compact supplier data for CSV export (only fields needed)
-    csv_data_js = json.dumps([
-        {
-            "uen": s.get("uen", ""),
-            "name": s.get("name", ""),
-            "summary": s.get("description_short", ""),
-            "description": (s.get("description") or "").replace("\n", " "),
-            "address": ", ".join(filter(None, [s.get("address_1"), s.get("address_2"), s.get("address_3")])),
-            "postal_code": s.get("postal_code", ""),
-            "city": s.get("city", ""),
-            "phone": s.get("phone", ""),
-            "fax": s.get("fax", ""),
-            "email": s.get("email", ""),
-            "website": s.get("company_url", ""),
-            "supply_heads": "; ".join(sh.get("code", "") for sh in s.get("supply_heads", []) if sh.get("code")),
-            "sh_full": "; ".join(sh.get("full", "") for sh in s.get("supply_heads", []) if sh.get("full")),
-            "sh_codes_arr": [sh.get("code", "") for sh in s.get("supply_heads", []) if sh.get("code")],
-        }
-        for s in suppliers
-    ], ensure_ascii=False)
-
-    # Count
-    total = len(suppliers)
-
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GeBIZ Supplier Directory — {total} suppliers</title>
-<style>
-:root {{
-  --bg: #f8f9fa;
-  --card-bg: #ffffff;
-  --border: #e2e8f0;
-  --primary: #2563eb;
-  --primary-light: #dbeafe;
-  --text: #1e293b;
-  --text-muted: #64748b;
-  --approved: #16a34a;
-  --approved-bg: #dcfce7;
-  --radius: 10px;
-  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
-}}
-
-* {{ box-sizing: border-box; margin: 0; padding: 0; }}
-
-body {{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.5;
-}}
-
-.top-bar {{
-  background: var(--primary);
-  color: white;
-  padding: 16px 24px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}}
-
-.top-bar-inner {{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}}
-
-.top-bar h1 {{ font-size: 1.1rem; font-weight: 700; white-space: nowrap; }}
-.top-bar h1 small {{ font-weight: 400; opacity: 0.8; }}
-
-#search-input {{
-  flex: 1;
-  min-width: 200px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 2px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.15);
-  color: white;
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color 0.2s;
-}}
-#search-input::placeholder {{ color: rgba(255,255,255,0.6); }}
-#search-input:focus {{ border-color: white; background: rgba(255,255,255,0.25); }}
-
-#sort-select {{
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 2px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.15);
-  color: white;
-  font-size: 0.9rem;
-  cursor: pointer;
-}}
-
-.filter-bar {{
-  background: white;
-  border-bottom: 1px solid var(--border);
-  padding: 10px 24px;
-  position: sticky;
-  top: 57px;
-  z-index: 99;
-  overflow-x: auto;
-  white-space: nowrap;
-}}
-
-.filter-bar-inner {{
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}}
-
-.filter-bar-inner label {{
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 600;
-  white-space: nowrap;
-  margin-right: 4px;
-}}
-
-.chip {{
-  padding: 5px 12px;
-  border-radius: 20px;
-  border: 1.5px solid var(--border);
-  background: white;
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: all 0.15s;
-  white-space: nowrap;
-}}
-.chip:hover {{ border-color: var(--primary); color: var(--primary); }}
-.chip.active {{ background: var(--primary); border-color: var(--primary); color: white; }}
-
-.content {{
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px 24px;
-}}
-
-.results-bar {{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}}
-
-.grid {{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 16px;
-}}
-
-.card {{
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.1s;
-}}
-.card:hover {{ box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }}
-.card.hidden {{ display: none; }}
-
-.card-header {{
-  padding: 14px 16px 10px;
-  border-bottom: 1px solid var(--border);
-}}
-
-.card-title-row {{
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-}}
-
-.uen-badge {{
-  background: #f1f5f9;
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-family: monospace;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  white-space: nowrap;
-  margin-top: 2px;
-  flex-shrink: 0;
-}}
-
-.company-name {{
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.3;
-}}
-
-.sh-tags {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}}
-
-.sh-tag {{
-  font-size: 0.72rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: default;
-}}
-
-.tag-approved {{ background: var(--approved-bg); color: var(--approved); }}
-.tag-other {{ background: #f1f5f9; color: var(--text-muted); }}
-
-.card-body {{ padding: 12px 16px; }}
-
-.ai-summary {{
-  font-size: 0.84rem;
-  color: var(--text);
-  line-height: 1.5;
-  margin: 0 0 10px 0;
-}}
-
-.detail-desc span {{
-  font-size: 0.83rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  white-space: pre-wrap;
-}}
-
-.description {{
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-bottom: 10px;
-  line-height: 1.5;
-}}
-
-.btn-more {{
-  background: none;
-  border: none;
-  color: var(--primary);
-  font-size: 0.8rem;
-  cursor: pointer;
-  padding: 0;
-  margin-left: 4px;
-}}
-
-.contact-bar {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  font-size: 0.82rem;
-}}
-
-.contact-item {{
-  color: var(--text-muted);
-  white-space: nowrap;
-}}
-
-.contact-item a {{ color: var(--primary); text-decoration: none; }}
-.contact-item a:hover {{ text-decoration: underline; }}
-
-.card-expanded {{
-  padding: 0 16px 0;
-  border-top: 1px solid var(--border);
-  background: #f8fafc;
-}}
-
-.card-expanded .detail-row {{
-  display: flex;
-  gap: 10px;
-  padding: 6px 0;
-  font-size: 0.85rem;
-  border-bottom: 1px solid var(--border);
-}}
-.card-expanded .detail-row:last-of-type {{ border-bottom: none; }}
-.detail-label {{
-  font-weight: 600;
-  color: var(--text-muted);
-  min-width: 60px;
-  flex-shrink: 0;
-}}
-
-.sh-table {{
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.8rem;
-  margin: 8px 0;
-}}
-.sh-table th, .sh-table td {{
-  padding: 5px 8px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}}
-.sh-table th {{ font-weight: 700; color: var(--text-muted); background: #f1f5f9; }}
-.status-approved {{ color: var(--approved); font-weight: 600; }}
-.status-other {{ color: var(--text-muted); }}
-
-.btn-expand {{
-  width: 100%;
-  padding: 8px;
-  background: none;
-  border: none;
-  border-top: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: background 0.15s;
-}}
-.btn-expand:hover {{ background: #f1f5f9; }}
-
-.no-results {{
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text-muted);
-  font-size: 1rem;
-  display: none;
-}}
-
-@media (max-width: 600px) {{
-  .grid {{ grid-template-columns: 1fr; }}
-  .top-bar-inner {{ flex-direction: column; align-items: stretch; }}
-}}
-</style>
-</head>
-<body>
-
-<div class="top-bar">
-  <div class="top-bar-inner">
-    <h1>GeBIZ Supplier Database <small>({total} suppliers)</small></h1>
-    <input type="text" id="search-input" placeholder="Search by name, UEN, or description…" oninput="filterCards()" autocomplete="off">
-    <select id="sort-select" onchange="sortCards()">
-      <option value="name">Sort: Name A–Z</option>
-      <option value="uen">Sort: UEN</option>
-    </select>
-  </div>
-</div>
-
-<div class="filter-bar">
-  <div class="filter-bar-inner">
-    <label>Supply Head:</label>
-    {chips_html}
-  </div>
-</div>
-
-<div class="content">
-  <div class="results-bar">
-    <span id="results-count">{total} suppliers</span>
-    <span id="active-filter">Showing all</span>
-  </div>
-  <div class="grid" id="cards-grid">
-{cards_html}
-  </div>
-  <div class="no-results" id="no-results">No suppliers match your search.</div>
-</div>
-
-<script>
-const cards = Array.from(document.querySelectorAll('.card'));
-let activeShFilter = 'ALL';
-
-function filterCards() {{
-  const q = document.getElementById('search-input').value.toLowerCase().trim();
-  let visible = 0;
-  cards.forEach(card => {{
-    const name = card.dataset.name || '';
-    const uen = card.dataset.uen || '';
-    const desc = card.dataset.desc || '';
-    const shData = card.dataset.sh || '';
-
-    const matchText = !q || name.includes(q) || uen.includes(q) || desc.includes(q);
-    const matchSh = activeShFilter === 'ALL' || shData.split(' ').includes(activeShFilter);
-
-    if (matchText && matchSh) {{
-      card.classList.remove('hidden');
-      visible++;
-    }} else {{
-      card.classList.add('hidden');
-    }}
-  }});
-  document.getElementById('results-count').textContent = visible + ' supplier' + (visible !== 1 ? 's' : '');
-  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
-}}
-
-function sortCards() {{
-  const grid = document.getElementById('cards-grid');
-  const val = document.getElementById('sort-select').value;
-  const sorted = [...cards].sort((a, b) => {{
-    if (val === 'name') return (a.dataset.name || '').localeCompare(b.dataset.name || '');
-    if (val === 'uen') return (a.dataset.uen || '').localeCompare(b.dataset.uen || '');
-    return 0;
-  }});
-  sorted.forEach(c => grid.appendChild(c));
-  filterCards();
-}}
-
-document.querySelectorAll('.chip').forEach(chip => {{
-  chip.addEventListener('click', () => {{
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    activeShFilter = chip.dataset.sh;
-    const label = activeShFilter === 'ALL' ? 'all' : activeShFilter;
-    document.getElementById('active-filter').textContent = 'Filter: ' + label;
-    filterCards();
-  }});
-}});
-
-function toggleDesc(btn) {{
-  const short = btn.previousElementSibling.previousElementSibling;
-  const full = btn.previousElementSibling;
-  if (full.style.display === 'none') {{
-    full.style.display = 'inline';
-    short.style.display = 'none';
-    btn.textContent = 'Show less';
-  }} else {{
-    full.style.display = 'none';
-    short.style.display = 'inline';
-    btn.textContent = 'Show more';
-  }}
-}}
-
-function toggleCard(btn) {{
-  const expanded = btn.previousElementSibling;
-  if (expanded.style.display === 'none') {{
-    expanded.style.display = 'block';
-    btn.textContent = '▲ Hide details';
-  }} else {{
-    expanded.style.display = 'none';
-    btn.textContent = '▼ Details';
-  }}
-}}
-</script>
-</body>
-</html>"""
-
-
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -1170,18 +570,8 @@ def main():
         json.dump(final_suppliers, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(final_suppliers)} suppliers to {JSON_OUT}")
 
-    # ── Phase 3: Build HTML ──
-    print("\n[HTML] Building searchable database...")
-    valid_suppliers = [s for s in final_suppliers if s.get("name")]
-    print(f"  Valid suppliers: {len(valid_suppliers)}")
-    html = build_html(valid_suppliers)
-    with open(HTML_OUT, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"Saved HTML to {HTML_OUT}")
-
-    print("\n✓ Done!")
+    print("\n✓ Done! Run build_html.py separately to regenerate the site's index.html.")
     print(f"  JSON: {JSON_OUT}")
-    print(f"  HTML: {HTML_OUT}")
 
 
 if __name__ == "__main__":
