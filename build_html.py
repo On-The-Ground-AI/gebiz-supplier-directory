@@ -9,9 +9,11 @@ Rebuild gebiz_suppliers.html with:
 """
 import json, os, re
 from collections import Counter
+from datetime import datetime
 
 JSON_PATH = os.environ.get("GEBIZ_JSON_PATH", "suppliers.json")
 HTML_PATH = os.environ.get("GEBIZ_HTML_PATH", "gebiz_suppliers.html")
+METADATA_PATH = os.environ.get("GEBIZ_METADATA_PATH", "scrape_metadata.json")
 
 # API base for tracking + signup. Empty string = same origin (relative /api),
 # which is correct when served from Vercel. Set to an absolute URL (e.g.
@@ -41,6 +43,15 @@ def build():
 
     suppliers = [s for s in suppliers if s.get("name")]
     total = len(suppliers)
+
+    last_scraped_str = ""
+    try:
+        with open(METADATA_PATH, encoding="utf-8") as f:
+            last_scraped_iso = json.load(f).get("last_scraped", "")
+        if last_scraped_iso:
+            last_scraped_str = datetime.fromisoformat(last_scraped_iso).strftime("%d %b %Y")
+    except FileNotFoundError:
+        pass
 
     # Pre-compute per-supplier grade and year sets
     all_grades = set()
@@ -211,6 +222,8 @@ def build():
             f'  <button class="btn-expand" onclick="toggleCard(this)">▼ Details</button>\n'
             f'</div>\n'
         )
+
+    last_updated_html = f" Last updated {last_scraped_str}." if last_scraped_str else ""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -468,7 +481,7 @@ h3{{font-size:.9rem;font-weight:700;color:var(--text);line-height:1.3}}
     <p>Try broadening your search or removing some filters.</p>
   </div>
   <footer class="site-footer">
-    Data sourced from the public <a href="https://www.gebiz.gov.sg/ptn/supplier/directory/index.xhtml" target="_blank" rel="noopener">GeBIZ Supplier Directory</a>.
+    Data sourced from the public <a href="https://www.gebiz.gov.sg/ptn/supplier/directory/index.xhtml" target="_blank" rel="noopener">GeBIZ Supplier Directory</a>.{last_updated_html}
     Downloading a CSV requires an email and records which filters/data sets were exported, to help us improve the directory.
   </footer>
 </div>

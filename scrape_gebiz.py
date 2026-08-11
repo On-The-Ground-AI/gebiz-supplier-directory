@@ -15,6 +15,7 @@ import warnings
 import threading
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -40,6 +41,7 @@ FALLBACK_SUPPLY_HEADS = [
 
 OUTPUT_DIR = Path(__file__).parent
 JSON_OUT = OUTPUT_DIR / "suppliers.json"
+METADATA_OUT = OUTPUT_DIR / "scrape_metadata.json"
 LISTING_CACHE = OUTPUT_DIR / "listing_cache.json"
 DEBUG_DIR = OUTPUT_DIR / "debug"
 
@@ -283,11 +285,12 @@ def scrape_listings_and_profiles(
             page_num += 1
             continue
 
-        # Fetch profiles for this page's 10 suppliers IMMEDIATELY (while codes are valid)
+        # Fetch profiles for this page's 10 suppliers IMMEDIATELY (while codes are valid).
+        # Always re-fetch, even if we already have data from a previous run: a supplier's
+        # supply head status/grade/expiry can change between scrapes, and silently trusting
+        # stale data here is exactly what caused a supplier's info to go stale unnoticed.
         for entry in entries:
             code = entry["code"]
-            if code in results and results[code].get("name") and results[code]["name"] not in ("Supplier Name", ""):
-                continue  # already have good data for this code
             time.sleep(PROFILE_DELAY)
             profile = fetch_profile_inline(page, code, existing_profiles.get(code))
             results[code] = profile
@@ -614,6 +617,11 @@ def main():
     with open(JSON_OUT, "w", encoding="utf-8") as f:
         json.dump(final_suppliers, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(final_suppliers)} suppliers to {JSON_OUT}")
+
+    # Stamp when this scrape completed, so the site can show "last updated"
+    with open(METADATA_OUT, "w", encoding="utf-8") as f:
+        json.dump({"last_scraped": datetime.now(timezone.utc).isoformat()}, f, indent=2)
+    print(f"Saved scrape timestamp to {METADATA_OUT}")
 
     print("\n✓ Done! Run build_html.py separately to regenerate the site's index.html.")
     print(f"  JSON: {JSON_OUT}")
