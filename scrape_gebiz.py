@@ -518,9 +518,15 @@ def parse_profile(html: str, code: str) -> dict:
             "status": row.get("status", ""),
         })
 
-    # If name not found, try from the first non-empty line
+    # If name not found, try from the first non-empty line — but only if that
+    # line is a company name rather than page chrome. On an error or
+    # session-expired page "Trading Partner Ref" never appears, so lines[0] is
+    # the page title ("GeBIZ | Error"), which would otherwise be stored as a
+    # supplier called "GeBIZ | Error".
     if not result["name"] and lines:
-        result["name"] = lines[0]
+        first = lines[0].strip()
+        if not first.startswith("GeBIZ") and "|" not in first:
+            result["name"] = first
 
     return result
 
@@ -607,11 +613,19 @@ def main():
     # Deduplicate by UEN: keep the entry with the most supply heads
     seen_uens = {}
     final_suppliers = []
+    rejected = 0
     for s in all_supplier_values:
         uen = s.get("uen") or ""
         name = s.get("name") or ""
         if not name or name in ("Supplier Name", "") or s.get("error"):
             continue  # skip bad entries
+        # A real profile always yields a UEN from "Trading Partner Ref. No.".
+        # Without one the fetch returned an error/session-expired page, so the
+        # record is page chrome, not a company — keep it out of the dataset.
+        if not uen:
+            rejected += 1
+            print(f"  Rejected non-profile record: {name!r} (no UEN)")
+            continue
         if uen and uen in seen_uens:
             # Merge supply_heads from duplicate into existing
             existing = seen_uens[uen]
@@ -626,6 +640,8 @@ def main():
                 seen_uens[uen] = s
 
     print(f"\n  After UEN dedup: {len(final_suppliers)} unique suppliers")
+    if rejected:
+        print(f"  ({rejected} non-profile records rejected — failed fetches)")
 
     # Save JSON
     with open(JSON_OUT, "w", encoding="utf-8") as f:
