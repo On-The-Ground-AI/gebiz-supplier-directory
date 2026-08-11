@@ -136,21 +136,21 @@ def discover_supply_heads(page) -> list[str]:
         dump_debug(page, "discovery_dropdown_not_found")
         return []
     dropdown_btn.click()
-    try:
-        page.wait_for_selector("button.selectOneMenuSearchable_LIST-BUTTON", timeout=8000)
-    except Exception:
-        pass
-    time.sleep(0.5)
 
-    labels = page.eval_on_selector_all(
-        "button.selectOneMenuSearchable_LIST-BUTTON",
-        "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
-    )
     codes = []
-    for label in labels:
-        m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
-        if m:
-            codes.append(m.group(1))
+    for attempt in range(6):
+        time.sleep(1.0)
+        labels = page.eval_on_selector_all(
+            "button.selectOneMenuSearchable_LIST-BUTTON",
+            "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
+        )
+        for label in labels:
+            m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
+            if m:
+                codes.append(m.group(1))
+        if codes:
+            break
+        print(f"  (category list not rendered yet, retrying — attempt {attempt + 1}/6)")
 
     print(f"  Found {len(codes)} Supply Head categories")
     if not codes:
@@ -194,8 +194,10 @@ def click_next_btn(page) -> bool:
     return False
 
 
-def fetch_profile_inline(page, code: str, existing: dict = None) -> dict:
-    """Fetch a single profile using page.request.get() (same browser session, codes stay valid)."""
+def fetch_profile_inline(page, code: str, existing: dict = None) -> tuple[dict, bool]:
+    """Fetch a single profile using page.request.get() (same browser session, codes stay valid).
+    Returns (profile, was_freshly_fetched) — the caller needs to know when a fetch
+    failed and fell back to old cached data, since that's stale, not confirmed-current."""
     url = f"{PROFILE_BASE}?code={code}"
     try:
         response = page.request.get(url, headers=HEADERS, timeout=20000)
@@ -205,9 +207,9 @@ def fetch_profile_inline(page, code: str, existing: dict = None) -> dict:
             time.sleep(0.5)
             response2 = page.request.get(url, headers=HEADERS, timeout=20000)
             profile = parse_profile(response2.text(), code)
-        return profile
+        return profile, True
     except Exception as e:
-        return existing or {"code": code, "name": "", "error": str(e)}
+        return (existing or {"code": code, "name": "", "error": str(e)}), False
 
 
 def scrape_listings_and_profiles(
@@ -261,6 +263,7 @@ def scrape_listings_and_profiles(
         return 0
 
     new_fetched = 0
+    stale_fallbacks = 0
     page_num = 1
     max_pages = (total // 10) + 2
 
@@ -292,9 +295,11 @@ def scrape_listings_and_profiles(
         for entry in entries:
             code = entry["code"]
             time.sleep(PROFILE_DELAY)
-            profile = fetch_profile_inline(page, code, existing_profiles.get(code))
+            profile, fresh = fetch_profile_inline(page, code, existing_profiles.get(code))
             results[code] = profile
-            if profile.get("name") and profile["name"] not in ("Supplier Name", ""):
+            if not fresh:
+                stale_fallbacks += 1
+            elif profile.get("name") and profile["name"] not in ("Supplier Name", ""):
                 new_fetched += 1
 
         pct = page_num / max_pages * 100
@@ -308,11 +313,20 @@ def scrape_listings_and_profiles(
                 json.dump(_partial, f, ensure_ascii=False, indent=2)
 
         if not click_next_btn(page):
-            print(f"\n  {supply_head_code}: Done at page {page_num}. New profiles this run: {new_fetched}", flush=True)
+            print(f"\n  {supply_head_code}: Done at page {page_num}. Freshly fetched: {new_fetched}"
+                  f"{f', stale fallbacks (fetch failed): {stale_fallbacks}' if stale_fallbacks else ''}", flush=True)
             break
         wait_for_page_ready(page, timeout=30000)
         time.sleep(PAGE_DELAY)
         page_num += 1
+    else:
+        # Loop exhausted max_pages without click_next_btn ever reporting "no more
+        # pages" — the page-count estimate undershot the real listing, so this
+        # supply head may be missing suppliers past this point.
+        print(f"\n  {supply_head_code}: WARNING — hit max_pages ({max_pages}) without reaching "
+              f"the last page. Freshly fetched: {new_fetched}"
+              f"{f', stale fallbacks (fetch failed): {stale_fallbacks}' if stale_fallbacks else ''}. "
+              f"Total may be incomplete.", flush=True)
 
     return new_fetched
 
@@ -576,7 +590,7 @@ def main():
                 json_out_path=JSON_OUT,
                 save_interval=SAVE_INTERVAL,
             )
-            print(f"  Completed {sh_code}: {new_profiles} new profiles fetched", flush=True)
+            print(f"\n  Completed {sh_code}: {new_profiles} new profiles fetched", flush=True)
 
             # Save after each supply head completes
             _partial = sorted(results.values(), key=lambda s: s.get("name", "").lower())
