@@ -7,16 +7,15 @@ Rebuild gebiz_suppliers.html with:
 - Activity text search (description/AI summary only)
 - CSV export of current filtered view
 """
-import json, re
+import json, os, re
 from collections import Counter
 
-JSON_PATH = "/Users/seehaojun/Desktop/OTG/BD/suppliers.json"
-HTML_PATH = "/Users/seehaojun/Desktop/OTG/BD/gebiz_suppliers.html"
+JSON_PATH = os.environ.get("GEBIZ_JSON_PATH", "suppliers.json")
+HTML_PATH = os.environ.get("GEBIZ_HTML_PATH", "gebiz_suppliers.html")
 
 # API base for tracking + signup. Empty string = same origin (relative /api),
 # which is correct when served from Vercel. Set to an absolute URL (e.g.
 # "https://your-app.vercel.app") if hosting the HTML elsewhere (GitHub Pages).
-import os
 API_BASE = os.environ.get("GEBIZ_API_BASE", "")
 
 
