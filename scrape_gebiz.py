@@ -1,6 +1,7 @@
 """
 GeBIZ Supplier Directory Scraper
-Scrapes EPU/CMP/10, EPU/SER/35, EPU/SER/34, EPU/SER/19, EPU/SER/30
+Discovers every Supply Head category from the live search dropdown and
+scrapes all of them (previously hardcoded to a fixed subset of 5).
 
 Phase 1: Playwright pagination to collect all supplier codes
 Phase 2: requests (parallel) to fetch and parse all profile pages
@@ -27,7 +28,9 @@ BASE_URL = "https://www.gebiz.gov.sg"
 SEARCH_URL = f"{BASE_URL}/ptn/supplier/directory/index.xhtml"
 PROFILE_BASE = f"{BASE_URL}/ptn/supplier/directory/searchDetail.xhtml"
 
-SUPPLY_HEADS = [
+# SUPPLY_HEADS is discovered at runtime from the live dropdown (see
+# discover_supply_heads); this fallback is only used if discovery fails.
+FALLBACK_SUPPLY_HEADS = [
     "EPU/CMP/10",   # Computer Related Hardware, Software, and Services
     "EPU/SER/35",   # Service (Training of Personnel)
     "EPU/SER/34",   # Service (Consultant)
@@ -114,6 +117,37 @@ def dismiss_dialogs(page) -> None:
             time.sleep(0.5)
     except Exception:
         pass
+
+
+def discover_supply_heads(page) -> list[str]:
+    """Open the Supply Head dropdown on the search page and read every
+    category code straight from the live options, instead of relying on a
+    hardcoded list that goes stale as GeBIZ adds/renames categories."""
+    print("Discovering available Supply Head categories...")
+    page.goto(SEARCH_URL, wait_until="networkidle", timeout=60000)
+    time.sleep(1.5)
+    dismiss_dialogs(page)
+
+    dropdown_btn = page.query_selector("input.selectOneMenuSearchable_BUTTON")
+    if not dropdown_btn:
+        print("  ERROR: dropdown button not found during discovery")
+        dump_debug(page, "discovery_dropdown_not_found")
+        return []
+    dropdown_btn.click()
+    time.sleep(0.8)
+
+    labels = page.eval_on_selector_all(
+        "button.selectOneMenuSearchable_LIST-BUTTON",
+        "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
+    )
+    codes = []
+    for label in labels:
+        m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
+        if m:
+            codes.append(m.group(1))
+
+    print(f"  Found {len(codes)} Supply Head categories")
+    return codes
 
 
 def wait_for_page_ready(page, timeout: int = 15000) -> None:
@@ -517,8 +551,13 @@ def main():
         ctx = browser.new_context(user_agent=HEADERS["User-Agent"])
         page = ctx.new_page()
 
+        supply_heads = discover_supply_heads(page) or FALLBACK_SUPPLY_HEADS
+        if supply_heads == FALLBACK_SUPPLY_HEADS:
+            print(f"  Using fallback list of {len(supply_heads)} supply heads (discovery failed)")
+        print(f"Scraping {len(supply_heads)} supply heads: {', '.join(supply_heads)}")
+
         # ── Phase 1+2 Combined: For each supply head, interleave listing + profile fetch ──
-        for sh_code in SUPPLY_HEADS:
+        for sh_code in supply_heads:
             print(f"\n[{sh_code}] Starting interleaved scrape...")
             new_profiles = scrape_listings_and_profiles(
                 supply_head_code=sh_code,
