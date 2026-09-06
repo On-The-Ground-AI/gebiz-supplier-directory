@@ -306,6 +306,15 @@ def scrape_listings_and_profiles(
             code = entry["code"]
             time.sleep(PROFILE_DELAY)
             profile, fresh = fetch_profile_inline(page, code, existing_profiles.get(code))
+            # parse_profile() never sets description_short — that's added later by
+            # generate_summaries.py — so a fresh re-fetch would otherwise silently wipe
+            # out a supplier's existing AI summary on every run. Carry it forward when
+            # the underlying description text hasn't changed; if it has, leave it blank
+            # so generate_summaries.py picks it up and writes a summary that actually
+            # matches the new description, instead of keeping a now-mismatched one.
+            old = existing_profiles.get(code)
+            if old and old.get("description_short") and old.get("description") == profile.get("description"):
+                profile["description_short"] = old["description_short"]
             results[code] = profile
             if not fresh:
                 stale_fallbacks += 1
