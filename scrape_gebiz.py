@@ -137,20 +137,27 @@ def discover_supply_heads(page) -> list[str]:
         return []
     dropdown_btn.click()
 
-    codes = []
-    for attempt in range(6):
-        time.sleep(1.0)
-        labels = page.eval_on_selector_all(
-            "button.selectOneMenuSearchable_LIST-BUTTON",
-            "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
+    # Poll in-browser instead of round-tripping from Python each time — the
+    # previous approach (sleep + re-query from Python, repeated) burned most of
+    # its budget on round-trip overhead rather than actual page-side waiting,
+    # and still lost the race against the dropdown's async render.
+    try:
+        page.wait_for_function(
+            "document.querySelectorAll('button.selectOneMenuSearchable_LIST-BUTTON').length > 0",
+            timeout=15000
         )
-        for label in labels:
-            m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
-            if m:
-                codes.append(m.group(1))
-        if codes:
-            break
-        print(f"  (category list not rendered yet, retrying — attempt {attempt + 1}/6)")
+    except Exception:
+        pass
+
+    labels = page.eval_on_selector_all(
+        "button.selectOneMenuSearchable_LIST-BUTTON",
+        "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
+    )
+    codes = []
+    for label in labels:
+        m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
+        if m:
+            codes.append(m.group(1))
 
     print(f"  Found {len(codes)} Supply Head categories")
     if not codes:
