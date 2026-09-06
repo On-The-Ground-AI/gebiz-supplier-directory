@@ -137,20 +137,23 @@ def discover_supply_heads(page) -> list[str]:
         return []
     dropdown_btn.click()
 
-    # Poll in-browser instead of round-tripping from Python each time — the
-    # previous approach (sleep + re-query from Python, repeated) burned most of
-    # its budget on round-trip overhead rather than actual page-side waiting,
-    # and still lost the race against the dropdown's async render.
+    # Match on the `label` attribute, not the CSS class: the class-based lookup
+    # has failed on this first navigation every single time it's been tried
+    # (even with generous polling), while scrape_listings_and_profiles's
+    # attribute-based lookup (button[label*="..."]) for one specific option has
+    # never once failed under otherwise-identical timing. That points to these
+    # elements getting their attributes and their class set in separate render
+    # passes, with the attribute landing first — so query by attribute here too.
     try:
         page.wait_for_function(
-            "document.querySelectorAll('button.selectOneMenuSearchable_LIST-BUTTON').length > 0",
+            "document.querySelectorAll('button[label]').length > 0",
             timeout=15000
         )
     except Exception:
         pass
 
     labels = page.eval_on_selector_all(
-        "button.selectOneMenuSearchable_LIST-BUTTON",
+        "button[label]",
         "els => els.map(el => (el.getAttribute('label') || el.innerText || el.textContent || '').trim())"
     )
     codes = []
