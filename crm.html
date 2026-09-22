@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Outreach CRM</title>
+<style>
+  :root{--bg:#0f172a;--panel:#1e293b;--panel2:#273449;--border:#334155;--text:#e2e8f0;--muted:#94a3b8;--primary:#3b82f6;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--violet:#a78bfa}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;padding:24px;max-width:1300px;margin:0 auto}
+  header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+  h1{font-size:1.3rem;font-weight:700}
+  h1 small{color:var(--muted);font-weight:400;font-size:.85rem}
+  .btn{display:inline-block;background:var(--primary);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:.85rem;font-weight:600;cursor:pointer;text-decoration:none}
+  .btn:hover{background:#2563eb}
+  .btn.ghost{background:var(--panel2);color:var(--text);border:1px solid var(--border)}
+  .btn.danger{background:var(--red)}
+  .btn.small{padding:5px 10px;font-size:.76rem}
+
+  /* passcode gate */
+  #gate{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:100}
+  #gate .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:32px;width:100%;max-width:340px;text-align:center}
+  #gate h2{font-size:1.1rem;margin-bottom:16px}
+  #gate input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel2);color:var(--text);font-size:1rem;text-align:center;letter-spacing:.1em;margin-bottom:12px}
+  #gate .err{color:var(--red);font-size:.8rem;min-height:1.2em;margin-bottom:8px}
+
+  #app{display:none}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:18px}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .stats{display:flex;gap:10px;flex-wrap:wrap}
+  .pill{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:5px 12px;font-size:.76rem;color:var(--muted)}
+  .pill b{color:var(--text)}
+
+  table{width:100%;border-collapse:collapse;font-size:.83rem}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.03em}
+  tr:hover td{background:rgba(255,255,255,.02)}
+  .muted{color:var(--muted)}
+  .conf{padding:2px 8px;border-radius:999px;font-size:.7rem;font-weight:700}
+  .conf.high{background:rgba(34,197,94,.15);color:var(--green)}
+  .conf.medium{background:rgba(245,158,11,.15);color:var(--amber)}
+  .conf.low{background:rgba(239,68,68,.15);color:var(--red)}
+  .conf.\-{background:var(--panel2);color:var(--muted)}
+  select.status{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px 6px;font-size:.78rem}
+  .status-not_called{color:var(--muted)}
+  .status-contacted{color:var(--primary)}
+  .status-interested{color:var(--green)}
+  .status-follow_up{color:var(--amber)}
+  .status-not_interested,.status-rejected{color:var(--red)}
+  .status-closed_won{color:var(--violet)}
+
+  .history{font-size:.76rem;color:var(--muted);margin-top:4px}
+  .history .call{border-left:2px solid var(--border);padding-left:8px;margin-top:4px}
+
+  /* modal */
+  .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+  .modal-bg.show{display:flex}
+  .modal{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;width:100%;max-width:440px;max-height:90vh;overflow:auto}
+  .modal h3{font-size:1rem;margin-bottom:14px}
+  .field{margin-bottom:12px}
+  .field label{display:block;font-size:.76rem;color:var(--muted);margin-bottom:4px}
+  .field input,.field select,.field textarea{width:100%;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--panel2);color:var(--text);font-size:.85rem;font-family:inherit}
+  .field textarea{resize:vertical;min-height:70px}
+  .modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+  .err{background:#7f1d1d;color:#fecaca;padding:10px 14px;border-radius:8px;margin-bottom:14px;font-size:.82rem}
+  @media(max-width:900px){table,thead,tbody,th,td,tr{display:block}thead{display:none}tr{border-bottom:2px solid var(--border);padding:10px 0}td{border:none;padding:4px 0}td:before{content:attr(data-label);display:block;font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="card">
+    <h2>🔒 Outreach CRM — passcode required</h2>
+    <input type="password" id="passcode-input" placeholder="Passcode" autocomplete="off" maxlength="20">
+    <div class="err" id="gate-err"></div>
+    <button class="btn" id="unlock-btn" style="width:100%">Unlock</button>
+  </div>
+</div>
+
+<div id="app">
+<header>
+  <h1>Outreach CRM <small>AI agency cold-call pipeline</small></h1>
+  <div style="display:flex;gap:8px">
+    <button class="btn" id="add-contact-btn">+ Add company</button>
+    <button class="btn ghost" id="lock-btn">Lock</button>
+  </div>
+</header>
+
+<div id="load-err" class="err" style="display:none"></div>
+
+<div class="panel">
+  <div class="toolbar">
+    <div class="stats" id="stats"></div>
+    <span class="muted" style="font-size:.78rem" id="updated"></span>
+  </div>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr>
+      <th>Company</th><th>Ask for</th><th>Phone</th><th>What they do</th><th>Status</th><th>Last call</th><th>Next follow-up</th><th></th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  </div>
+</div>
+</div>
+
+<!-- Log call modal -->
+<div class="modal-bg" id="call-modal-bg">
+  <div class="modal">
+    <h3 id="call-modal-title">Log a call</h3>
+    <div class="field"><label>Called by</label><input id="cf-called-by" placeholder="Your name"></div>
+    <div class="field"><label>Response</label>
+      <select id="cf-response">
+        <option>No answer</option>
+        <option>Voicemail</option>
+        <option>Gatekeeper / wrong person</option>
+        <option selected>Spoke with contact</option>
+        <option>Interested</option>
+        <option>Not interested</option>
+        <option>Callback requested</option>
+        <option>Meeting booked</option>
+      </select>
+    </div>
+    <div class="field"><label>Notes</label><textarea id="cf-notes" placeholder="What was said, objections, next step..."></textarea></div>
+    <div class="field"><label>Update pipeline status to</label>
+      <select id="cf-status">
+        <option value="">— leave unchanged —</option>
+        <option value="not_called">Not called</option>
+        <option value="contacted">Contacted</option>
+        <option value="interested">Interested</option>
+        <option value="follow_up">Follow-up needed</option>
+        <option value="not_interested">Not interested</option>
+        <option value="rejected">Rejected</option>
+        <option value="closed_won">Closed — won</option>
+      </select>
+    </div>
+    <div class="field"><label>Next follow-up date (optional)</label><input type="date" id="cf-followup"></div>
+    <div class="modal-actions">
+      <button class="btn ghost" data-close>Cancel</button>
+      <button class="btn" id="cf-save">Save call</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add/edit contact modal -->
+<div class="modal-bg" id="contact-modal-bg">
+  <div class="modal">
+    <h3 id="contact-modal-title">Add company</h3>
+    <div class="field"><label>Company</label><input id="xf-company"></div>
+    <div class="field"><label>Phone</label><input id="xf-phone"></div>
+    <div class="field"><label>Email</label><input id="xf-email"></div>
+    <div class="field"><label>What they do</label><input id="xf-what"></div>
+    <div class="field"><label>Contact name (who to ask for)</label><input id="xf-name"></div>
+    <div class="field"><label>Title</label><input id="xf-title"></div>
+    <div class="field"><label>Confidence</label>
+      <select id="xf-confidence"><option value=""></option><option>High</option><option>Medium</option><option>Low</option></select>
+    </div>
+    <div class="modal-actions">
+      <button class="btn ghost" data-close>Cancel</button>
+      <button class="btn danger" id="xf-delete" style="display:none;margin-right:auto">Delete</button>
+      <button class="btn" id="xf-save">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '/api/crm';
+let passcode = sessionStorage.getItem('crm_passcode') || '';
+let state = { contacts: [], calls: [] };
+let activeContactId = null;
+
+const STATUS_LABEL = {
+  not_called:'Not called', contacted:'Contacted', interested:'Interested',
+  follow_up:'Follow-up needed', not_interested:'Not interested', rejected:'Rejected', closed_won:'Closed — won'
+};
+
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function fmtDate(s){ if(!s) return ''; try{ return new Date(s).toLocaleString('en-SG',{dateStyle:'medium',timeStyle:'short'}); }catch{ return s; } }
+function fmtDay(s){ if(!s) return ''; try{ return new Date(s).toLocaleDateString('en-SG',{dateStyle:'medium'}); }catch{ return s; } }
+function confClass(c){ return (c||'-').toLowerCase(); }
+
+async function api(opts){
+  const r = await fetch(API + (opts.qs ? ('?'+opts.qs) : ''), {
+    method: opts.method || 'GET',
+    headers: opts.method==='POST' ? {'Content-Type':'application/json'} : undefined,
+    body: opts.method==='POST' ? JSON.stringify({passcode, ...(opts.body||{})}) : undefined,
+    cache: 'no-store'
+  });
+  if (r.status === 401) throw new Error('unauthorized');
+  if (!r.ok) throw new Error('request failed ('+r.status+')');
+  return r.json();
+}
+
+async function tryUnlock(code){
+  passcode = code;
+  try {
+    const d = await api({qs:'passcode='+encodeURIComponent(code)});
+    state = d;
+    sessionStorage.setItem('crm_passcode', code);
+    document.getElementById('gate').style.display='none';
+    document.getElementById('app').style.display='block';
+    render();
+    return true;
+  } catch(e) {
+    document.getElementById('gate-err').textContent = 'Wrong passcode.';
+    return false;
+  }
+}
+
+document.getElementById('unlock-btn').onclick = () => tryUnlock(document.getElementById('passcode-input').value.trim());
+document.getElementById('passcode-input').addEventListener('keydown', e => { if(e.key==='Enter') tryUnlock(e.target.value.trim()); });
+document.getElementById('lock-btn').onclick = () => {
+  sessionStorage.removeItem('crm_passcode');
+  location.reload();
+};
+
+async function reload(){
+  try{
+    const d = await api({qs:'passcode='+encodeURIComponent(passcode)});
+    state = d;
+    document.getElementById('load-err').style.display='none';
+    render();
+  }catch(e){
+    const el = document.getElementById('load-err');
+    el.textContent = 'Failed to refresh data: ' + e.message;
+    el.style.display='block';
+  }
+}
+
+function render(){
+  const contacts = state.contacts;
+  const callsByContact = {};
+  for (const c of state.calls) (callsByContact[c.contact_id] ||= []).push(c);
+
+  const counts = {};
+  for (const c of contacts) counts[c.status] = (counts[c.status]||0)+1;
+  document.getElementById('stats').innerHTML = Object.entries(STATUS_LABEL).map(([k,label]) =>
+    `<span class="pill">${label}: <b>${counts[k]||0}</b></span>`).join('');
+  document.getElementById('updated').textContent = 'updated ' + new Date().toLocaleTimeString('en-SG');
+
+  document.getElementById('rows').innerHTML = contacts.map(c => {
+    const calls = (callsByContact[c.id]||[]).sort((a,b)=> new Date(b.called_at)-new Date(a.called_at));
+    const last = calls[0];
+    const history = calls.slice(0,3).map(call =>
+      `<div class="call">${fmtDate(call.called_at)} — <b>${esc(call.response||'')}</b>${call.called_by?' (by '+esc(call.called_by)+')':''}${call.notes?'<br>'+esc(call.notes):''}</div>`
+    ).join('');
+
+    return `<tr data-id="${c.id}">
+      <td data-label="Company"><b>${esc(c.company)}</b>${c.email?`<div class="muted" style="font-size:.75rem">${esc(c.email)}</div>`:''}</td>
+      <td data-label="Ask for">${esc(c.contact_name)||'<span class="muted">—</span>'}${c.contact_title?`<div class="muted" style="font-size:.75rem">${esc(c.contact_title)}</div>`:''}${c.confidence?`<div class="conf ${confClass(c.confidence)}" style="display:inline-block;margin-top:4px">${esc(c.confidence)}</div>`:''}</td>
+      <td data-label="Phone">${esc(c.phone)||'<span class="muted">—</span>'}</td>
+      <td data-label="What they do">${esc(c.what_they_do)||''}</td>
+      <td data-label="Status">
+        <select class="status status-select">
+          ${Object.entries(STATUS_LABEL).map(([k,label])=>`<option value="${k}" ${c.status===k?'selected':''}>${label}</option>`).join('')}
+        </select>
+      </td>
+      <td data-label="Last call">${last?fmtDate(last.called_at)+'<div class="muted" style="font-size:.75rem">'+esc(last.response||'')+'</div>':'<span class="muted">Never</span>'}
+        ${history?`<div class="history">${history}</div>`:''}
+      </td>
+      <td data-label="Next follow-up">${c.next_follow_up?fmtDay(c.next_follow_up):'<span class="muted">—</span>'}</td>
+      <td data-label="">
+        <button class="btn small log-call-btn">Log call</button>
+        <button class="btn ghost small edit-btn">Edit</button>
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="8" class="muted">No companies yet — add one above.</td></tr>';
+
+  // wire row actions
+  document.querySelectorAll('#rows tr[data-id]').forEach(tr => {
+    const id = Number(tr.dataset.id);
+    const contact = contacts.find(c=>c.id===id);
+    tr.querySelector('.status-select').onchange = async (e) => {
+      await api({method:'POST', body:{action:'update_contact', id, status:e.target.value}});
+      reload();
+    };
+    tr.querySelector('.log-call-btn').onclick = () => openCallModal(contact);
+    tr.querySelector('.edit-btn').onclick = () => openContactModal(contact);
+  });
+}
+
+// --- Log call modal ---
+const callModalBg = document.getElementById('call-modal-bg');
+function openCallModal(contact){
+  activeContactId = contact.id;
+  document.getElementById('call-modal-title').textContent = 'Log a call — ' + contact.company;
+  document.getElementById('cf-called-by').value = '';
+  document.getElementById('cf-response').value = 'Spoke with contact';
+  document.getElementById('cf-notes').value = '';
+  document.getElementById('cf-status').value = '';
+  document.getElementById('cf-followup').value = '';
+  callModalBg.classList.add('show');
+}
+document.getElementById('cf-save').onclick = async () => {
+  await api({method:'POST', body:{
+    action:'log_call',
+    contact_id: activeContactId,
+    called_by: document.getElementById('cf-called-by').value,
+    response: document.getElementById('cf-response').value,
+    notes: document.getElementById('cf-notes').value,
+    status: document.getElementById('cf-status').value,
+    next_follow_up: document.getElementById('cf-followup').value
+  }});
+  callModalBg.classList.remove('show');
+  reload();
+};
+
+// --- Add/edit contact modal ---
+const contactModalBg = document.getElementById('contact-modal-bg');
+function openContactModal(contact){
+  activeContactId = contact ? contact.id : null;
+  document.getElementById('contact-modal-title').textContent = contact ? 'Edit company' : 'Add company';
+  document.getElementById('xf-company').value = contact?.company || '';
+  document.getElementById('xf-phone').value = contact?.phone || '';
+  document.getElementById('xf-email').value = contact?.email || '';
+  document.getElementById('xf-what').value = contact?.what_they_do || '';
+  document.getElementById('xf-name').value = contact?.contact_name || '';
+  document.getElementById('xf-title').value = contact?.contact_title || '';
+  document.getElementById('xf-confidence').value = contact?.confidence || '';
+  document.getElementById('xf-delete').style.display = contact ? 'inline-block' : 'none';
+  contactModalBg.classList.add('show');
+}
+document.getElementById('add-contact-btn').onclick = () => openContactModal(null);
+document.getElementById('xf-save').onclick = async () => {
+  const fields = {
+    company: document.getElementById('xf-company').value,
+    phone: document.getElementById('xf-phone').value,
+    email: document.getElementById('xf-email').value,
+    what_they_do: document.getElementById('xf-what').value,
+    contact_name: document.getElementById('xf-name').value,
+    contact_title: document.getElementById('xf-title').value,
+    confidence: document.getElementById('xf-confidence').value,
+  };
+  if (!fields.company.trim()) { alert('Company name is required.'); return; }
+  if (activeContactId) {
+    await api({method:'POST', body:{action:'update_contact', id: activeContactId, ...fields}});
+  } else {
+    await api({method:'POST', body:{action:'add_contact', ...fields}});
+  }
+  contactModalBg.classList.remove('show');
+  reload();
+};
+document.getElementById('xf-delete').onclick = async () => {
+  if (!confirm('Delete this company and its call history?')) return;
+  await api({method:'POST', body:{action:'delete_contact', id: activeContactId}});
+  contactModalBg.classList.remove('show');
+  reload();
+};
+
+document.querySelectorAll('[data-close]').forEach(b => b.onclick = () => {
+  callModalBg.classList.remove('show');
+  contactModalBg.classList.remove('show');
+});
+
+// auto-unlock if we already have a passcode this tab session
+if (passcode) tryUnlock(passcode);
+setInterval(() => { if (document.getElementById('app').style.display==='block') reload(); }, 30000);
+</script>
+</body>
+</html>
