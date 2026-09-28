@@ -1,6 +1,12 @@
 // /api/crm — passcode-gated outreach CRM (call tracking for the AI agency pilot list).
 // Not linked from the public site; auth is a shared passcode, not a per-user login.
 //
+// Two clients read and write the same tables: /crm.html here, and OTG Studio's
+// "GeBiz suppliers outreach" pipeline (otg-studio.vercel.app/pipelines/gebiz-suppliers-outreach),
+// which calls this endpoint server-to-server. Studio sends the passcode in the
+// X-CRM-Passcode header rather than the query string so it never lands in a URL
+// or a request log; the query/body forms stay for crm.html.
+//
 // GET  /api/crm?passcode=XXX                      -> { contacts:[...], calls:[...] }
 // POST /api/crm  { passcode, action, ... }
 //   action: "add_contact"    { company, phone, email, what_they_do, contact_name, contact_title, confidence }
@@ -79,7 +85,7 @@ async function ensureSchema(sql) {
 
 function checkPasscode(req, body) {
   const expected = process.env.CRM_PASSCODE || "1234321";
-  const given = (body && body.passcode) || req.query.passcode || "";
+  const given = req.headers["x-crm-passcode"] || (body && body.passcode) || req.query.passcode || "";
   return String(given) === String(expected);
 }
 
