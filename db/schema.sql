@@ -43,7 +43,8 @@ CREATE TABLE IF NOT EXISTS crm_contacts (
   confidence      TEXT,           -- High | Medium | Low | '' (how sure we are of contact_name)
   status          TEXT NOT NULL DEFAULT 'not_called',
   next_follow_up  DATE,
-  created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+  created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+  uen             TEXT            -- set when imported from suppliers.json; dedupes imports
 );
 
 CREATE TABLE IF NOT EXISTS crm_calls (

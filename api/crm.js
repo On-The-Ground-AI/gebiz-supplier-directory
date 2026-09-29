@@ -14,7 +14,24 @@
 //   action: "delete_contact" { id }
 //   action: "log_call"       { contact_id, called_by, response, notes, status? }  (status optionally updates the contact)
 //   action: "delete_call"    { id }
+//   action: "search_directory" { q?, head?, max_grade?, hide_in_crm?, limit?, offset? }
+//             -> { total, results:[{uen,name,phone,email,url,heads,grade,in_crm}], facets }
+//   action: "import_suppliers" { uens:[...] }  (<=500)  or  { filter:{ q?, head?, max_grade? } }
+//             (every directory supplier matching the filter; an empty filter imports all of them)
+//             Either way, anything already on the list is skipped.
+//             -> { added, skipped }
 import { getSql, cors, readBody } from "./_db.js";
+import { loadDirectory, facets, normName, searchDirectory, whatTheyDo } from "./_directory.js";
+
+const IMPORT_LIMIT = 500;
+
+/** "Already on the list" means the same UEN, or the same company name for rows added by hand. */
+async function crmIndex(sql) {
+  const rows = await sql`SELECT uen, company FROM crm_contacts`;
+  const uens = new Set(rows.map((r) => r.uen).filter(Boolean));
+  const names = new Set(rows.map((r) => normName(r.company)));
+  return (r) => uens.has(r.uen) || names.has(normName(r.name));
+}
 
 const SEED_CONTACTS = [
   { company: "A I Associates Pte. Ltd.", phone: "6659 7688", email: "admin@ai-associates.com", what_they_do: "Interior design & build, furniture", contact_name: "Benz Tangkunboriboon", contact_title: "Managing Director", confidence: "High" },
@@ -62,6 +79,10 @@ async function ensureSchema(sql) {
       created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
     )
   `;
+
+  // Added when suppliers could be imported from the directory: the UEN is how an
+  // import knows a company is already on the list.
+  await sql`ALTER TABLE crm_contacts ADD COLUMN IF NOT EXISTS uen TEXT`;
 
   const [{ n }] = await sql`SELECT count(*)::int AS n FROM crm_contacts`;
   if (n === 0) {
@@ -168,6 +189,59 @@ export default async function handler(req, res) {
           await sql`UPDATE crm_contacts SET next_follow_up = ${body.next_follow_up || null} WHERE id = ${contactId}`;
         }
         res.status(200).json({ call });
+        return;
+      }
+
+      if (action === "search_directory") {
+        const rows = loadDirectory();
+        const inCrm = await crmIndex(sql);
+        const out = searchDirectory(rows, {
+          q: body.q || "",
+          head: body.head || "",
+          maxGrade: Number(body.max_grade) || 0,
+          hideInCrm: body.hide_in_crm !== false,
+          limit: body.limit,
+          offset: body.offset,
+        }, inCrm);
+        res.status(200).json({ ...out, facets: facets(rows) });
+        return;
+      }
+
+      if (action === "import_suppliers") {
+        const rows = loadDirectory();
+        const inCrm = await crmIndex(sql);
+        let wanted;
+        if (body.filter && typeof body.filter === "object") {
+          const f = body.filter;
+          wanted = searchDirectory(rows, {
+            q: f.q || "", head: f.head || "", maxGrade: Number(f.max_grade) || 0,
+            hideInCrm: false, limit: Infinity,
+          }, inCrm).results.map((r) => r.uen);
+        } else {
+          wanted = Array.isArray(body.uens) ? [...new Set(body.uens.map(String))] : [];
+          if (wanted.length > IMPORT_LIMIT) { res.status(400).json({ error: `At most ${IMPORT_LIMIT} per import` }); return; }
+        }
+        if (wanted.length === 0) { res.status(400).json({ error: "No suppliers given" }); return; }
+        const byUen = new Map(rows.map((r) => [r.uen, r]));
+        const picked = wanted.map((u) => byUen.get(u)).filter((r) => r && !inCrm(r));
+        if (picked.length > 0) {
+          // One statement for the whole batch: row-by-row over the HTTP driver
+          // would be one round trip per supplier.
+          await sql`
+            INSERT INTO crm_contacts (company, phone, email, what_they_do, contact_name, contact_title, confidence, uen)
+            SELECT * FROM unnest(
+              ${picked.map((r) => r.name)}::text[],
+              ${picked.map((r) => r.phone)}::text[],
+              ${picked.map((r) => r.email)}::text[],
+              ${picked.map(whatTheyDo)}::text[],
+              ${picked.map(() => "")}::text[],
+              ${picked.map(() => "Not researched — ask for the owner/Director")}::text[],
+              ${picked.map(() => "")}::text[],
+              ${picked.map((r) => r.uen)}::text[]
+            )
+          `;
+        }
+        res.status(200).json({ added: picked.length, skipped: wanted.length - picked.length });
         return;
       }
 

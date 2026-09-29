@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/crm.js": { "includeFiles": "suppliers.json" }
+  },
+  "redirects": [
+    { "source": "/suppliers.json", "destination": "/", "permanent": false }
+  ]
+}
