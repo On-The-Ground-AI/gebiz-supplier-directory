@@ -49,6 +49,7 @@
   .status-follow_up{color:var(--amber)}
   .status-not_interested,.status-rejected{color:var(--red)}
   .status-closed_won{color:var(--violet)}
+  .status-skipped{color:var(--muted)}
 
   .history{font-size:.76rem;color:var(--muted);margin-top:4px}
   .history .call{border-left:2px solid var(--border);padding-left:8px;margin-top:4px}
@@ -120,6 +121,7 @@
         <option>Not interested</option>
         <option>Callback requested</option>
         <option>Meeting booked</option>
+        <option>Email sent</option>
       </select>
     </div>
     <div class="field"><label>Notes</label><textarea id="cf-notes" placeholder="What was said, objections, next step..."></textarea></div>
@@ -133,6 +135,7 @@
         <option value="not_interested">Not interested</option>
         <option value="rejected">Rejected</option>
         <option value="closed_won">Closed — won</option>
+        <option value="skipped">Not contacting</option>
       </select>
     </div>
     <div class="field"><label>Next follow-up date (optional)</label><input type="date" id="cf-followup"></div>
@@ -172,7 +175,8 @@ let activeContactId = null;
 
 const STATUS_LABEL = {
   not_called:'Not called', contacted:'Contacted', interested:'Interested',
-  follow_up:'Follow-up needed', not_interested:'Not interested', rejected:'Rejected', closed_won:'Closed — won'
+  follow_up:'Follow-up needed', not_interested:'Not interested', rejected:'Rejected', closed_won:'Closed — won',
+  skipped:'Not contacting'
 };
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
