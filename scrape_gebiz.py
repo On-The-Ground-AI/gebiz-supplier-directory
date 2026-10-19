@@ -137,13 +137,9 @@ def discover_supply_heads(page) -> list[str]:
         return []
     dropdown_btn.click()
 
-    # Match on the `label` attribute, not the CSS class: the class-based lookup
-    # has failed on this first navigation every single time it's been tried
-    # (even with generous polling), while scrape_listings_and_profiles's
-    # attribute-based lookup (button[label*="..."]) for one specific option has
-    # never once failed under otherwise-identical timing. That points to these
-    # elements getting their attributes and their class set in separate render
-    # passes, with the attribute landing first — so query by attribute here too.
+    # Options carry their code in the `label` attribute, formatted
+    # "[CODE][CODE - Description]" (the first is "[ALL][All]"), so the code
+    # sits after a leading "[" — the regex below must allow for it.
     try:
         page.wait_for_function(
             "document.querySelectorAll('button[label]').length > 0",
@@ -158,7 +154,7 @@ def discover_supply_heads(page) -> list[str]:
     )
     codes = []
     for label in labels:
-        m = re.match(r"^([A-Z]+/[A-Z]+/\d+)", label)
+        m = re.match(r"^\[?([A-Z]+/[A-Z]+/\d+)", label)
         if m:
             codes.append(m.group(1))
 
