@@ -4,11 +4,26 @@ Uses Message Batches API for cost efficiency (~$1.25 total).
 Adds description_short field to each supplier in suppliers.json.
 """
 import json
+import re
 import time
 import anthropic
 
 JSON_PATH = "suppliers.json"
 MIN_DESC_LEN = 50
+MAX_SUMMARY_LEN = 300
+
+# On thin or garbled profiles the model sometimes asks for more detail
+# instead of summarising; those replies must not be stored as summaries.
+NOT_A_SUMMARY = re.compile(
+    r"could you|please provide|i need|i can't|i cannot|i don't|i appreciate|unable to|"
+    r"\byou('ve|r)?\b|appears to|note that|\*\*",
+    re.I,
+)
+
+
+def is_valid_summary(text: str) -> bool:
+    return bool(text) and "\n" not in text and len(text) <= MAX_SUMMARY_LEN and not NOT_A_SUMMARY.search(text)
+
 
 SYSTEM = (
     "You summarise Singapore government supplier company profiles. "
@@ -65,12 +80,16 @@ def main():
 
     # Build code -> summary map
     summaries = {}
+    rejected = 0
     for result in client.messages.batches.results(batch_id):
         if result.result.type == "succeeded":
             text = result.result.message.content[0].text.strip()
-            summaries[result.custom_id] = text
+            if is_valid_summary(text):
+                summaries[result.custom_id] = text
+            else:
+                rejected += 1
 
-    print(f"Got {len(summaries)} summaries")
+    print(f"Got {len(summaries)} summaries ({rejected} rejected as not a summary)")
 
     # Apply summaries to suppliers
     applied = 0
