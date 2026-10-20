@@ -288351,7 +288351,7 @@
     "uen": "200104673R",
     "name": "TOUCH COMMUNITY SERVICES LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.touch.org.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "20 Lengkok Bahru",
@@ -288378,7 +288378,9 @@
         "expiry_date": "23 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides social services in Singapore, including child care, youth, seniors' activity centre, home care and cyber wellness programmes.",
+    "enriched_source": "https://www.touch.org.sg/about-touch"
   },
   {
     "code": "154d7862c5b61f870a9be14b01b7318f",
@@ -288672,7 +288674,9 @@
         "expiry_date": "11 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Commercialises Temasek Polytechnic's intellectual property and offers business advisory and technical consultancy services to industry.",
+    "enriched_source": "https://recordowl.com/company/tp-innovation-holdings-pte-ltd"
   },
   {
     "code": "7d0df58b9d4050d234df01dbad9e23ac",
@@ -289630,7 +289634,9 @@
         "expiry_date": "15 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates as an IATA travel agent since 1972, focusing on school, church and corporate travel.",
+    "enriched_source": "https://recordowl.com/company/transinex-pte-ltd"
   },
   {
     "code": "e5a0a079686694cbf2f95b0cab216e55",
@@ -289813,7 +289819,9 @@
         "expiry_date": "13 Sep 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes medical technology products including surgical, orthopaedic, in-vitro diagnostics and ophthalmology products.",
+    "enriched_source": "https://www.medicaldevice-network.com/contractors/medical-device-distributors/transmedic-pte-ltd/"
   },
   {
     "code": "0bce2b1676b1633bf57224a51608b929",
@@ -290004,7 +290012,9 @@
         "expiry_date": "21 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Travel agency accredited by IATA and a NATAS member, focusing on Asian tour packages.",
+    "enriched_source": "https://recordowl.com/company/travel-gsh-pte-ltd"
   },
   {
     "code": "78cbc5ee53face5f23d18762eaa81991",
@@ -292029,7 +292039,7 @@
     "uen": "Y286778",
     "name": "Trymax Semiconductor Equipment B.V.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://trymax-semiconductor.com",
     "country": "NETHERLANDS",
     "city": "",
     "address_1": "Bijsterhuizen 1152 Nijmegen",
@@ -292048,7 +292058,9 @@
         "expiry_date": "08 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes plasma-based process equipment for semiconductor manufacturers, such as ashers and UV curing systems.",
+    "enriched_source": "https://www.3dincites.com/2021/11/trymax-moves-to-a-new-green-manufacturing-facility/"
   },
   {
     "code": "dc11f9a6d17aefd099ea1a53c69bba0a",
@@ -292720,7 +292732,9 @@
         "expiry_date": "11 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes optical microscopy and inspection equipment, including maskless UV lithography tools, magnetism characterization tools and 3D microscopes.",
+    "enriched_source": "https://www.semi.org/en/resources/member-directory/tuotuo-technologysingapore-pte-ltd"
   },
   {
     "code": "72ed04fe491655d9626eae45af7bfe2c",
@@ -292762,7 +292776,7 @@
     "uen": "Y286411",
     "name": "Turnitin LLC",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.turnitin.com",
     "country": "UNITED STATES",
     "city": "",
     "address_1": "2101 Webster Street, Suite 1800",
@@ -292781,7 +292795,9 @@
         "expiry_date": "22 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides the Turnitin plagiarism-detection and academic integrity software service for schools and universities.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Turnitin"
   },
   {
     "code": "7f4da2dcae69a1f285650346b91bb251",
@@ -293309,7 +293325,9 @@
         "expiry_date": "28 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Logistics company handling freight transport arrangement, warehousing and container yard work.",
+    "enriched_source": "https://recordowl.com/company/ubts-pte-ltd"
   },
   {
     "code": "43154d3cd78fd2c0497c449174046ad6",
@@ -293768,7 +293786,9 @@
         "expiry_date": "31 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies water-industry equipment and does leak detection work for PUB; began in automotive accessory distribution.",
+    "enriched_source": "https://recordowl.com/company/uk-cool-pte-ltd"
   },
   {
     "code": "e1ac0a6911ac9b891b7bab575e7dde1a",
@@ -294003,7 +294023,7 @@
     "uen": "197602568D",
     "name": "UMW EQUIPMENT & ENGINEERING PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://umwequipment.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "108 INTERNATIONAL ROAD",
@@ -294022,7 +294042,9 @@
         "expiry_date": "10 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Exclusive authorised distributor of Toyota industrial equipment and Komatsu heavy equipment in Singapore.",
+    "enriched_source": "https://umwequipment.com/"
   },
   {
     "code": "74c2c3e9ba7af37827f11b26c2706cf6",
