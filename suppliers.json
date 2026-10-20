@@ -261734,7 +261734,9 @@
         "expiry_date": "09 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Repairs, maintains, manufactures, assembles and services aircraft and aircraft parts; approved Part 145 maintenance organisation at 507 Airport Road.",
+    "enriched_source": "https://recordowl.com/company/st-aerospace-engineering-pte-ltd"
   },
   {
     "code": "0931d559918881761e8c5dfd93d24b2b",
@@ -264369,7 +264371,9 @@
         "expiry_date": "01 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs brand names, brand identities, products, websites and mobile applications, and provides management consultancy.",
+    "enriched_source": "https://recordowl.com/company/tribex-pte-ltd"
   },
   {
     "code": "9645dffabc5322229bf3a2bb20aa81a2",
@@ -269153,7 +269157,9 @@
         "expiry_date": "28 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides manpower contracting services (excluding IT manpower), including part-time service crew and event packing staff.",
+    "enriched_source": "https://recordowl.com/company/su-yun-pte-ltd"
   },
   {
     "code": "bc14f265cc17aba9865901194d693ef0",
@@ -269300,7 +269306,9 @@
         "expiry_date": "15 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Building maintenance specialist and structural repair contractor.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Success-Forever-Construction-Maintenance-Pte-Ltd"
   },
   {
     "code": "ebc52f8dae8a924257938aa0d6aae236",
@@ -269534,7 +269542,9 @@
         "expiry_date": "24 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides cleaning and building maintenance services, including housekeeping and long-term contract cleaning for commercial and industrial premises.",
+    "enriched_source": "https://event.e2i.com.sg/company-profile/"
   },
   {
     "code": "bf5ab28c976853937681ca3dacdaf42b",
@@ -269635,7 +269645,9 @@
         "expiry_date": "14 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies car parking systems, including electronic parking and parking guidance systems.",
+    "enriched_source": "https://www.datanyze.com/people/Ping-Ting/5802633836"
   },
   {
     "code": "a6193a75d5ebe1386ce23b15af0c2826",
@@ -269838,7 +269850,7 @@
     "uen": "198703016K",
     "name": "SUNRAY WOODCRAFT CONSTRUCTION PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sunray.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "9",
@@ -269865,7 +269877,9 @@
         "expiry_date": "18 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides building construction, renovation and interior fit-out contracting, with carpentry origins.",
+    "enriched_source": "https://scam.sg/companies/198703016K/sunray-woodcraft-construction-pte-ltd"
   },
   {
     "code": "af8304f88e00c92364aef1c90c839cea",
@@ -269952,7 +269966,7 @@
     "uen": "52955046J",
     "name": "SUNTEC SINGAPORE INT'L CONVENTION & EXHIBITION CENTRE",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.suntecsingapore.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 Raffles Boulevard",
@@ -269979,7 +269993,9 @@
         "expiry_date": "29 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates the Suntec Singapore convention and exhibition centre, hosting conferences, exhibitions and events at Suntec City.",
+    "enriched_source": "https://suntecsingapore.helpjuice.com/342296-2-about-suntec-singapore"
   },
   {
     "code": "7e1d53216c7e91e769ca4ed36cbb1bd9",
@@ -270013,7 +270029,9 @@
         "expiry_date": "11 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Repairs and retails audio and video equipment.",
+    "enriched_source": "https://scam.sg/companies/sunvision-electronic-engineering"
   },
   {
     "code": "dd436ce93fd66d26289c4ba73558e937",
@@ -270811,7 +270829,9 @@
         "expiry_date": "06 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes instrumentation and marine electronics, with instrumentation and healthcare divisions.",
+    "enriched_source": "https://recordowl.com/company/supratechnic-pte-ltd"
   },
   {
     "code": "231ace503acd70e817498cd23372e377",
@@ -271186,7 +271206,9 @@
         "expiry_date": "24 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Non-profit business association for Singapore's sustainable energy industry, running training and SME energy-efficiency programmes.",
+    "enriched_source": "https://www.cbinsights.com/company/sustainable-energy-association-of-singapore"
   },
   {
     "code": "61b2f97561bfa2e17df225c55032cbb0",
@@ -271920,7 +271942,9 @@
         "expiry_date": "20 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures sterile injectables and offers contract manufacturing services.",
+    "enriched_source": "https://www.cbinsights.com/company/swiss-parenterals"
   },
   {
     "code": "aeb336b6f26b3085240be8f8a4ca6a52",
@@ -273134,7 +273158,9 @@
         "expiry_date": "20 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Registered BCA contractor for building automation, industrial and process control, communication and security systems, and mechanical engineering works.",
+    "enriched_source": "https://www1.bca.gov.sg/bca-directory/company/Details/199401116G"
   },
   {
     "code": "33ac69a9a55f3a7486a1d0971c75463e",
@@ -274015,7 +274041,9 @@
         "expiry_date": "10 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering consultancy covering civil, structural, mechanical, electrical, geotechnical and railway engineering from planning through construction and maintenance.",
+    "enriched_source": "https://sgpgrid.com/company-details/tylin-international-pte-ltd"
   },
   {
     "code": "0f36b333cd2654b14e34773267185439",
