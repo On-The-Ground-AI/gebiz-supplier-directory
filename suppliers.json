@@ -229272,7 +229272,9 @@
         "expiry_date": "28 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Digital performance agency offering SEM, SEO, performance marketing, social media and analytics, with offices in Singapore and Ho Chi Minh City.",
+    "enriched_source": "https://prospeo.io/c/red2-digital"
   },
   {
     "code": "4618ad07c5368e6807b1c3ff3e61910f",
@@ -231215,7 +231217,7 @@
     "uen": "T25FC0030B",
     "name": "RESKILL CORP. SINGAPORE BRANCH",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.reskill.work",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "60 PAYA LEBAR ROAD",
@@ -231234,7 +231236,9 @@
         "expiry_date": "30 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides instructor-led corporate training in Singapore, including soft skills, leadership and compliance courses, plus open courses.",
+    "enriched_source": "https://www.reskill.work/static/company"
   },
   {
     "code": "0a8942127f63467dd68b3b3b2df31156",
@@ -231841,7 +231845,9 @@
         "expiry_date": "02 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides customised commercial WiFi network solutions for the public sector and outdoors, covering wireless, IT network security and CCTV surveillance.",
+    "enriched_source": "https://panasonic.com/sg/corporate/news/article/rfnet-technologies.html"
   },
   {
     "code": "eae5f29bdd76889450b1787cc68a8910",
@@ -232021,7 +232027,9 @@
         "expiry_date": "22 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies mission equipment and training solutions, including reconnaissance, fire-control and simulation systems, to armed forces and government customers.",
+    "enriched_source": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-electronics"
   },
   {
     "code": "261fb71e1d9b63bd6b2837b3ffaaff41",
@@ -232202,7 +232210,9 @@
         "expiry_date": "12 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs an engineering and technical service centre in Singapore and a Tuas hub for logistics and tactical vehicles serving Southeast Asia.",
+    "enriched_source": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-singapore"
   },
   {
     "code": "e97089917b935470feb73ce14efe3b18",
@@ -232707,7 +232717,9 @@
         "expiry_date": "16 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies uninterruptible power supply (UPS) products; Singapore subsidiary of Riello UPS.",
+    "enriched_source": "https://riello-ups.com/news/412-riello-ups-strengthens-its-international-sales-network-with-opening-of-a-new-subsidiary-in-singapore"
   },
   {
     "code": "a87109eb3a6176c53dc25a751538d174",
@@ -232741,7 +232753,9 @@
         "expiry_date": "10 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manages sales and customer support of Rigaku analytical instruments in Southeast Asia, Oceania, Korea, Taiwan and South Asia; wholly owned by Rigaku.",
+    "enriched_source": "https://rigaku.com/about/news-and-press-releases/rigaku-relocates-asia-pacific-headquarters"
   },
   {
     "code": "cbe9cd52282b5ef4d7d00f3cca0f4c78",
@@ -232818,7 +232832,9 @@
         "expiry_date": "08 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides career transition, resume review, interview preparation and career planning services in Singapore, as part of ManpowerGroup.",
+    "enriched_source": "https://sbo.sg/?p=55571"
   },
   {
     "code": "bc6c79b5adf42456233dc7d2cc7582ad",
@@ -232929,7 +232945,9 @@
         "expiry_date": "17 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Consulting engineering firm working in renewables, infrastructure, traffic analysis and logistics, formerly D'Appolonia S.p.A.",
+    "enriched_source": "https://atoka.io/public/it/azienda/rina-consulting-spa/5ed47bb5b710"
   },
   {
     "code": "e4b5fdba7587c6e88222b0bc6b959da5",
@@ -233247,7 +233265,9 @@
         "expiry_date": "19 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Venture capital fund manager, trading as Reefknot Capital, investing in AI and deep tech for supply chain and logistics.",
+    "enriched_source": "https://recordowl.com/company/rki2-pte-ltd"
   },
   {
     "code": "efa44fe61c1dedcf82e3edb9520f74f5",
@@ -233648,7 +233668,7 @@
     "uen": "198601884W",
     "name": "ROBERT BOSCH SECURITY SOLUTIONS PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.boschbuildingtechnologies.com/sg/en/contact/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "38C Jalan Pemimpin,#05-01,Robert Bosch SEA Regional HQ",
@@ -233683,7 +233703,9 @@
         "expiry_date": "25 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides video surveillance, intrusion detection, fire detection, voice alarm, public address and access control systems in Singapore.",
+    "enriched_source": "https://www.asmag.com/mobile/article_detail.aspx?aid=12922"
   },
   {
     "code": "98e9441c7e7aa8fbeee096085697230c",
@@ -233771,7 +233793,9 @@
         "expiry_date": "04 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Recruits specialist professionals for permanent and contract roles in Singapore; Robert Walters (Singapore) Pte Ltd, ROC 199706961E.",
+    "enriched_source": "https://www.robertwalters.com.au/contact-us/singapore.html"
   },
   {
     "code": "2010881c836c06f00c1f593b02213172",
@@ -233797,7 +233821,9 @@
         "expiry_date": "18 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Chartered accountants and certified public accountants offering audit, assurance, accounting and tax services, established 1977.",
+    "enriched_source": "https://getprospect.com/business-directory/robert-yam-and-co-pac"
   },
   {
     "code": "e170ca6a563fae5ac70b08c4900db2eb",
@@ -233909,7 +233935,9 @@
         "expiry_date": "11 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Exclusive distributor of the temi personal robot in Singapore, Malaysia and Indonesia.",
+    "enriched_source": "https://recordowl.com/company/robosolutions-pte-ltd"
   },
   {
     "code": "3eb072d73bb636672c7d755f48c8eb4b",
@@ -233993,7 +234021,9 @@
         "expiry_date": "09 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Roche Diagnostics' Asia Pacific headquarters and Center of Excellence in Singapore.",
+    "enriched_source": "https://www.asianscientist.com/2015/08/pharma/roche-diagnostics-apac-hq-singapore/"
   },
   {
     "code": "d040bb04a07b62a5e820d5f24efb1726",
@@ -234232,7 +234262,9 @@
         "expiry_date": "06 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes mission-critical communications systems, including voice communication and air traffic management systems, with R&D and production in Bucharest.",
+    "enriched_source": "https://www.property-forum.eu/news/rohde-schwarz-topex-expands-offices-to-10000-sqm-in-northern-bucharest/21674"
   },
   {
     "code": "f5e681d3daeb5a1c5d6ccd60d849dd3e",
@@ -234325,7 +234357,9 @@
         "expiry_date": "12 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Management consultancy whose Singapore office, opened in 2012, serves as its Southeast Asia regional hub.",
+    "enriched_source": "https://www.rolandberger.com/en/SoutheastAsia/"
   },
   {
     "code": "fa2228b4ffffe549ac12ee63fc4a1d96",
@@ -234599,7 +234633,9 @@
         "expiry_date": "17 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Delivers wireless coverage solutions, communications engineering services and datacomm and enterprise solutions in Singapore.",
+    "enriched_source": "https://www.cbinsights.com/company/roots-communications"
   },
   {
     "code": "e5f6c54b6254e4de2c84a5488e3495f3",
@@ -234694,7 +234730,9 @@
         "expiry_date": "05 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Public relations and strategic communications agency offering media relations, corporate communications, reputation management and crisis support.",
+    "enriched_source": "https://www.odwyerpr.com/pr_firms_database/4627/rothman-roman-group.html"
   },
   {
     "code": "4004255ea22ef5b4054b46285aaa1ad5",
@@ -235089,7 +235127,9 @@
         "expiry_date": "09 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides commercial and residential building cleaning, facade cleaning, waste management, disinfection and pest control, managing over 1,400 cleaners.",
+    "enriched_source": "https://sme100.asia/event/hall-of-fame-2023/singapore-2023/rs-facilities-services-pte-ltd/"
   },
   {
     "code": "9f1a2d204bc54506a393d51047fd56e1",
@@ -235399,7 +235439,7 @@
     "uen": "199200865W",
     "name": "RSP ARCHITECTS PLANNERS & ENGINEERS (PTE) LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://rsp.design/singapore/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "79 Robinson Road",
@@ -235418,7 +235458,9 @@
         "expiry_date": "16 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Architecture, planning and engineering design firm founded in 1956, with its Singapore headquarters at 79 Robinson Road.",
+    "enriched_source": "https://rsp.design/singapore/"
   },
   {
     "code": "647dfacabff00c7589bf4b6422b4041e",
@@ -235981,7 +236023,9 @@
         "expiry_date": "05 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides computing infrastructure including bare-metal cloud, container services and storage for machine-learning and compute-heavy workloads.",
+    "enriched_source": "https://www.cbinsights.com/company/runsun-cloud"
   },
   {
     "code": "9665bae003d2224f5489768cd80361d3",
@@ -236528,7 +236572,9 @@
         "expiry_date": "25 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Geoengineering services company, majority-owned by SGS since December 2020.",
+    "enriched_source": "https://www.sgs.com/en/news/2020/12/sgs-acquires-a-majority-stake-in-ryobi-geotechnique-international-pte-ltd"
   },
   {
     "code": "32fcdf2227252fa15138dcf0a5cba231",
@@ -236696,7 +236742,9 @@
         "expiry_date": "25 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Architectural firm offering architecture, town planning, urban design, interior design and project management services.",
+    "enriched_source": "https://sgpgrid.com/company-details/s-a-chua-architects-pte-ltd"
   },
   {
     "code": "de6e7fcf0f46ff34d9f33faf5ac588de",
@@ -237299,7 +237347,9 @@
         "expiry_date": "20 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Architectural design firm and a member of the Surbana Jurong Group.",
+    "enriched_source": "https://companieshouse.sg/saa-architects-pte-ltd-199407758e"
   },
   {
     "code": "8a16f4fe5356841d5e935b82e3cda363",
@@ -237598,7 +237648,9 @@
         "expiry_date": "19 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies structural steel products and construction materials for export, with offices in Singapore, Indonesia and China.",
+    "enriched_source": "https://recordowl.com/company/safa-international-pte-ltd"
   },
   {
     "code": "c4ebb27bf6c39cb778b517abbaabc6a6",
@@ -238540,7 +238592,9 @@
         "expiry_date": "10 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Indian restaurant serving dishes such as chicken biryani and fish head curry, with catering and delivery.",
+    "enriched_source": "https://www.zabihah.com/restaurants/b4fb1219-7119-49df-a814-b7faf51c84c2/sakunthalas-race-course-outlet-singapore-sg"
   },
   {
     "code": "f680622be94de8a1dc8457a246461e0c",
@@ -238662,7 +238716,9 @@
         "expiry_date": "25 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Dried-goods supplier to hawker centres, restaurants, cafes, school canteens and caterers.",
+    "enriched_source": "https://recordowl.com/company/sam-seng-private-limited"
   },
   {
     "code": "ecdb676dedfcace455e17c31ff28c7d7",
@@ -239076,7 +239132,9 @@
         "expiry_date": "12 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Integrated construction company offering material supply, precast concrete components, waste recycling, R&D and pavement consulting.",
+    "enriched_source": "https://sgpgrid.com/company-details/samwoh-corporation-pte-ltd"
   },
   {
     "code": "52eb1764c6be56d8f14ad0692c28a7d1",
