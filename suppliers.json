@@ -218613,7 +218613,9 @@
         "expiry_date": "19 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides training and simulation solutions, including training simulator systems, from Ang Mo Kio.",
+    "enriched_source": "https://sg.jobstreet.com/companies/prescient-systems-n-technologies-pte-ltd-168551223776247"
   },
   {
     "code": "33f433a5ef862fcd7632ef427faac41b",
@@ -218775,7 +218777,9 @@
         "expiry_date": "16 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides laundry and dry cleaning services.",
+    "enriched_source": "https://recordowl.com/company/prestige-laundry-and-cleaning-pte-ltd"
   },
   {
     "code": "1cd24cffb6c378c713d0cce9418fbace",
@@ -219346,7 +219350,9 @@
         "expiry_date": "11 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes food products and wholesale trading, including meat processing and preserving.",
+    "enriched_source": "https://recordowl.com/company/prime-deli-trading-pte-ltd"
   },
   {
     "code": "131e0dac672e06df8eb3f4eeebd88d8d",
@@ -219440,7 +219446,9 @@
         "expiry_date": "10 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides cleaning, toilet sanitation, pest control and integrated facility services in Singapore.",
+    "enriched_source": "https://finviz.com/news/342170/primech-a-p-secures-us240-million-multi-year-government-linked-contract-for-integrated-cleaning-services-across-six-major-hawker-centres-in-singapore"
   },
   {
     "code": "70f8edb1982b4ed7b33e78c883846604",
@@ -219600,7 +219608,9 @@
         "expiry_date": "10 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides premises security guard and manpower services.",
+    "enriched_source": "https://www.maukerja.my/en/company/primo-guards-pte-ltd"
   },
   {
     "code": "ffbc1198110e52169cb4f48fcd91f22f",
@@ -219760,7 +219770,9 @@
         "expiry_date": "18 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides landscaping services including green roof and wall systems, irrigation, landscape maintenance, plant rental and festive decorations.",
+    "enriched_source": "https://express-press-release.net/news/2023/07/29/1439745"
   },
   {
     "code": "2de16b687e2ebff79b07ae29924319f6",
@@ -219802,7 +219814,9 @@
         "expiry_date": "23 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies medical and pharmaceutical products to the marine and shipping industry, with Good Distribution Practice certification.",
+    "enriched_source": "https://sg.jobstreet.com/companies/princeton-pharmacy-168550545998517"
   },
   {
     "code": "260293262eb5ce8f5f890046bf09d3db",
@@ -220153,7 +220167,9 @@
         "expiry_date": "08 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Specialises in data centre infrastructure, with principal activity in electrical works and general building contracting.",
+    "enriched_source": "https://recordowl.com/company/pro-matrix-pte-ltd"
   },
   {
     "code": "225ebbd4ae02d5e77fd0bd995f4e1f02",
@@ -220753,7 +220769,7 @@
     "uen": "200602712H",
     "name": "PROMEGA PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.promega.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "77 Science Park Drive #02-16",
@@ -220788,7 +220804,9 @@
         "expiry_date": "07 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates Promega's Singapore sales and customer-service office covering Singapore and other Asian markets.",
+    "enriched_source": "https://www.promega.com/support/sales-support"
   },
   {
     "code": "da06ab7cbea4d8fbc0975541f6abc94f",
@@ -220865,7 +220883,9 @@
         "expiry_date": "12 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides electrical engineering and integrated facilities management services, including extra low voltage, air-conditioning and fire prevention systems.",
+    "enriched_source": "https://www.datanyze.com/people/Grace-Lim/8513755718"
   },
   {
     "code": "fea9f348fea721809a9840fc8ef07756",
@@ -221396,7 +221416,9 @@
         "expiry_date": "29 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides training in international protocol, business and dining etiquette, cultural awareness and image grooming for adults and young people.",
+    "enriched_source": "https://recordowl.com/company/protocol-academy-pte-ltd"
   },
   {
     "code": "49b76fdeefd17f68b099165c62f9d6c9",
@@ -221577,7 +221599,9 @@
         "expiry_date": "05 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides IT consultancy as a NetSuite partner.",
+    "enriched_source": "https://www.erpresearch.com/netsuite-partners/ps-global-c-pte-ltd"
   },
   {
     "code": "fe8bc92c49c3bd2627f02557b70ce127",
@@ -221763,7 +221787,9 @@
         "expiry_date": "12 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides freight forwarding and logistics services, focused on hazardous and high-risk products.",
+    "enriched_source": "https://asia.breakbulk.com/exhibitors/psa-bdp-singapore-pte-ltd"
   },
   {
     "code": "c7f86af74ba10871e9b98abb4d61d351",
@@ -222440,7 +222466,9 @@
         "expiry_date": "20 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies water dispensers in Singapore; also reported as providing office machinery rental.",
+    "enriched_source": "https://recordowl.com/company/pure-dew-international-pte-ltd"
   },
   {
     "code": "c8672ac04bb9fdbdc6bee009d630c285",
@@ -223874,7 +223902,9 @@
         "expiry_date": "10 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Quantity surveying consultancy in Singapore, founded in 2007.",
+    "enriched_source": "https://sgpgrid.com/company/qs-consultants-ID0000"
   },
   {
     "code": "696ad754aee2e13e074177a1042cfcbe",
@@ -223990,7 +224020,9 @@
         "expiry_date": "14 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides monitoring and measurement services in Singapore and India.",
+    "enriched_source": "https://sgpgrid.com/company/qsafe-pte-ltd-ID0000"
   },
   {
     "code": "8a6d31d86e0ddf3983b4e5901a13cd99",
@@ -224247,7 +224279,9 @@
         "expiry_date": "31 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes medical, dental and veterinary equipment to clinics and hospitals across Asia, focusing on diagnostic imaging.",
+    "enriched_source": "https://recordowl.com/company/qst-technologies-pte-ltd"
   },
   {
     "code": "6842c07a85408001917308fb73c696a1",
@@ -224340,7 +224374,9 @@
         "expiry_date": "21 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes and sells quality-testing and laboratory equipment in Singapore.",
+    "enriched_source": "https://recordowl.com/company/qt-instruments-s-pte-ltd"
   },
   {
     "code": "5cf47baf0555138c8b46c2839ab1a3bd",
@@ -224409,7 +224445,9 @@
         "expiry_date": "25 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore multi-disciplinary law practice covering corporate and M&A, litigation and arbitration, and intellectual property.",
+    "enriched_source": "https://www.legal500.com/firms/34707-quahe-woo-palmer-llc/c-singapore/about"
   },
   {
     "code": "028a30f0bf42ead44498b1a4d758f1b4",
@@ -224505,7 +224543,9 @@
         "expiry_date": "18 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures ready-cut meat and seafood, ready-to-cook food, marinated meats and sauces, including Halal-certified products.",
+    "enriched_source": "https://recordowl.com/company/quan-feng-food-supply-pte-ltd"
   },
   {
     "code": "94d8ad36ec9026a59a932cef91f46947",
@@ -224573,7 +224613,9 @@
         "expiry_date": "24 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, installs and maintains building automation, extra low voltage (ELV) and security systems in Singapore.",
+    "enriched_source": "https://sgpgrid.com/company/quantum-automation-pte-ltd-ID0000"
   },
   {
     "code": "fb754e31913d96e71bef5c0696f8efab",
@@ -225040,7 +225082,9 @@
         "expiry_date": "18 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides vessel tracking, remote monitoring and IoT-based products, including pipeline monitoring and coal discharge measurement on barges.",
+    "enriched_source": "https://sgpgrid.com/company/que-maritime-ID0000"
   },
   {
     "code": "d12c09e1dcd54eec6acc5dd65cec3904",
@@ -225066,7 +225110,9 @@
         "expiry_date": "02 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides turn-key entertainment solutions with customised programs for events such as corporate dinners and music festivals.",
+    "enriched_source": "https://sgpgrid.com/company/quebec-leisure-international-ID0000"
   },
   {
     "code": "137af01af16bf719188f20877eae349a",
