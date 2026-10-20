@@ -195627,7 +195627,9 @@
         "expiry_date": "27 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies welding, industrial gases and safety solutions in Singapore and Southeast Asia under the Leeden NOX brand.",
+    "enriched_source": "https://www.machinetools.com/en/brands/leeden-nox"
   },
   {
     "code": "34402cb9e7bee6798a569a9ae981edd1",
@@ -195830,7 +195832,9 @@
         "expiry_date": "17 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides quality and compliance consulting for life sciences, including commissioning, qualification and validation and computer system validation.",
+    "enriched_source": "https://efor-group.com/?p=11798"
   },
   {
     "code": "442c088b9c4928317c3d80e12474f758",
@@ -196049,7 +196053,9 @@
         "expiry_date": "19 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Registered noise consultant under NEA's ACMV scheme, providing noise and vibration control engineering in Singapore.",
+    "enriched_source": "https://www.nea.gov.sg/docs/default-source/our-services/building-planning/list-of-registered-noise-consultants-(acmv)-scheme-sep-2025.pdf"
   },
   {
     "code": "c1c857e1382d06ba328b317e8c75190a",
@@ -196153,7 +196159,9 @@
         "expiry_date": "22 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Fund management firm licensed by MAS under a Capital Markets Services licence, leading the Nordea group's Asian business from Singapore.",
+    "enriched_source": "https://www.wealthbriefing.com/html/article.php/nordea-ramps-up-singapore-business%2C-secures-licence"
   },
   {
     "code": "b3838191643feb9f00bfa072e69da4e8",
@@ -196527,7 +196535,9 @@
         "expiry_date": "23 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Prints banknotes and passports, including polymer banknotes for Australia and other countries, as a wholly owned subsidiary of the Reserve Bank of Australia.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Note_Printing_Australia"
   },
   {
     "code": "6f0568df4ba13fb9a256b1abed03f8fe",
@@ -196732,7 +196742,9 @@
         "expiry_date": "05 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops healthcare IT software including VESALIUS, a hospital information system used by hospitals in Singapore and Malaysia.",
+    "enriched_source": "https://www.nova-hub.com/contact/"
   },
   {
     "code": "20f454191dcfabdc9700f658238c1c96",
@@ -197218,7 +197230,7 @@
     "uen": "199508531N",
     "name": "NSK INTERNATIONAL (SINGAPORE) PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.nsk.com/asean_oceania/sg/index.html",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "238A Thomson Road",
@@ -197237,7 +197249,9 @@
         "expiry_date": "30 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies bearings, automotive and mechatronic products in Singapore, serving as NSK group's regional headquarters for ASEAN and Oceania.",
+    "enriched_source": "https://www.nsk.com/asean_oceania/sg/index.html"
   },
   {
     "code": "0e4340c9fddd451ec257a2c440f860a6",
@@ -197467,7 +197481,7 @@
     "uen": "S86SS0105G",
     "name": "NTUC CLUB",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.ntucclub.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 PASIR RIS CLOSE",
@@ -197518,7 +197532,9 @@
         "expiry_date": "19 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates leisure, recreation and event venues for workers, including Downtown East, D'Resort and Wild Wild Wet.",
+    "enriched_source": "https://www.ntucclub.com/about-us"
   },
   {
     "code": "9825902be9f1547988c87cf5389ffe02",
@@ -197670,7 +197686,9 @@
         "expiry_date": "11 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides continuing education and training for working adults in areas such as infocomm technology, healthcare, workplace safety and business excellence.",
+    "enriched_source": "https://www.ntuclearninghub.com/about-us/overview"
   },
   {
     "code": "6ffd6ae3414cdf827aa4d0c02c103b7e",
@@ -197748,7 +197766,9 @@
         "expiry_date": "18 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Nuclear consulting firm founded in 2009 in France, covering decommissioning, waste management, strategic advisory and engineering support.",
+    "enriched_source": "https://craft.co/nucadvisor"
   },
   {
     "code": "776137bfac62b17466f0cac4dcd37d6a",
@@ -197782,7 +197802,9 @@
         "expiry_date": "07 May 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes security inspection equipment such as cargo, vehicle, baggage and personnel scanners, with headquarters in Beijing.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Nuctech_Company"
   },
   {
     "code": "fe3aeaa1daa210670d4d58ff64945571",
@@ -197892,7 +197914,9 @@
         "expiry_date": "22 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides referral laboratory services as the outreach arm of NUH's Department of Laboratory Medicine, serving local and overseas clients.",
+    "enriched_source": "https://www.nuh.com.sg/care-at-nuh/services/nuh-referral-laboratories-nrl"
   },
   {
     "code": "67c126c26789828bd56a2053a5f315ca",
@@ -197945,7 +197969,9 @@
         "expiry_date": "06 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides production services for FMCG clients, including point-of-sale materials, signage and printing.",
+    "enriched_source": "https://recordowl.com/company/nuko-design-s-pte-ltd"
   },
   {
     "code": "c46784e96315ae011e48525c79cf492e",
@@ -198014,7 +198040,9 @@
         "expiry_date": "10 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Offers consultation, clinical supervision, counselling therapy and parenting programmes for professional, organisational and relational growth.",
+    "enriched_source": "https://recordowl.com/company/nurture-growth-nurture-relationships-pte-ltd"
   },
   {
     "code": "197b99e753e8c195bf60ef22bd5672ba",
@@ -198099,7 +198127,9 @@
         "expiry_date": "03 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds satellites and provides IoT connectivity and end-to-end IoT solutions, as an NUS spin-off launched in 2018.",
+    "enriched_source": "https://orbitcodex.com/organizations/nuspace"
   },
   {
     "code": "6844e041eb7762045ac27ed4abfeda6d",
@@ -198827,7 +198857,9 @@
         "expiry_date": "07 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds data centres, high-rise offices and transport infrastructure in Singapore as the Obayashi group's Asia-Pacific regional headquarters.",
+    "enriched_source": "https://www.obayashi.co.jp/en/company/group/asia.html"
   },
   {
     "code": "f08c6b421d52cf653be6c23d87241e0d",
@@ -199267,7 +199299,9 @@
         "expiry_date": "06 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Design-and-build audio visual solutions provider in Singapore, founded 2016.",
+    "enriched_source": "https://sgpgrid.com/company/octave-av-ID0000"
   },
   {
     "code": "3020a2ddaef857f1c6cef7dd8998d469",
@@ -200175,7 +200209,9 @@
         "expiry_date": "15 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Collects recycling materials from Singapore and neighbouring countries, sorts them mechanically, and trades metals and commodities.",
+    "enriched_source": "https://recordowl.com/company/ohgitani-s-pte-ltd"
   },
   {
     "code": "532e9c2cc6f610126e751eced70617fa",
@@ -200208,7 +200244,7 @@
     "uen": "199202550Z",
     "name": "OKAMURA INTERNATIONAL (SINGAPORE) PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.okamura.com/en-sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1557 KEPPEL ROAD SINGAPORE 089066",
@@ -200227,7 +200263,9 @@
         "expiry_date": "15 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells office furniture and runs an interior design wing for corporate fit-outs in Singapore.",
+    "enriched_source": "https://www.okamura.com/sales-offices/"
   },
   {
     "code": "804424a7e051e1f8a34ff82af3b18bc4",
@@ -200370,7 +200408,9 @@
         "expiry_date": "07 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies conveyors, robot palletizers and sorting systems, with installation and maintenance services; subsidiary of Okura Yusoki Japan.",
+    "enriched_source": "https://sgpgrid.com/company/okura-flexible-automation-systems-pte-ltd-ID0000"
   },
   {
     "code": "200364d26b827be2c3eafaea72d7441e",
@@ -200628,7 +200668,9 @@
         "expiry_date": "13 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Exclusive channel partner for analytical instrumentation and consumables makers in Singapore, Malaysia and Thailand; sells lab reagents and instruments.",
+    "enriched_source": "https://sgpgrid.com/company/omega-scientific-pte-ltd-ID0000"
   },
   {
     "code": "e1275d108f3ce5d5fc03da183418b0ae",
@@ -201337,7 +201379,9 @@
         "expiry_date": "06 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore entity of Omron's Industrial Automation business, listed on Omron's Asia Pacific locations page.",
+    "enriched_source": "https://www.omron.com.aws.omron.co.jp/apac/en/locations.html"
   },
   {
     "code": "b3c81398cd83313cce44b1be033a90db",
@@ -202109,7 +202153,9 @@
         "expiry_date": "29 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore security technology company focused on AI-driven public and private security, a Graded A security agency.",
+    "enriched_source": "https://sg.jobstreet.com/companies/oneberry-technologies-pte-ltd-168551110035909"
   },
   {
     "code": "3fee807c154d8f78f0d669ba5fd6d1e4",
@@ -202161,7 +202207,9 @@
         "expiry_date": "13 Jun 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Specialty insurance broker, the Singapore arm of London-based Oneglobal, offering risk placement, international programmes, retail insurance and employee benefits consulting.",
+    "enriched_source": "https://www.reinsurancene.ws/fabien-goutoulli-to-lead-oneglobal-singapore-as-ceo/"
   },
   {
     "code": "0bc2ed77d013bdf567534cec3897bbfc",
@@ -202324,7 +202372,9 @@
         "expiry_date": "15 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Security and communication systems integrator doing design, project management, installation and maintenance for semiconductor, pharmaceutical and data centre clients.",
+    "enriched_source": "https://www.singaporetech.edu.sg/careernexus/companies/onesystems-technologies-pte-ltd"
   },
   {
     "code": "0da9e1430e287e9c6fe976fcea1de157",
@@ -202436,7 +202486,9 @@
         "expiry_date": "14 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore architecture, urban planning and design firm, headquartered at the SLF Building, Thomson Road.",
+    "enriched_source": "https://en.wikipedia.org/wiki/ONG_%26_ONG"
   },
   {
     "code": "4ac65998a403f02715c12e1d2e585b27",
@@ -202462,7 +202514,9 @@
         "expiry_date": "19 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Building contractor registered with the BCA, focused on industrial and commercial construction plus public housing renovation and road and drainage works; founded 1965.",
+    "enriched_source": "https://sg.jobstreet.com/companies/ong-teng-chong-building-contractor-168551529925589"
   },
   {
     "code": "0674187d8edd085210be692dcfdaf2d1",
@@ -203009,7 +203063,9 @@
         "expiry_date": "03 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Data centre facility solutions provider offering turnkey design and build, critical systems installation, audit and advisory, and maintenance and facility management.",
+    "enriched_source": "https://recordowl.com/company/optima-dc-solutions-services-pte-ltd"
   },
   {
     "code": "de4e310dddb26cfd957350eea644fe94",
@@ -203094,7 +203150,9 @@
         "expiry_date": "14 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Medical device distributor and sole agent for international brands in ostomy, skin care, diagnostic, airway management, rehabilitation and surgical products.",
+    "enriched_source": "https://sgpgrid.com/company/optimal-medical-products-pte-ltd-ID0000"
   },
   {
     "code": "7697359484fab063ba9f21cd7c3f6f9b",
@@ -203128,7 +203186,6 @@
     "uen": "199700895N",
     "name": "OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD",
     "description": "",
-    "company_url": "",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 Changi Business Park Crescent",
@@ -203163,7 +203220,9 @@
         "expiry_date": "07 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "IT services provider offering application development, testing, data warehousing, cloud migration, infrastructure management and robotic process automation.",
+    "enriched_source": "https://craft.co/optimum-solutions-14"
   },
   {
     "code": "0b0b6ae8e6adaef95abfd60321f0ed39",
