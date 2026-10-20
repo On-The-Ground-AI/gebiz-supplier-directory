@@ -252172,7 +252172,7 @@
     "uen": "52814002K",
     "name": "SINGMED HEALTHCARE SYSTEMS",
     "description": "",
-    "company_url": "",
+    "company_url": "https://singmed.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "10 Ubi Crescent  #05-18",
@@ -252215,7 +252215,9 @@
         "expiry_date": "13 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies medical equipment in Singapore from 10 Ubi Crescent #05-18.",
+    "enriched_source": "https://pharmchoices.com/list-of-medical-equipment-suppliers-in-singapore/7/"
   },
   {
     "code": "294157c1b6784a6b5642e5fcbc8d8ee3",
@@ -253382,7 +253384,7 @@
     "uen": "201734671R",
     "name": "SKILLS DEVELOPMENT ACADEMY PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://sda.edu.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "158 KALLANG WAY, #03 -05",
@@ -253417,7 +253419,9 @@
         "expiry_date": "20 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "SkillsFuture-registered training provider offering WSQ courses, established in 2017.",
+    "enriched_source": "https://sda.edu.sg/?p=54083"
   },
   {
     "code": "42f85ee90aced5b86402e1c3606f31d5",
@@ -253661,7 +253665,9 @@
         "expiry_date": "20 Sep 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops, produces and services mini unmanned aerial systems (drones) for defence, based in Stovring, Denmark.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Sky-Watch"
   },
   {
     "code": "f8d7bb1e82eb1fb1ef1526aeba694464",
@@ -259197,7 +259203,9 @@
         "expiry_date": "21 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Publishes news and media titles in Singapore; primary activity is news publishing.",
+    "enriched_source": "https://ssicdata.com/company/sph-media-limited-202120748H"
   },
   {
     "code": "0cb698514211e51435aea130c0af7005",
@@ -260800,7 +260808,9 @@
         "expiry_date": "08 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides architectural services as a design consultancy covering architecture, interiors and landscape design.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Sqft-Architects-Pte-Ltd"
   },
   {
     "code": "b8689b48420e5dafa1e207be20f56f07",
@@ -260940,7 +260950,9 @@
         "expiry_date": "14 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides building engineering design and consultancy, with infrastructure engineering design and consultancy as a secondary activity.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Squire-Mech-Private-Limited"
   },
   {
     "code": "03c5b6771414c281316db89134c99bd1",
@@ -261119,7 +261131,9 @@
         "expiry_date": "14 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides training courses, with management consultancy as a secondary activity.",
+    "enriched_source": "https://www.scam.sg/companies/198400164G/ssa-academy-pte-ltd"
   },
   {
     "code": "34491e85152fe9cdecbcda4f549d16f9",
@@ -261238,7 +261252,7 @@
     "uen": "T08CC3017C",
     "name": "ST ANDREW'S MISSION HOSPITAL",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.samh.org.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "St. Andrew's Mission Hospital",
@@ -261257,7 +261271,9 @@
         "expiry_date": "20 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a hospital at Simei that includes St. Andrew's Community Hospital, which focuses on rehabilitation and sub-acute care.",
+    "enriched_source": "https://www.samh.org.sg/who-we-are/"
   },
   {
     "code": "8769933867f646d9bafae385c085e98d",
@@ -261539,7 +261555,9 @@
         "expiry_date": "18 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Holds investments and provides engineering, marketing and engineering support services for ST Engineering's commercial aerospace business.",
+    "enriched_source": "https://recordowl.com/company/st-engineering-aerospace-ltd"
   },
   {
     "code": "f63538c021cae1cd923f1dbd04921721",
@@ -261910,7 +261928,9 @@
         "expiry_date": "05 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides e-government, data centre, cloud, data analytics and interactive media solutions.",
+    "enriched_source": "https://recordowl.com/company/st-engineering-digital-systems-pte-ltd"
   },
   {
     "code": "128ff3aed9041c23f8114519dcbf5ad9",
@@ -262484,7 +262504,9 @@
         "expiry_date": "19 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides turnkey shipbuilding, ship conversion and ship repair services from its Singapore shipyards.",
+    "enriched_source": "https://recordowl.com/company/st-engineering-marine-ltd"
   },
   {
     "code": "fc81f00c4e96984186c596985a3824f9",
@@ -262566,7 +262588,9 @@
         "expiry_date": "29 Dec 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops software and applications (except games and cybersecurity) and provides computer facilities management.",
+    "enriched_source": "https://scam.sg/companies/198601030N/st-engineering-mission-software-services-pte-ltd"
   },
   {
     "code": "38a86bc813f53175d27c0f04dcddd64f",
@@ -264037,7 +264061,9 @@
         "expiry_date": "15 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides airport operation services, with chartered bus services as a secondary activity.",
+    "enriched_source": "https://www.sgpbusiness.com/company/St-airport-Services-Pte-Ltd"
   },
   {
     "code": "0ae72c8716bd2f1b9d3b90598d7feeb5",
@@ -264063,7 +264089,9 @@
         "expiry_date": "05 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Swiss charitable foundation, launched in 2020, that runs Global Trade Alert and Digital Policy Alert tracking trade and digital policy measures.",
+    "enriched_source": "https://www.fundraiso.com/en/organisations/stgallen-endowment-for-prosperity-through-trade"
   },
   {
     "code": "1c5551df41a6017afa9e36a583b87f94",
@@ -264544,7 +264572,7 @@
     "uen": "200000251C",
     "name": "STAMFORD CATERING SERVICES PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.stamfordcs.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "24A Senoko South Road",
@@ -264563,7 +264591,9 @@
         "expiry_date": "19 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Halal-certified buffet caterer for corporate events, home parties and weddings, operating under Select Group at 24A Senoko South Road.",
+    "enriched_source": "https://recordowl.com/company/stamford-catering-services-pte-ltd"
   },
   {
     "code": "d054cc6bcc6631390e5b7dee890389a9",
@@ -265113,7 +265143,9 @@
         "expiry_date": "13 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Educational publisher developing, marketing and distributing K-12 instructional materials in Singapore.",
+    "enriched_source": "https://recordowl.com/company/star-publishing-pte-ltd"
   },
   {
     "code": "b8db090417d9599213d70b7fe202cc5d",
@@ -265667,7 +265699,9 @@
         "expiry_date": "31 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore telecom operator providing mobile, broadband, fixed voice and pay TV services, plus a cybersecurity business.",
+    "enriched_source": "https://www.morningstar.com.au/investments/security/SGX/CC3"
   },
   {
     "code": "4c9498399dbc2f4d2b4c5b7c3738c298",
@@ -266098,7 +266132,9 @@
         "expiry_date": "24 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesale bank in Singapore licensed by MAS for capital markets dealing, custodial services and investment advice.",
+    "enriched_source": "https://wealthmanagement.sg/firms/state-street-bank-and-trust-company"
   },
   {
     "code": "0b2df0b8ba236470fad8735b3f00e0c4",
@@ -266167,7 +266203,9 @@
         "expiry_date": "12 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Local wholesale supplier of office supplies and stationery to corporate customers, with account management and an online corporate portal.",
+    "enriched_source": "https://stationeryworld.com.sg/office"
   },
   {
     "code": "637ca05388f1bc912a5c6d5cf43b764b",
@@ -266331,7 +266369,9 @@
         "expiry_date": "25 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes and services Steyr Motors marine engines, and services HamiltonJet and Alamarin-Jet engines in Singapore.",
+    "enriched_source": "https://recordowl.com/company/steady-marine-services-pte-ltd"
   },
   {
     "code": "6b64bde73965fff87d9085ac18708e26",
@@ -267791,7 +267831,9 @@
         "expiry_date": "06 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds aluminium and steel vessels and offers vessel repair and maintenance at its 5 Benoi Road shipyard with a dry dock and slipway.",
+    "enriched_source": "https://cyprusshippingnews.com/2022/02/04/strategic-marine-completes-acquisition-of-new-shipyard-in-singapore/"
   },
   {
     "code": "73472062ca0d5f4700b0235334554643",
@@ -268835,7 +268877,9 @@
         "expiry_date": "02 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Strategy, design and innovation practice offering training and coaching that helps leaders and organisations build creative capacity.",
+    "enriched_source": "https://recordowl.com/company/the-red-dojo-pte-ltd"
   },
   {
     "code": "9e054bc1f6264734fd8e3914b377d4a7",
