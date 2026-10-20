@@ -276215,7 +276215,9 @@
         "expiry_date": "20 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Installs sports surfaces such as tennis courts; one of the larger sports surface installers in the ASEAN region.",
+    "enriched_source": "https://recordowl.com/company/tcb-sports-pte-ltd"
   },
   {
     "code": "c27dc42caf371a6eeaec4c1089f04021",
@@ -277737,7 +277739,9 @@
         "expiry_date": "15 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a national R&D centre for the marine, offshore and maritime sectors, with an ocean basin test facility at NUS.",
+    "enriched_source": "https://recordowl.com/company/technology-centre-for-offshore-and-marine-singapore-ltd"
   },
   {
     "code": "9898960b2f14b519196128b9bd4730b5",
@@ -280537,7 +280541,9 @@
         "expiry_date": "30 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Dutch defence and security electronics company in Hengelo, making radar and communication systems.",
+    "enriched_source": "https://www.agconnect.nl/partners/thales"
   },
   {
     "code": "7ccf1939e20765a336855d57dbea3dca",
@@ -283182,7 +283188,9 @@
         "expiry_date": "09 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Production agency offering video and TVC production, animation and VFX, post-production, MICE technical production, live-streaming and app development.",
+    "enriched_source": "https://sgpgrid.com/company/the-production-initiative-ID0000"
   },
   {
     "code": "a6ca5f437d6be914bf76e4704e9d1204",
@@ -283475,7 +283483,9 @@
         "expiry_date": "02 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Chinese civil aviation research institute under CAAC, developing air traffic management, aviation information and safety systems.",
+    "enriched_source": "https://www.iata.org/en/services/certification/training-development/cbta-center/cbta-certified-companies/the-second-research-institute-of-caac/1212955/"
   },
   {
     "code": "1b8f5f74ef905cdab1fcc873d88421f8",
@@ -284049,7 +284059,7 @@
     "uen": "198000012M",
     "name": "THE WORLD MANAGEMENT PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "http://www.twm.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "100 LORONG 23 GEYLANG",
@@ -284068,7 +284078,9 @@
         "expiry_date": "08 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides business management consulting and supports ERP, project management, accounting and CRM software including Sage ACCPAC and SAP Business One.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3868"
   },
   {
     "code": "19cb6d4565226ab358a4d5015695f794",
@@ -286236,7 +286248,9 @@
         "expiry_date": "12 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs maker-centric STEAM programmes for students and teachers, plus corporate training, using 3D printing, Tinkercad and digital fabrication.",
+    "enriched_source": "https://sgpgrid.com/company-details/tinkermind-edutech-singapore-private-limited"
   },
   {
     "code": "e67e730fcf9c4ece3cb9d6e0388b7de5",
@@ -286547,7 +286561,9 @@
         "expiry_date": "22 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes mechanic and workshop hand-tools, with wholesale of general hardware as a secondary activity.",
+    "enriched_source": "https://recordowl.com/company/titans-hardware-supplies-private-limited"
   },
   {
     "code": "874597d3e79ef40489b0ab7907aa669d",
@@ -286733,7 +286749,9 @@
         "expiry_date": "26 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Organises MICE events, with customised event applications, event production, conference management and venue sourcing.",
+    "enriched_source": "https://recordowl.com/company/tlc-events-pte-ltd"
   },
   {
     "code": "4f9365029d81a952c59481187a49d53a",
@@ -286922,7 +286940,9 @@
         "expiry_date": "31 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides high-tech solutions for test and measurement, network and security, academic and research, and energy; an Ansys authorised channel partner.",
+    "enriched_source": "https://th.jobsdb.com/companies/tme-systems-pte-ltd-171090281930873"
   },
   {
     "code": "9645e61bbbbbf0b3c4e3caa1f8db7956",
@@ -287306,7 +287326,7 @@
     "uen": "192300014M",
     "name": "TOKIO MARINE INSURANCE SINGAPORE LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://tokiomarine.com/sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "20 McCallum Street",
@@ -287325,7 +287345,9 @@
         "expiry_date": "20 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides non-life (general) insurance in Singapore, including motor and travel insurance and claims services.",
+    "enriched_source": "https://tokiomarine.com/sg/en/non-life/get-in-touch.html"
   },
   {
     "code": "da261d4aadaf361fca631c2485b938ad",
@@ -288035,7 +288057,9 @@
         "expiry_date": "25 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Regional sales headquarters for Toshiba multifunction and barcode printers, with OEM/ODM point-of-sale, kiosk and ATM terminal solutions.",
+    "enriched_source": "https://sgpgrid.com/company-details/toshiba-tec-singapore-pte-ltd"
   },
   {
     "code": "ce6af6c1927d05296c42aacc7416da9f",
@@ -288250,7 +288274,9 @@
         "expiry_date": "31 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes professional lighting, smart rigging and video servers.",
+    "enriched_source": "https://sgpgrid.com/company/total-solution-marketing-pte-ltd-ID0000"
   },
   {
     "code": "568c50abb0f6b327d8c2f4920cd26115",
