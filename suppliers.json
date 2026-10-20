@@ -18537,7 +18537,9 @@
         "expiry_date": "12 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Recruitment, staffing and outsourcing company, per a third-party company registry profile.",
+    "enriched_source": "https://recordowl.com/company/alwayshired-pte-ltd"
   },
   {
     "code": "881529f7eee3511e0dccceb4d3b20333",
@@ -19283,7 +19285,9 @@
         "expiry_date": "04 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Does shipbuilding, repair and conversion, steel fabrication and machining, lifting equipment manufacture and modular trailer logistics.",
+    "enriched_source": "https://sgpgrid.com/company-details/american-equipment-services-pte-ltd"
   },
   {
     "code": "c21713ca55f1a171069b8af8a449b736",
@@ -23428,7 +23432,9 @@
         "expiry_date": "25 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides commercial and packaging printing, including book work, annual reports, magazines and textbooks, using offset and digital presses.",
+    "enriched_source": "https://sg.canon/en/campaign/business-insight/interview-with-clients/raising-the-bar-in-singapore-printing-market"
   },
   {
     "code": "9c7736f197ed09aff3a01cee9924b45b",
@@ -24047,7 +24053,9 @@
         "expiry_date": "04 May 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and builds swimming pool filtration, water treatment, spa and water feature systems and maintains pools; registry lists pipe-line construction as main activity.",
+    "enriched_source": "https://recordowl.com/company/aquatech-products-and-services-pte-ltd"
   },
   {
     "code": "3f4763e3eb8162132ac16c9fd1818236",
@@ -28496,7 +28504,9 @@
         "expiry_date": "22 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and manufactures electronic security systems including access control, biometric recognition and security management software.",
+    "enriched_source": "https://intersec.ae.messefrankfurt.com/dubai/en/exhibitor-search/exhibitor-search.detail.html/asis-technologies-pte-ltd.html"
   },
   {
     "code": "9994429213f59615705b86890c599eff",
@@ -29492,7 +29502,9 @@
         "expiry_date": "25 Oct 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales computer hardware and peripheral equipment and provides IT consultancy, per its ACRA-based registry listing.",
+    "enriched_source": "https://recordowl.com/company/ast-technology-asia-pte-ltd"
   },
   {
     "code": "4da950ef04579b9d2889f66f9f0f19d9",
@@ -36875,7 +36887,7 @@
     "uen": "200010145R",
     "name": "BAKER & MCKENZIE.WONG & LEOW",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.bakermckenzie.com/en/locations/asia-pacific/singapore",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "38 Beach Rd",
@@ -36894,7 +36906,9 @@
         "expiry_date": "21 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides Singapore and cross-border legal advice in corporate and M&A, finance, disputes and arbitration, IP and technology, tax and employment.",
+    "enriched_source": "https://www.bakermckenzie.com/en/locations/asia-pacific/singapore"
   },
   {
     "code": "e048cf3cfe221946ddd83ee61b3bae64",
@@ -52889,7 +52903,7 @@
     "uen": "202133232E",
     "name": "CAPITAL GROUP INVESTMENT MANAGEMENT PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.capitalgroup.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "One Raffles Quay",
@@ -52916,7 +52930,9 @@
         "expiry_date": "11 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "MAS-licensed Singapore fund manager that deals in capital markets products, manages funds and advises on investment products, part of The Capital Group Companies.",
+    "enriched_source": "https://capitalmarkets.sg/fund-managers/capital-group-investment-management-pte-ltd/mas-licence/"
   },
   {
     "code": "9e89b818c332225d484ade381e8ad9e5",
@@ -56131,7 +56147,9 @@
         "expiry_date": "08 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Auxiliary police force in the Certis group that supplies armed security officers to government bodies and private companies in Singapore.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Certis_Group"
   },
   {
     "code": "32612bd3d57ded193a47c5092c6af2f7",
@@ -68065,7 +68083,9 @@
         "expiry_date": "06 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a windsurfing school and rental centre at NSRCC Sea Sports Centre, Changi Coast Walk, offering windsurfing courses.",
+    "enriched_source": "https://citynomads.com/water-sports-and-activities-in-singapore-five-places-to-have-fun-in-the-sun/"
   },
   {
     "code": "73ece3549ec7e26fc049e7e98925c5ba",
@@ -83394,7 +83414,9 @@
         "expiry_date": "04 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Interior contractor offering drywall partitions, false and metal ceilings, feature ceilings and interior fit-out in Singapore since 1995.",
+    "enriched_source": "https://www.dongjian.com.sg"
   },
   {
     "code": "bed7c1e74c108dba5c09b33fe44acdb0",
@@ -84571,7 +84593,9 @@
         "expiry_date": "07 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies customisable corporate suits, workwear, polo shirts and sports jerseys with silkscreen, embroidery and printing, made in its own overseas factories.",
+    "enriched_source": "https://www.uniform-standard.com.sg"
   },
   {
     "code": "975f58ab383391e0d0501e72270a3f80",
@@ -92516,7 +92540,9 @@
         "expiry_date": "20 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures and repairs engineering and scientific instruments.",
+    "enriched_source": "https://companieshouse.sg/elite-engineers-200513904w"
   },
   {
     "code": "b188181343fee8c08ddfc36ab686b01b",
@@ -111746,7 +111772,7 @@
     "uen": "198703957D",
     "name": "GARTNER ADVISORY (SINGAPORE) PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.gartner.com",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "7 Straits View",
@@ -111773,7 +111799,8 @@
         "expiry_date": "18 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "enriched_source": "https://www.gartner.com/en/contact/worldwide-offices/apac"
   },
   {
     "code": "46ab83393c7a6e199c142e634d605c2c",
@@ -118900,7 +118927,9 @@
         "expiry_date": "24 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures and distributes chemical cleaning products, mosquito repellents and hand sanitizers, including aviation, marine and F&B cleaners.",
+    "enriched_source": "https://recordowl.com/company/green-tropic-products-pte-ltd"
   },
   {
     "code": "1cd4dad0bca4229cfd0ee0a8e331c70d",
@@ -151569,7 +151598,9 @@
         "expiry_date": "26 Nov 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes and exports galenical pharmaceutical preparations such as tinctures and liquid extracts, supplied from China.",
+    "enriched_source": "https://www.cphi-online.com/product/valerian-tincture-bp/"
   },
   {
     "code": "928441f196b81cd7d9d66556b323c9b4",
@@ -152099,7 +152130,9 @@
         "expiry_date": "04 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides real estate management services for residential, commercial and industrial property, per its ACRA-derived registry entry.",
+    "enriched_source": "https://companieshouse.sg/keppel-land-real-estate-services-201632046H"
   },
   {
     "code": "e20cf09dfe11b6efbedfc0f62e566a13",
@@ -159578,7 +159611,9 @@
         "expiry_date": "04 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales pre-owned continental car spare parts for brands such as Audi, BMW, Mercedes-Benz, Volkswagen and Volvo.",
+    "enriched_source": "https://recordowl.com/company/latest-auto-parts-pte-ltd"
   },
   {
     "code": "8443f489501187031b652ec1e468b12e",
@@ -159886,7 +159921,9 @@
         "expiry_date": "20 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops immersive extended-reality and AI products for tourism, education, defence, healthcare and corporate training; Singapore-based (LDR / IMMRSIV Group).",
+    "enriched_source": "https://www.immrsiv.com/"
   },
   {
     "code": "c6d02df23b2e0f34dc34b5aa1adf79a4",
@@ -193835,7 +193872,9 @@
         "expiry_date": "30 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides ICT services including NTT Data Managed Services for public sector and NGO clients.",
+    "enriched_source": "https://www.ibm.com/partnerplus/directory/solution/0807"
   },
   {
     "code": "1c4a3c438fe7470766242ca0f040a882",
@@ -203654,7 +203693,9 @@
         "expiry_date": "25 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales and distributes medical and pharmaceutical products to clinics, hospitals and nursing homes in Singapore.",
+    "enriched_source": "https://www.panmalayan.com.sg"
   },
   {
     "code": "758b5cb33890fab48aa1f51bd2c71dd9",
@@ -206145,7 +206186,9 @@
         "expiry_date": "09 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore publishing arm of Pearson for printed and digital educational materials, listed as publisher imprint on textbooks.",
+    "enriched_source": "https://www.topograph.co/companies/sg/pearson-education-south-asia-pte-ltd-197500275D"
   },
   {
     "code": "cb7a2b14b489120b689eb4a4532e5e16",
@@ -210603,7 +210646,9 @@
         "expiry_date": "21 Oct 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Rents, repairs and maintains coffee machines and supplies coffee beans, beverage mixes and accessories under the Veloci Coffee brand, plus SCA coffee courses.",
+    "enriched_source": "https://www.velocicoffee.com.sg"
   },
   {
     "code": "76f8706d532b69098fb33599f3a27173",
@@ -213984,7 +214029,9 @@
         "expiry_date": "27 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops and operates a hotel and commercial building at 1 Fullerton Square, Singapore.",
+    "enriched_source": "https://recordowl.com/company/precious-treasure-pte-ltd"
   },
   {
     "code": "acbe74899b2bdc3d28308bc572226993",
@@ -221555,7 +221602,9 @@
         "expiry_date": "25 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides intellectual property software such as Orbit Intelligence and IP services including patent filing, renewals and translation.",
+    "enriched_source": "https://www.questel.com/about-questel/offices/"
   },
   {
     "code": "fbddf2d5f1c046fa61e5aec8c2f2b84f",
@@ -237560,7 +237609,7 @@
     "uen": "200503272E",
     "name": "SCIENCEWERKE PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sciencewerke.com/singapore/",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "100G Pasir Panjang Road",
@@ -237603,7 +237652,9 @@
         "expiry_date": "14 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells and distributes instruments, reagents and consumables for biomedical and life sciences customers, per directory listings.",
+    "enriched_source": "https://sgpgrid.com/company-details/sciencewerke-pte-ltd"
   },
   {
     "code": "39ef0a0c3e33429ff68a961dcca7f351",
@@ -238638,7 +238689,7 @@
     "uen": "200708461Z",
     "name": "SEARCHASIA CONSULTING PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.searchasia.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "391A ORCHARD ROAD",
@@ -238665,7 +238716,9 @@
         "expiry_date": "20 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Executive recruitment firm placing talent in consumer, finance, banking, HR, technology, supply chain, real estate and legal roles across Asia.",
+    "enriched_source": "https://www.searchasia.com.sg"
   },
   {
     "code": "635fa253f5c2d74ed6e45a0e57dc8eec",
@@ -255404,7 +255457,7 @@
     "uen": "Y304177",
     "name": "Sportradar AG",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sportradar.com",
     "country": "SWITZERLAND",
     "city": "",
     "address_1": "Feldlistrasse 2",
@@ -255431,7 +255484,9 @@
         "expiry_date": "04 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sports technology company serving betting and gaming operators, media, teams, leagues and integrity bodies; headquartered in St. Gallen, Switzerland.",
+    "enriched_source": "https://www.sportradar.com"
   },
   {
     "code": "991e857537bc75f5d6961eb74695bb27",
@@ -309647,7 +309702,7 @@
     "uen": "199101680M",
     "name": "YEO ENG KOON (S) PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.yek.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "30 WOODLANDS LOOP",
@@ -309682,7 +309737,9 @@
         "expiry_date": "06 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies, plans, services and fabricates commercial kitchen equipment and ventilation systems for Singapore's foodservice and hospitality industry.",
+    "enriched_source": "https://www.yek.com.sg"
   },
   {
     "code": "48ccb58afe3ae0b588e42c3fc2c309d3",
