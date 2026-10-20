@@ -199851,7 +199851,9 @@
         "expiry_date": "25 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supports a wide range of equipment from OEM suppliers (e.g. Diehl Aerospace, Liebherr Aerospace) on defence platforms such as the NH90, Tigre and A400M.",
+    "enriched_source": "https://web.safran-group.com/archives-zodiac/files/file158.pdf"
   },
   {
     "code": "7e8452d218a7d441b0850d9061aba063",
@@ -200025,7 +200027,7 @@
     "uen": "195800192C",
     "name": "OGILVY SINGAPORE PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.ogilvy.com/sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 George Street",
@@ -200068,7 +200070,9 @@
         "expiry_date": "18 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Integrated marketing agency in Singapore covering advertising, PR, health and consulting disciplines.",
+    "enriched_source": "https://www.ogilvy.com/sg/about"
   },
   {
     "code": "faf0c0778632b499f0509379444fe8c3",
@@ -200237,7 +200241,9 @@
         "expiry_date": "23 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Global technical services consultancy to the oil and gas exploration and production industry, established 1988.",
+    "enriched_source": "https://keyfactsenergy.com/directory/1347"
   },
   {
     "code": "be4f33d4b97a3eb54c442d3d6f7b71a2",
@@ -203377,7 +203383,9 @@
         "expiry_date": "17 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides IT outsourcing in Singapore, including enterprise IT support, customer support centre outsourcing and enterprise integration; Microsoft Gold and Cisco partner.",
+    "enriched_source": "https://sg.jobstreet.com/job/94865802"
   },
   {
     "code": "f59d1579b79c7d6e396d086e7740d9b8",
@@ -203735,7 +203743,9 @@
         "expiry_date": "14 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates a hyperspectral satellite constellation (GHOSt) that detects methane and other leaks, mainly for pipeline monitoring.",
+    "enriched_source": "https://techcrunch.com/2023/01/31/orbital-sidekick-raises-10m-to-bring-hyperspectral-imaging-to-oil-and-gas-pipeline-monitoring/amp"
   },
   {
     "code": "1f8a5db3e1ddec30a6015a5bf054f0cc",
@@ -203822,7 +203832,7 @@
     "uen": "S90SS0118F",
     "name": "ORCHID COUNTRY CLUB",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.ntucclub.com/our-brands/lifestyle/orchid-country-club",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 ORCHID CLUB ROAD",
@@ -203841,7 +203851,9 @@
         "expiry_date": "10 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a country club and hotel in Yishun with a 27-hole golf course, about 75 rooms and function and banquet facilities.",
+    "enriched_source": "https://www.successfulmeetings.com/Meeting-Event-Venues/Singapore-Singapore/Convention-Hotel/Orchid-Country-Club-p5567824"
   },
   {
     "code": "82a52aaed15f73396e1f557b69cd7a76",
@@ -203901,7 +203913,7 @@
     "uen": "Y014329",
     "name": "Orell Fussli AG",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.orellfuessli.com",
     "country": "SWITZERLAND",
     "city": "Zurich",
     "address_1": "Dietzingerstrasse 3",
@@ -203920,7 +203932,9 @@
         "expiry_date": "17 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Swiss company printing banknotes and other security documents, with bookselling and publishing operations; founded 1519 and listed on SIX.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Orell_F%C3%BCssli"
   },
   {
     "code": "11f247eb181f13951f399f8e037b8f66",
@@ -204594,7 +204608,9 @@
         "expiry_date": "19 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Quantity surveying firm offering cost planning, procurement support and cost management for construction projects; formerly EC Harris Singapore.",
+    "enriched_source": "https://recordowl.com/company/otn-building-cost-consultants-pte-ltd"
   },
   {
     "code": "9e2dbd700996a22613ec247e5d6a82d7",
@@ -204620,7 +204636,9 @@
         "expiry_date": "04 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Consultancy and construction firm for aquaculture, agriculture and environmental management, designing aquaculture systems and providing training.",
+    "enriched_source": "https://recordowl.com/company/otolith-environmental-engineering-pte-ltd"
   },
   {
     "code": "4d5f9149280a1898d63d6715fbbc7ce1",
@@ -204807,7 +204825,9 @@
         "expiry_date": "08 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes and supplies waste container storage systems; part of the OTTO Group's Asia headquarters in Singapore.",
+    "enriched_source": "https://www.ecohubmap.com/company/business/otto-waste-systems-singapore-pte-ltd/83q4m1e0rl1xyeeil"
   },
   {
     "code": "31c499b711d268fbd6da853682fc35ed",
@@ -204868,7 +204888,9 @@
         "expiry_date": "05 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Marine civil engineering and foreshore contractor working on seawalls, breakwaters, reclamation and dredging.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Oung-Construction-S-Pte-Ltd"
   },
   {
     "code": "2c5adc9eba339eab702b2bbef04adb16",
@@ -205222,7 +205244,7 @@
     "uen": "193200032W",
     "name": "OVERSEA-CHINESE BANKING CORPORATION LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.ocbc.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "65 Chulia Street",
@@ -205249,7 +205271,9 @@
         "expiry_date": "14 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore bank providing banking and financial services, headquartered at OCBC Centre, 65 Chulia Street.",
+    "enriched_source": "https://www.ocbc.com/assets/pdf/annual%20reports/2011/ocbc-2011-corporate-profile.pdf"
   },
   {
     "code": "9f4d1195a277b75b05829630a994b0a9",
@@ -205464,7 +205488,9 @@
         "expiry_date": "23 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Printer offering repro and finishing, print management and direct mail services, based at Eunos Technolink.",
+    "enriched_source": "https://www.streetdirectory.com/oxfordgraphic/"
   },
   {
     "code": "e78c4d58c298c8b699fdd0ce1cc80260",
@@ -205610,7 +205636,9 @@
         "expiry_date": "25 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Finnish builder of professional aluminium boats, including pilot and rescue boats for defence, civil security and infrastructure customers.",
+    "enriched_source": "https://www.marine-pilots.com/companies/2132-oy-kewatec-aluboat-ab"
   },
   {
     "code": "416d9474507650ce2925df7a1f5229a6",
@@ -205900,7 +205928,9 @@
         "expiry_date": "27 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates and manages car parks, including HDB car park contracts awarded by the Housing and Development Board.",
+    "enriched_source": "https://recordowl.com/company/p-parking-international-pte-ltd"
   },
   {
     "code": "57f5fbac953871b5e3260bebbd896ccb",
@@ -206049,7 +206079,9 @@
         "expiry_date": "27 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Paris-based mobile network security firm focused on telecom signalling (SS7, Diameter, 5G), offering penetration testing, vulnerability assessments and training.",
+    "enriched_source": "https://ensun.io/company/p1-security-660e0c1e85860563af452603"
   },
   {
     "code": "a822a862623fb381ffb214c6aff1d585",
@@ -206172,7 +206204,9 @@
         "expiry_date": "11 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Berlin-based aerospace engineering and information technology company, a subsidiary of the TXT Group.",
+    "enriched_source": "https://singapore-airshow.german-pavilion.com/en/sites/exhibitors/131259"
   },
   {
     "code": "38840ff2f6921177c23db79a29568412",
@@ -206206,7 +206240,9 @@
         "expiry_date": "24 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Organisation development consultancy covering culture building, transformational change, merger integration and performance management.",
+    "enriched_source": "https://www.leadershipchallenge.com/Resources/Community/Certified-Masters/Certified-Masters-Detail.aspx?itemid=142"
   },
   {
     "code": "53683c8d9f473dc438dd0c29c266dd76",
@@ -206361,7 +206397,7 @@
     "uen": "Y285450",
     "name": "Pacific Consultants Co., Ltd",
     "description": "",
-    "company_url": "",
+    "company_url": "https://en.pacific.co.jp",
     "country": "JAPAN",
     "city": "",
     "address_1": "3--22 Kanda-Nishikicho, Chiyoda-ku",
@@ -206380,7 +206416,9 @@
         "expiry_date": "30 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Tokyo construction consultancy providing planning, surveying, design, construction management and maintenance of roads, railways, rivers and ports.",
+    "enriched_source": "https://en.pacific.co.jp/business/"
   },
   {
     "code": "c20b9f2fa9998b3e1f5f429ce894945a",
@@ -206535,7 +206573,9 @@
         "expiry_date": "07 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs swimming lessons for children and adults at levels from beginner to competitive, with venues in Tampines, Aljunied and Pasir Ris.",
+    "enriched_source": "https://www.littledayout.com/swimming-lessons-for-kids-in-singapore-6-swim-schools-to-dive-into/"
   },
   {
     "code": "de301062aa622129ee584565bfcb846f",
@@ -206969,7 +207009,9 @@
         "expiry_date": "14 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies biotechnology and life sciences equipment to research institutes, biotech firms, universities and polytechnics, and offers preventive maintenance contracts.",
+    "enriched_source": "https://www.bionity.com/en/companies/1046177/palico-biotech-pte-ltd.html"
   },
   {
     "code": "f537b06aad05985bf9e39dafbdd9dbc1",
@@ -207194,7 +207236,9 @@
         "expiry_date": "27 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells and services life rafts, life jackets and inflatable boats, and supplies marine navigation equipment, from 22 Tuas West Road; an approved MPA liferaft servicing station.",
+    "enriched_source": "https://recordowl.com/company/pamarine-private-limited"
   },
   {
     "code": "11c53e30f863836b07c84340f119ff10",
@@ -207228,7 +207272,9 @@
         "expiry_date": "21 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Owns and manages hotels and resorts under the Pan Pacific, PARKROYAL COLLECTION and PARKROYAL brands, headquartered at 7500A Beach Road.",
+    "enriched_source": "https://www.hospitalitynet.org/organization/17000704.html"
   },
   {
     "code": "a6480c32f1842f1174ef6b16fadbc7de",
@@ -207449,7 +207495,9 @@
         "expiry_date": "08 Oct 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies surface mount technology machines, auto insertion machines and laser marking machines, plus factory software, from 285 Jalan Ahmad Ibrahim.",
+    "enriched_source": "https://sg.jobstreet.com/companies/panasonic-factory-solutions-asia-pacific-168554637619369"
   },
   {
     "code": "a6cb40decc97f9d423878198d84a6acf",
@@ -207700,7 +207748,7 @@
     "uen": "202100147N",
     "name": "PARADIGM RECRUITMENT PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://paradigmrecruitment.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "462 TAGORE INDUSTRIAL AVENUE, 01-01",
@@ -207727,7 +207775,9 @@
         "expiry_date": "06 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Recruitment agency focused on financial services, licensed for non-FDW recruitment, at 462 Tagore Industrial Avenue.",
+    "enriched_source": "https://recordowl.com/company/paradigm-recruitment-pte-ltd"
   },
   {
     "code": "69eb18ab1e933074d044e3d9927326d0",
@@ -208170,7 +208220,9 @@
         "expiry_date": "08 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs the reference laboratory for Parkway's hospital labs from Framework 2 at 2 Aljunied Avenue 1, with CAP and ISO 15189 accreditation.",
+    "enriched_source": "https://sg.jobstreet.com/companies/parkway-laboratory-services-168553411044619"
   },
   {
     "code": "1b149fc82f87969bda2fdc7d249a3a98",
@@ -208760,7 +208812,9 @@
         "expiry_date": "20 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, manufactures and markets gas-piston AR-style rifles, receivers and accessories from Phoenix, Arizona.",
+    "enriched_source": "https://advocacy.sba.gov/2018/11/16/patriot-ordnance-factory-pof-usa/"
   },
   {
     "code": "e94f89334dea702f90fb2e5ed4ab821d",
@@ -209037,14 +209091,16 @@
         "expiry_date": "16 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes ultra-precision motion control products, develops systems and provides technical services, at 543 Yishun Industrial Park A.",
+    "enriched_source": "https://recordowl.com/company/pba-systems-pte-ltd"
   },
   {
     "code": "34d555e1d5ad8036dd2ac2b1f22a282c",
     "uen": "199701282W",
     "name": "PCB GRAPHTECH PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://pcbgt.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "51, Bukit Batok Crescent",
@@ -209071,7 +209127,9 @@
         "expiry_date": "25 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells and trains users on electronics and CAD software such as Altium Designer, plus EMC probing hardware and EMC testing and design services.",
+    "enriched_source": "https://pcbgt.com.sg/about-us/"
   },
   {
     "code": "ee42fab11273032b9e3c76a1c5bb88a5",
@@ -209902,7 +209960,9 @@
         "expiry_date": "05 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides civil and structural engineering consultancy, including building design, basement earth-retaining structure design and temporary works design.",
+    "enriched_source": "https://recordowl.com/company/pec-civil-consultant-pte-ltd"
   },
   {
     "code": "2a70c9ed32a207ee3f100fbb2f5ed26b",
@@ -210021,7 +210081,9 @@
         "expiry_date": "07 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Travel management company at Acetech Centre, listed among Singapore Airlines' appointed travel agents.",
+    "enriched_source": "https://www.singaporeair.com/content/dam/sia/web-assets/pdfs/global-footer/list-of-appointed-agents.pdf"
   },
   {
     "code": "c72c5e7eadd76a9a29687b19b2b32e0d",
@@ -210089,7 +210151,7 @@
     "uen": "197600165Z",
     "name": "PENGUIN INTERNATIONAL LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.penguin.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "21 Tuas Road",
@@ -210116,7 +210178,9 @@
         "expiry_date": "27 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore-listed marine group whose Penguin Shipyard builds high-speed aluminium vessels, with ship repair and offshore crewboat operations, at 21 Tuas Road.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/2777"
   },
   {
     "code": "5225bcae1756667d787e5b44cd5414db",
@@ -210150,7 +210214,9 @@
         "expiry_date": "26 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds high-speed aluminium vessels such as offshore crewboats, patrol boats, security boats and ferries at a Tuas shipyard.",
+    "enriched_source": "https://www.penguin.com.sg/our-shipyards/penguin-shipyard-international/"
   },
   {
     "code": "b66ee961d09f5fbd4edbbc64bac62fa2",
