@@ -292414,7 +292414,9 @@
         "expiry_date": "13 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Boutique law firm specialising in complex corporate disputes and transactions.",
+    "enriched_source": "https://worldservicesgroup.com/member/tsmp-law-corporation/10493"
   },
   {
     "code": "5099d6af10509e3c48ac94be72eafe40",
@@ -292914,7 +292916,9 @@
         "expiry_date": "16 Dec 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Tests and certifies products, issuing CB test certificates and listed as a testing laboratory under ASEAN schemes.",
+    "enriched_source": "https://asean.org/wp-content/uploads/2023/02/Final-Listing-Proposal-for-TUV-SUD-PSB-PTE-LTD-as-TL-ao-12012023.pdf"
   },
   {
     "code": "ceff58861ae3a75fbbb2c0632a965e12",
@@ -297909,7 +297913,7 @@
     "uen": "199204913M",
     "name": "VALOUR OFFSHORE MARINE SERVICES PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://kvoms.com/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "53, KAKI BUKIT PLACE",
@@ -297928,7 +297932,9 @@
         "expiry_date": "21 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Ship owner offering vessel chartering, salvage, towing and crewing services.",
+    "enriched_source": "https://kvoms.com/"
   },
   {
     "code": "7f20274c403efa9e77bca44e7f3e9d00",
@@ -298626,7 +298632,9 @@
         "expiry_date": "05 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies OEM equipment with system and component engineering design-in and integration, turnkey project management, and lentiviral vectors for clinical development.",
+    "enriched_source": "https://recordowl.com/company/vector-biomed-pte-ltd"
   },
   {
     "code": "190bb68ee9bc404875124c619a4406e2",
@@ -300135,7 +300143,9 @@
         "expiry_date": "03 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides condition monitoring systems and services and implements IIoT M&E systems.",
+    "enriched_source": "https://www.topograph.co/companies/sg/vibtech-genesis-pte-ltd-200505139H"
   },
   {
     "code": "cdcb218f58334fc681ccb27ce79b0ec8",
@@ -301920,7 +301930,9 @@
         "expiry_date": "25 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore video production company producing videos for corporate clients and organisations.",
+    "enriched_source": "https://www.designrush.com/agency/profile/vivid-media-pte-ltd"
   },
   {
     "code": "5dc92bbf531070a29f22901be5a5988f",
@@ -302101,7 +302113,9 @@
         "expiry_date": "18 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds 3D city models from satellite and aerial imagery using an AI automated mapping pipeline.",
+    "enriched_source": "https://recordowl.com/company/vizzio-technologies-pte-ltd"
   },
   {
     "code": "a59505f455f08fa472444ab0f057b1e5",
