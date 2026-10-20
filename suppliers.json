@@ -250140,7 +250140,9 @@
         "expiry_date": "12 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates Singapore's flag-carrier airline and offers external corporate training through the Singapore Airlines Academy.",
+    "enriched_source": "https://marketech-apac.com/sia-launches-academy-to-offer-companies-training-programs-including-digitization/"
   },
   {
     "code": "23a2115b1595841bcac07d35b4d2c30f",
@@ -251083,7 +251085,9 @@
         "expiry_date": "29 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs SIM Global Education and SIM Academy, delivering overseas partner-university degree programmes and adult learning from its Clementi campus.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Singapore_Institute_of_Management"
   },
   {
     "code": "0a6f14984131a5f2694e7fb2e2d50ef9",
@@ -251958,7 +251962,9 @@
         "expiry_date": "20 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Recruitment agency supplying hotel and resort staff, with manpower outsourcing and cleaning and logistics support services, at 239A Victoria Street.",
+    "enriched_source": "https://www.leadstal.com/sb/singasia-management-pte-ltd"
   },
   {
     "code": "a8d9053b80e74319f10a3af375408705",
@@ -252157,7 +252163,9 @@
         "expiry_date": "11 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures and sells commercial kitchen equipment and refrigeration products, with a showroom at 1 Ubi View #01-13 Focus One.",
+    "enriched_source": "https://my.jobstreet.com/companies/singmah-steel-refrigeration-168551184489590"
   },
   {
     "code": "31cf298ac70720c5e0c1801a5fd8355b",
@@ -252780,7 +252788,7 @@
     "uen": "200006659E",
     "name": "SISTIC.COM PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://corporate.sistic.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "6 Changi Business Park Avenue 1",
@@ -252799,7 +252807,9 @@
         "expiry_date": "23 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates ticketing services for events, venues and attractions in Singapore from Changi Business Park.",
+    "enriched_source": "https://sg.jobstreet.com/companies/sistic-168550686071239"
   },
   {
     "code": "51b8e0a1947f69237bb090a4d18c91ec",
@@ -254106,7 +254116,9 @@
         "expiry_date": "16 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides environmental consulting services including air quality, carbon management, geotechnical engineering, land remediation and marine science.",
+    "enriched_source": "https://pitchbook.com/profiles/company/11520-91"
   },
   {
     "code": "d329f84e50d1f1e867fac28c13140843",
@@ -254472,7 +254484,9 @@
         "expiry_date": "08 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells off-the-shelf software for case management, knowledge base, shift scheduling, surveys and staff appraisals, and builds custom software.",
+    "enriched_source": "https://recordowl.com/company/smart-wares-pte-ltd"
   },
   {
     "code": "ca53c427f4f293e1d5efdb5dd54e6d48",
@@ -254611,7 +254625,7 @@
     "uen": "197401505K",
     "name": "SMC CORPORATION (SINGAPORE) PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.smcworld.com/about_us/en-sg/singapore.html",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "33 TUAS AVE 8",
@@ -254638,7 +254652,9 @@
         "expiry_date": "07 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Assembles and supplies pneumatic actuators, valves and thermo equipment in Singapore, the local arm of Japan's SMC; established 1974.",
+    "enriched_source": "https://www.smcworld.com/about_us/en-sg/singapore.html"
   },
   {
     "code": "11585f84a57f3bde3ce6aa5ad36ff61a",
@@ -254997,7 +255013,9 @@
         "expiry_date": "16 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates public bus services on scheduled routes in Singapore, with about 1,200 buses on 74 services, plus chartered bus services.",
+    "enriched_source": "https://companieshouse.sg/smrt-buses-ltd-198202292d"
   },
   {
     "code": "e9c96cfd9ec9d1a456857421b9f28455",
@@ -256011,7 +256029,7 @@
     "uen": "199305188Z",
     "name": "SOFTWARE AG (SINGAPORE) PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://softwareag.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "8 Temasek Boulevard",
@@ -256030,7 +256048,8 @@
         "expiry_date": "28 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "enriched_source": "https://softwareag.com/en_corporate/company/offices/asia-pacific.html"
   },
   {
     "code": "f6f473cf0e2e487771f65337ae42765c",
@@ -256286,7 +256305,9 @@
         "expiry_date": "17 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Fabricates and customises stainless steel products.",
+    "enriched_source": "https://recordowl.com/company/solid-stainless-steel-pte-ltd"
   },
   {
     "code": "e0fe137b7a8aa3f2782bc7891b284189",
@@ -256841,7 +256862,7 @@
     "uen": "199307994W",
     "name": "SONARDYNE ASIA PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sonardyne.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "NO. 23F,",
@@ -256860,7 +256881,9 @@
         "expiry_date": "11 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates Sonardyne's South East Asia headquarters at Loyang Offshore Supply Base, with offices, warehouse, workshop and test tank.",
+    "enriched_source": "https://www.sonardyne.com/products-knowledge-base/sonardyne-singapore-office-relocation-2022-june-july-2022/"
   },
   {
     "code": "21f97453f7627e8451a66e722a91b207",
@@ -256928,7 +256951,9 @@
         "expiry_date": "26 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes and markets consumer electronic products in Singapore.",
+    "enriched_source": "https://recordowl.com/company/sony-electronics-singapore-pte-ltd"
   },
   {
     "code": "0bb753d9778e732d9e6e1d4d0cb99e35",
@@ -257528,7 +257553,9 @@
         "expiry_date": "23 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides preventive maintenance, repair and servicing of medical equipment for healthcare institutions in Singapore.",
+    "enriched_source": "https://recordowl.com/company/south-asia-biomedical-engineering-pte-ltd"
   },
   {
     "code": "242d5e3627c6526b47f1e1fe53b7fd54",
@@ -257885,7 +257912,9 @@
         "expiry_date": "24 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Retails furniture and lifestyle brands from a showroom at 77 Bencoolen Street.",
+    "enriched_source": "https://www.spacefurniture.com.sg/pages/space-singapore-showroom"
   },
   {
     "code": "47b4de593194f50c12208280eb2653c2",
@@ -257946,7 +257975,9 @@
         "expiry_date": "29 Oct 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides IT systems and services for flight operations and air traffic management.",
+    "enriched_source": "https://www.evi.gv.at/f/495168p"
   },
   {
     "code": "3188e0d7423b04ba320874ec483e005f",
@@ -257996,7 +258027,9 @@
         "expiry_date": "08 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Design, fabrication and project management firm serving commercial and government clients.",
+    "enriched_source": "https://sgpgrid.com/company-details/spacelogic-pte-ltd"
   },
   {
     "code": "dc9ffcc77178cc9045b933e166492096",
@@ -258284,7 +258317,9 @@
         "expiry_date": "14 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides security consultancy services and is an SPF RCAR accredited auditor.",
+    "enriched_source": "https://www.police.gov.sg/-/media/Spf/Advisories/RCAR-Accredited-Auditors.ashx"
   },
   {
     "code": "a3244aedcb86798eb8712e356395ea7a",
@@ -258374,7 +258409,9 @@
         "expiry_date": "30 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes and sells biomedical, laboratory and quality-testing equipment, reagents, test kits and lab consumables.",
+    "enriched_source": "https://recordowl.com/company/spd-scientific-pte-ltd"
   },
   {
     "code": "cb8a19fafbd77749aac7a981caca062c",
@@ -258460,7 +258497,9 @@
         "expiry_date": "10 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Exempt financial adviser licensed by MAS, advising on investment products and arranging life policies; Specialist Risk Group's Asia-Pacific hub.",
+    "enriched_source": "https://wealthmanagement.sg/firms/specialist-risk-group-singapore"
   },
   {
     "code": "fcc39924e0390f90445f21ad8e3e665a",
@@ -258502,7 +258541,9 @@
         "expiry_date": "31 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales stationery to offices, schools and shops.",
+    "enriched_source": "https://recordowl.com/company/specialist-stationery-pte-ltd"
   },
   {
     "code": "9d8888f007f16f9a8d8dbd0d137b6c18",
