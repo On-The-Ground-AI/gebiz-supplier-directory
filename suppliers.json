@@ -233944,7 +233944,7 @@
     "uen": "Y306051",
     "name": "Robotnik Automation, S.L.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://robotnik.eu",
     "country": "SPAIN",
     "city": "",
     "address_1": "Ronda Auguste y Louis Loumiere, 6-8",
@@ -233979,7 +233979,9 @@
         "expiry_date": "01 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops and manufactures mobile robot platforms and mobile manipulators, and runs mobile service robotics R&D projects.",
+    "enriched_source": "https://my.motherbase.ai/company/82908-robotnik-automation"
   },
   {
     "code": "e8989b399d1d87ad20bfeca99bbddff6",
@@ -235807,7 +235809,9 @@
         "expiry_date": "10 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Joint venture of Prasarana Malaysia and SMRT that owns and operates the Johor Bahru-Singapore RTS Link rail line.",
+    "enriched_source": "https://globalmasstransit.net/johor-bahru-singapore-rapid-transit-system-rts-link-malaysia-and-singapore/"
   },
   {
     "code": "980b5def74792a9960dcfe5b5fa0d076",
@@ -235963,7 +235967,9 @@
         "expiry_date": "04 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "BIM consulting firm helping with BIM execution plans, model accuracy, software selection and project planning.",
+    "enriched_source": "https://resource.geospatialworld.net/company/rui-xin-bim-consulting-pte-ltd"
   },
   {
     "code": "44e3973c0c4baa3afb05e6935f7e9441",
@@ -237684,7 +237690,9 @@
         "expiry_date": "04 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Installs security systems from its base at Yishun Industrial Street 1.",
+    "enriched_source": "https://sgpgrid.com/company-details/safe-engineering-services-pte-ltd"
   },
   {
     "code": "fbd558dda9d4efc081d2efdc4e8e8525",
@@ -238139,7 +238147,9 @@
         "expiry_date": "14 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops optronics, avionics, inertial navigation and electronic systems for civil and military applications.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Safran_Electronics_%26_Defense"
   },
   {
     "code": "971eea78af977ed9a952210bc7eefad8",
@@ -240018,7 +240028,7 @@
     "uen": "198303171M",
     "name": "SAS INSTITUTE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sas.com/en_sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 Wallich Street #16-01/02 Guoco Tower",
@@ -240037,7 +240047,9 @@
         "expiry_date": "07 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells SAS analytics software and runs SAS training in Singapore from its Guoco Tower office.",
+    "enriched_source": "https://sas.com/en_sg/training/home.html"
   },
   {
     "code": "06ada158108a7d7c7f297c3e2cca3cba",
@@ -240187,7 +240199,9 @@
         "expiry_date": "15 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes aircraft parts and runs an automated aerospace logistics facility at Seletar Aerospace Link.",
+    "enriched_source": "https://www.edb.gov.sg/en/news-and-insights/satair-launches-autostore-to-scale-apac-aerospace-logistics"
   },
   {
     "code": "c2515da5d8107ac8d04a270d13215e04",
@@ -240435,7 +240449,7 @@
     "uen": "198903088H",
     "name": "SATS INSTITUTIONAL CATERING PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sats.com.sg/services/food-solutions/institutional-catering",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "SATS INSTITUTIONAL CATERING PTE LTD",
@@ -240462,7 +240476,9 @@
         "expiry_date": "03 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides large-scale institutional catering to healthcare providers, educational institutions and government agencies.",
+    "enriched_source": "https://www.sats.com.sg/services/food-solutions/institutional-catering"
   },
   {
     "code": "7da20f898cfd8882de4c799cc7621094",
@@ -240661,7 +240677,9 @@
         "expiry_date": "22 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides property valuation and real estate advisory services in Singapore as part of the Savills group.",
+    "enriched_source": "https://recordowl.com/company/savills-valuation-and-professional-services-s-pte-ltd"
   },
   {
     "code": "5f7cea0283c992312ad0561cb8ca2e16",
@@ -240722,7 +240740,9 @@
         "expiry_date": "08 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Inspects and tests bulk cargoes of oil, gas, chemicals and bunkers, with laboratory testing.",
+    "enriched_source": "https://recordowl.com/company/saybolt-singapore-pte-ltd"
   },
   {
     "code": "e97d3053a18d071a58b069c7970e834d",
@@ -240817,7 +240837,9 @@
         "expiry_date": "09 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates public bus services and the North East, Downtown and Sengkang-Punggol rail lines in Singapore.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-announcements/G9YQELHXQ3N6BWBP/880364_SBS%20Transit%20-%20Annual%20Report%202025.pdf"
   },
   {
     "code": "b7eaa2c1f38e00a738a8fc12b9742dbb",
@@ -240948,7 +240970,9 @@
         "expiry_date": "27 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides interior design, architecture, branding and project management services.",
+    "enriched_source": "https://recordowl.com/company/sca-design-pte-ltd"
   },
   {
     "code": "5cfae4250f269942257cb4b954dad568",
@@ -241016,7 +241040,9 @@
         "expiry_date": "26 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures aircraft arresting systems at its Väderstad, Sweden site.",
+    "enriched_source": "https://upplysningar.syna.se/foretag/5561202465/scandinavian-manufacturing-scama-ab"
   },
   {
     "code": "cc7ed221ee7207096fa37f1a318b74cc",
@@ -241325,7 +241351,9 @@
         "expiry_date": "21 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides application services including data and analytics, digital transformation, robotic process automation and PostgreSQL open source services.",
+    "enriched_source": "https://recordowl.com/company/schellden-solutions-pte-ltd"
   },
   {
     "code": "4c5deaeb2b2eecc3aff73596a7c10f72",
@@ -241461,7 +241489,7 @@
     "uen": "199201080H",
     "name": "SCHRODER INVESTMENT MANAGEMENT (SINGAPORE) LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.schroders.com/en-sg/sg/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "138 Market Street",
@@ -241480,7 +241508,9 @@
         "expiry_date": "25 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manages investment funds for individual and institutional clients in Singapore, regulated by the Monetary Authority of Singapore.",
+    "enriched_source": "https://www.schroders.com/en-sg/sg/institutional/contact-us"
   },
   {
     "code": "57bac58b1f19fe2407453cdb2a7ce349",
@@ -241888,7 +241918,9 @@
         "expiry_date": "03 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Markets biopharmaceutical products including recombinant insulin and human growth hormone.",
+    "enriched_source": "https://www.cphi-online.com/company/scigen-pte-ltd/"
   },
   {
     "code": "fb062cefc999c93f3a247fe2c253e9d3",
@@ -241954,7 +241986,9 @@
         "expiry_date": "17 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes life science and medical equipment and provides service to researchers and healthcare providers in Asia Pacific.",
+    "enriched_source": "https://www.businesswire.com/news/home/20230614273132/en/SciMed-Asia-Life-Science-Sales-and-Service-Distributing-Subsidiary-of-PHC-Holdings-Corporation-Becomes-Wholly-Owned-Subsidiary----Acquisition-Expands-PHC-Group%E2%80%99s-Business-Supporting-Researchers-and-Healthcare-Providers-in-Asia-Pacific---"
   },
   {
     "code": "db8b591f8601b2ea9a7ca6dec28e1712",
@@ -242183,7 +242217,9 @@
         "expiry_date": "12 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides architectural services for civic, residential, institutional, hospitality, industrial and healthcare projects.",
+    "enriched_source": "https://sdarchitects.com.sg/"
   },
   {
     "code": "5d51b40ccf2c25dca42a8a21cc3086fe",
@@ -242260,7 +242296,9 @@
         "expiry_date": "24 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides medical equipment, proficiency testing and genetic testing services.",
+    "enriched_source": "https://sg.jobstreet.com/companies/sdt-molecular-pte-ltd-174308694712354"
   },
   {
     "code": "30d8b97bbef09649a7b3adbfd3b058a9",
@@ -242481,7 +242519,9 @@
         "expiry_date": "15 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides recruitment, payroll, work pass and foreign crew recruitment services, as a subsidiary of Seacare Co-operative Ltd.",
+    "enriched_source": "https://recordowl.com/company/seacare-manpower-services-pte-ltd"
   },
   {
     "code": "fd6bf75f7e3671b2f95ea55ba24ba58b",
@@ -242568,7 +242608,9 @@
         "expiry_date": "26 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs Sealy's Asia business from Singapore, a joint venture of Sealy Inc. (USA) and Sealy of Australia covering about 12 countries.",
+    "enriched_source": "https://prospeo.io/c/sealy-asia-singapore-email-format"
   },
   {
     "code": "585f8c3859123b76323b7f9b4ddd694b",
@@ -242594,7 +242636,9 @@
         "expiry_date": "15 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Trains language teachers and promotes cooperation among language professionals across Southeast Asia.",
+    "enriched_source": "https://www.roots.gov.sg/places/places-landing/Places/surveyed-sites/regional-language-centre"
   },
   {
     "code": "07040c459e5917ef60b4f9dae03f49ba",
@@ -242682,7 +242726,9 @@
         "expiry_date": "24 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Repairs and upgrades ships, including cruise vessels, at its Tuas Boulevard Yard with dry docks.",
+    "enriched_source": "https://investors.seatrium.com/newsroom/Seatrium_Reinforces_Partnership_With_Royal_Caribbean_Group,_Secures_Major_Projects_For_Cruise_Repairs_&_Upgrades_19Mar26.pdf"
   },
   {
     "code": "19f9631b1f4e48bf69c3d5fc7eeadd67",
@@ -242925,7 +242971,9 @@
         "expiry_date": "05 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes smart card issuance equipment and identity systems to financial, government and education customers; Entrust reseller partner.",
+    "enriched_source": "https://www.entrust.com/it/partners/directory/secur-solutions-group-pte-ltd"
   },
   {
     "code": "dca7015c2fc307028acebc6987ff7e05",
@@ -243626,7 +243674,9 @@
         "expiry_date": "26 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides integrated food services in Singapore, including institutional and event catering, food retail and restaurants, from a central kitchen at Senoko.",
+    "enriched_source": "https://www.zawya.com/company/4295888173/select-group"
   },
   {
     "code": "244a63eeea88dfed2d2e67be35afa28a",
@@ -243652,7 +243702,9 @@
         "expiry_date": "22 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates school-based student care centres in Singapore under the Big Heart Student Care brand; owned by CDAC, Eurasian Association, SINDA and MENDAKI.",
+    "enriched_source": "https://recordowl.com/company/self-help-groups-student-care-limited"
   },
   {
     "code": "c59054338ade11aaee9705b13929c377",
@@ -243678,14 +243730,16 @@
         "expiry_date": "26 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a halal seafood and local-cuisine restaurant, Sembawang Eating House Seafood Restaurant.",
+    "enriched_source": "https://recordowl.com/company/sembawang-eating-house-seafood-restaurant-pte-ltd"
   },
   {
     "code": "fbf0c47809ce3b6444e22c8bf2304057",
     "uen": "199202243R",
     "name": "SEMBCORP ARCHITECTS & ENGINEERS PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://scae.sembcorp.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "51 Changi Business Park Central 2",
@@ -243704,7 +243758,9 @@
         "expiry_date": "28 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides architectural, civil and structural, M&E, project management, quantity surveying and land surveying services as a BCA Panel 1 consultancy.",
+    "enriched_source": "https://recordowl.com/company/sembcorp-architects-engineers-pte-ltd"
   },
   {
     "code": "99922506fd16ac8ca2cdcb7c835c8931",
@@ -243780,7 +243836,9 @@
         "expiry_date": "04 Aug 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, makes and installs outdoor playgrounds and playground, fitness and sports equipment.",
+    "enriched_source": "https://recordowl.com/company/semec-enterprise-pte-ltd"
   },
   {
     "code": "980ec7846326d333cd9717a196645a4d",
@@ -243806,7 +243864,9 @@
         "expiry_date": "18 Dec 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures, processes, refills and distributes LPG from Union Gas House on Defu Lane.",
+    "enriched_source": "https://recordowl.com/company/semgas-supply-pte-ltd"
   },
   {
     "code": "41205ea591b5826395e2495f21362163",
@@ -243840,7 +243900,9 @@
         "expiry_date": "15 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures metrology equipment for the semiconductor, display and photovoltaic industries.",
+    "enriched_source": "https://us.metoree.com/companies/143410/"
   },
   {
     "code": "ee76552e2a8a6c30052dde3103a43a70",
@@ -243934,7 +243996,9 @@
         "expiry_date": "15 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Building and civil engineering contractor registered with BCA, including general building (B1) and civil engineering (C3) workheads.",
+    "enriched_source": "https://www1.bca.gov.sg/bca-directory/company/Details/198801331R"
   },
   {
     "code": "edadbf3066ceb1208e990ff437b1935b",
@@ -244232,7 +244296,9 @@
         "expiry_date": "29 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides funeral services and caskets in Singapore from Geylang Bahru, operating around the clock.",
+    "enriched_source": "https://recordowl.com/company/serenity-casket-funerals-pte-limited"
   },
   {
     "code": "23d7f67cf2a22de8f9884cd699549c0a",
@@ -244258,7 +244324,9 @@
         "expiry_date": "27 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides cleaning for MRT stations, schools, commercial premises, food courts and town councils, plus carpet shampooing and floor polishing.",
+    "enriched_source": "https://emas.timesdirectories.com/ebook/emas/latest/files/basic-html/page91.html"
   },
   {
     "code": "8546c966ae804075e6dddc08dc415351",
@@ -244820,7 +244888,9 @@
         "expiry_date": "01 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides industrial automation and motion control solutions, including robotic systems and mechanical components, mainly for OEM customers.",
+    "enriched_source": "https://recordowl.com/company/servo-dynamics-pte-ltd"
   },
   {
     "code": "8404da2ea9c712d9170e85893d7dbfc1",
@@ -244846,7 +244916,9 @@
         "expiry_date": "18 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides e-procurement and e-marketplace services in Singapore.",
+    "enriched_source": "https://sgpgrid.com/company/sesami-singapore-pte-ltd-ID0000"
   },
   {
     "code": "8a58cea281106628021edf9030886f7b",
@@ -244896,7 +244968,9 @@
         "expiry_date": "31 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineers and manufactures autonomous mobile robots (AMRs) and automated guided vehicles (AGVs) for material handling and delivery.",
+    "enriched_source": "https://recordowl.com/company/sesto-robotics-pte-ltd"
   },
   {
     "code": "67ce7c6c1d3d595b83bb2222f15d75b8",
@@ -245259,7 +245333,9 @@
         "expiry_date": "26 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates school bus services for Singapore primary schools from Sin Ming Drive.",
+    "enriched_source": "https://compassvalepri.moe.edu.sg/contact/school-vendors/school-bus/"
   },
   {
     "code": "9d25c70e21ebc3de82bfd89a86234d8b",
@@ -245472,7 +245548,9 @@
         "expiry_date": "26 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a social enterprise that holds crafting sessions with differently-abled crafters to make handmade gifts.",
+    "enriched_source": "https://companieshouse.sg/sgifting-pte-ltd"
   },
   {
     "code": "3dc91ac82064295f670a51107705fb6f",
@@ -245658,7 +245736,7 @@
     "uen": "199404065N",
     "name": "SGS TESTING & CONTROL SERVICES SINGAPORE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sgs.com/en-sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "30 BOON LAY WAY",
@@ -245717,7 +245795,9 @@
         "expiry_date": "05 Oct 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides testing and inspection services in Singapore, and is an approved third-party inspection agency for steam piping.",
+    "enriched_source": "https://sgs.com/en-sg/office-directory"
   },
   {
     "code": "ef7a3e12327a00ea6852096dd413408a",
