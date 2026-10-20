@@ -270916,7 +270916,9 @@
         "expiry_date": "30 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides general building engineering design and consultancy services.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Surbana-Jurong-Consultants-Pte-Ltd"
   },
   {
     "code": "1a843ad5aa88da2ae2dd3f38b4723245",
@@ -273701,7 +273703,9 @@
         "expiry_date": "23 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Camera and photographic equipment retailer at Funan Mall, listed as a Fujifilm authorised dealer.",
+    "enriched_source": "https://www.fujifilm.com/sg/en/consumer/shop3091"
   },
   {
     "code": "54fd0b91288d5c9847ab2116c9d7dd96",
@@ -276598,7 +276602,9 @@
         "expiry_date": "10 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies military sub-systems; listed activities include consumer electronics manufacturing and electronics industrial design.",
+    "enriched_source": "https://recordowl.com/company/team-one-technologies-pte-ltd"
   },
   {
     "code": "402e6b62bb83b2a9431339223f6463c1",
@@ -276735,7 +276741,9 @@
         "expiry_date": "05 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "System integrator for public address, sound reinforcement, audio-visual and security systems, with turnkey design, supply, installation and commissioning.",
+    "enriched_source": "https://sg.jobstreet.com/companies/tec-revox-engineering-pte-ltd-168553985384038"
   },
   {
     "code": "cc637494a33f034d83fb225aa90dc231",
@@ -276795,7 +276803,9 @@
         "expiry_date": "30 Dec 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies computer printer ink and toner.",
+    "enriched_source": "https://recordowl.com/company/tech-digital-pte-ltd"
   },
   {
     "code": "cc7ca8e2a20330dc62245fbc81e5b1ca",
@@ -277727,7 +277737,9 @@
         "expiry_date": "15 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a national R&D centre for the marine, offshore and maritime sectors, with an ocean basin test facility at NUS.",
+    "enriched_source": "https://recordowl.com/company/technology-centre-for-offshore-and-marine-singapore-ltd"
   },
   {
     "code": "9898960b2f14b519196128b9bd4730b5",
@@ -277780,7 +277792,9 @@
         "expiry_date": "09 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Authorised reseller of MathWorks software in Southeast Asia.",
+    "enriched_source": "https://sgpgrid.com/company/techsource-systems-ID0000"
   },
   {
     "code": "6947dc827eaddd6448e8eac5cb43e48e",
@@ -277881,7 +277895,9 @@
         "expiry_date": "17 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Offshore software development company.",
+    "enriched_source": "https://in.kompass.com/c/techvariable/in478966/"
   },
   {
     "code": "1eed364ab6417457c27508c1d9291682",
@@ -279112,7 +279128,9 @@
         "expiry_date": "11 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides sustainability solutions and integrated services combining science and engineering expertise, including environmental engineering consultancy.",
+    "enriched_source": "https://recordowl.com/company/tembusu-asia-consulting-pte-ltd"
   },
   {
     "code": "395a28f3148c3d19ce4261de1563034c",
@@ -279326,7 +279344,9 @@
         "expiry_date": "21 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Registered building and construction contractor holding BCA workheads in general building (B2), curtain walls and several mechanical and electrical trades.",
+    "enriched_source": "https://www1.bca.gov.sg/bca-directory/company/Details/201115824M"
   },
   {
     "code": "349db892c816ebac4e7d4cef831d6fa4",
@@ -279441,7 +279461,9 @@
         "expiry_date": "20 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Imports and exports furnishing parts, with custom fabrics and soft furnishings for healthcare, hospitality and residential customers.",
+    "enriched_source": "https://recordowl.com/company/terio-pte-ltd"
   },
   {
     "code": "92d73bb49ac54d1d96d2325e79b6e460",
@@ -282571,7 +282593,9 @@
         "expiry_date": "26 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore branch of a wholesale bank licensed by MAS, with listed activities including fund management and custodial services.",
+    "enriched_source": "https://capitalmarkets.sg/banks/the-northern-trust-company"
   },
   {
     "code": "5e008f9e2b6076b2007a0a1cc9d7c1ed",
@@ -283643,7 +283667,9 @@
         "expiry_date": "07 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore technology consultancy and software development firm.",
+    "enriched_source": "https://recordowl.com/company/the-software-practice-pte-ltd"
   },
   {
     "code": "e55cd94d77db04c2852334b560222058",
