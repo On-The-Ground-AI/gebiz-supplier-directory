@@ -177319,7 +177319,9 @@
         "expiry_date": "08 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and builds event and exhibition stands, product displays and commercial interiors.",
+    "enriched_source": "https://sgpgrid.com/company/media-treeworks-ID0000"
   },
   {
     "code": "2ef1f7545dccaa9e342e36c9ba4b10d2",
@@ -185337,7 +185339,9 @@
         "expiry_date": "23 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells sports apparel and equipment, and runs the official store for Raffles Rugby (rugby shirts, polo tees, t-shirts).",
+    "enriched_source": "https://recordowl.com/company/monsoon-sports-pte-ltd"
   },
   {
     "code": "84022ecca42b2a50f0fb574bba83e623",
@@ -186832,7 +186836,9 @@
         "expiry_date": "09 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Optical shop offering eye examinations, orthokeratology and myopia control, and retailing spectacles.",
+    "enriched_source": "https://recordowl.com/company/mr-eyewear"
   },
   {
     "code": "d095b4be21e42f8ebd7e47617c0e3dba",
@@ -186874,7 +186880,7 @@
     "uen": "195000106C",
     "name": "MS FIRST CAPITAL INSURANCE LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://msfirstcapital.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "6 Raffles Quay #21-00",
@@ -186893,7 +186899,9 @@
         "expiry_date": "22 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Licensed general insurer writing non-life cover for large commercial and industrial risks, including fire, engineering, marine, motor and work injury.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/ms-first-capital-insurance-limited"
   },
   {
     "code": "25ece8d3ee01d3157a0db272c448bd3f",
