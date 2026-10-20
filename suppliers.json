@@ -221004,7 +221004,9 @@
         "expiry_date": "13 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates property brokerage services as the real estate agency arm of PropNex Limited.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-announcements/4BLEZY9ZATUGKBM4/752461_PXL_Annual%20Report%202022.pdf"
   },
   {
     "code": "0d8c8a41feaa533efb1dcf6b89942917",
@@ -221858,7 +221860,9 @@
         "expiry_date": "12 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates the PS.Cafe restaurant brand and other restaurants in Singapore.",
+    "enriched_source": "https://portfoliomagsg.com/article/psgourmet-groups-edward-lee-on-what-makes-a-home.html"
   },
   {
     "code": "f930bf0a8c13480f05c70ed0fb00dad9",
@@ -223138,7 +223142,9 @@
         "expiry_date": "20 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, fabricates, installs and distributes commercial and industrial kitchen equipment, with maintenance and servicing teams, in Singapore.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/2540"
   },
   {
     "code": "8ab5af493c7435ae5f9ce7735c2dae8d",
@@ -223337,7 +223343,9 @@
         "expiry_date": "18 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes control hardware for quantum computers, including the modular Cluster rack system, in Delft, Netherlands.",
+    "enriched_source": "https://ioplus.nl/archive/en/qblox-ensures-quantum-computers-are-controlled-quickly-and-reliably/"
   },
   {
     "code": "053b4273da957854705528ff7ad2c54f",
@@ -223676,7 +223684,7 @@
     "uen": "Y286577",
     "name": "QlikTech Netherlands B.V.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.qlik.com",
     "country": "NETHERLANDS",
     "city": "",
     "address_1": "Evert van de Beekstraat 122 Building B, 6th floor, 1118 CN Schiphol, Netherlands",
@@ -223695,7 +223703,8 @@
         "expiry_date": "07 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "enriched_source": "https://www.qlik.com/us/contact-us"
   },
   {
     "code": "e35e4b292fc2b6c332320aca30a3162c",
@@ -225355,7 +225364,9 @@
         "expiry_date": "15 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Software company with a shared services centre at City Gate Park, Mahon, Cork, Ireland.",
+    "enriched_source": "https://www.solocheck.ie/Irish-Company/Quest-Software-International-Limited-359440"
   },
   {
     "code": "9aa041ca5dc0f1900ad0a2df39acf9ad",
@@ -225397,7 +225408,9 @@
         "expiry_date": "27 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, builds and performance-tests cleanrooms and provides micro-contamination control engineering services in Singapore.",
+    "enriched_source": "https://recordowl.com/company/quest-technology-s-pte-ltd"
   },
   {
     "code": "c35b6ded9caaba57920d2dd8af5e83aa",
@@ -225639,7 +225652,9 @@
         "expiry_date": "14 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Building refurbishment and interior fit-out contractor offering addition and alteration, repair and redecoration, and design-and-build.",
+    "enriched_source": "https://sgpgrid.com/company-details/qxy-resources-pte-ltd"
   },
   {
     "code": "33f59a99046edac618625e1e46c14595",
@@ -226168,7 +226183,9 @@
         "expiry_date": "15 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides corporate group benefit plans and individual health plans as a subsidiary of Raffles Medical Group.",
+    "enriched_source": "https://majesco.com/customers/raffles-health-insurance"
   },
   {
     "code": "fcb4c1d8e87b6e43b78d8f933daa12c1",
@@ -226298,7 +226315,9 @@
         "expiry_date": "09 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates Raffles Hospital and a network of private clinics, health screening and dental centres in Singapore and across Asia.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/2770"
   },
   {
     "code": "e639c87058237623de8f3ea950d34281",
@@ -226436,7 +226455,9 @@
         "expiry_date": "15 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs an after-school student care programme at Casuarina Primary School.",
+    "enriched_source": "https://recordowl.com/company/raffles-student-care-casuarina-pte-ltd"
   },
   {
     "code": "03ffd8c93834cbd9f7e7f4affdf3b877",
@@ -226696,7 +226717,9 @@
         "expiry_date": "15 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs the student care centre at Teck Ghee Primary School, Ang Mo Kio, for before- and after-school care.",
+    "enriched_source": "https://recordowl.com/company/raffles-student-care-teck-ghee-pte-ltd"
   },
   {
     "code": "67d5ddeda0723a1527bb1c0ca09c0383",
@@ -226774,7 +226797,9 @@
         "expiry_date": "22 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Markets health and medical products across Southeast Asia.",
+    "enriched_source": "https://sgpgrid.com/company-details/raintree-medical-pte-ltd"
   },
   {
     "code": "5688c5202ea54f97d267239169523b2d",
@@ -226969,7 +226994,9 @@
         "expiry_date": "21 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides cybersecurity consulting including incident response and forensics, CISO-as-a-service, breach simulation exercises and risk assessments.",
+    "enriched_source": "https://recordowl.com/company/rajah-tann-cybersecurity-pte-ltd"
   },
   {
     "code": "963e02ab7b9accbea0a8be19266e946f",
@@ -227003,7 +227030,7 @@
     "uen": "202021677N",
     "name": "RAJAH & TANN CYBERSECURITY PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://sg.rajahtannasia.com/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "PAYA LEBAR ROAD, 08 -04",
@@ -227030,7 +227057,9 @@
         "expiry_date": "29 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Full-service Singapore law firm with over 430 fee earners, practising across competition, arbitration, M&A, restructuring and insolvency.",
+    "enriched_source": "https://iflr1000.com/Firm/rajah-tann-singapore/Profile/1285"
   },
   {
     "code": "dd83e37717999ea8f0e0b999871a158b",
@@ -227056,7 +227085,9 @@
         "expiry_date": "24 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore law firm founded in 1974, handling real-estate transactions and other domestic and international legal work.",
+    "enriched_source": "https://ramdwong.com.sg/"
   },
   {
     "code": "9369bb87161da461bbb7d8a25f5abc2d",
@@ -227144,7 +227175,9 @@
         "expiry_date": "20 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering company offering building automation and IT services.",
+    "enriched_source": "https://recordowl.com/company/rapid-effect-pte-ltd"
   },
   {
     "code": "7d016f70bb0310d211074fcd503c5c09",
@@ -227306,7 +227339,9 @@
         "expiry_date": "13 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Security guard agency providing residential, commercial, industrial, construction site and event security in Singapore.",
+    "enriched_source": "https://sgpgrid.com/company/ras-security-pte-ltd-ID0000"
   },
   {
     "code": "a78680e8c2f861f452053369b2cb3cda",
@@ -227332,7 +227367,9 @@
         "expiry_date": "28 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Halal caterer offering wedding catering, mini buffets, international buffets and live stations.",
+    "enriched_source": "https://sgpgrid.com/company/rasel-catering-singapore-pte-ltd-ID0000"
   },
   {
     "code": "d73e78f995030447c6f04588cb69955e",
@@ -227823,7 +227860,9 @@
         "expiry_date": "07 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Construction consultancy offering construction supervision and management, feasibility studies, geotechnical engineering, facade inspections and accredited checker services.",
+    "enriched_source": "https://recordowl.com/company/rcy-pte-ltd"
   },
   {
     "code": "e5e9a36ff283d601a5d6f533e62e9abe",
@@ -228113,7 +228152,7 @@
     "uen": "202338576M",
     "name": "REACH COMMUNITY SERVICES LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.reach.org.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "Blk 187 Bishan Street #01-475",
@@ -228140,7 +228179,9 @@
         "expiry_date": "24 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Registered charity and IPC running family, counselling and mental health, youth and senior services from community touchpoints, including Bishan Street 13.",
+    "enriched_source": "https://www.enablingguide.sg/services-details/reach-community-services-society---reach-counselling-centre"
   },
   {
     "code": "19abf5ff0b846c75d6ae733b8fb1799d",
@@ -228585,7 +228626,9 @@
         "expiry_date": "16 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Recruitment consultancy providing permanent and temporary staffing and payroll outsourcing, with offices in Singapore, Taiwan, Kuala Lumpur and Hong Kong.",
+    "enriched_source": "https://pitchbook.com/profiles/advisor/131613-22"
   },
   {
     "code": "afe3ac17018a64987db793b9ae036773",
@@ -228836,7 +228879,9 @@
         "expiry_date": "13 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Payment solutions provider for banks, acquirers and merchants in Asia Pacific, holding a MAS Major Payment Institution licence.",
+    "enriched_source": "https://reddotpayment.com/why-choose-red-dot-payment-as-your-payment-gateway/"
   },
   {
     "code": "cc435cb1b984c0e9253b736cb931c45b",
@@ -229354,7 +229399,9 @@
         "expiry_date": "10 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Civil, structural and geotechnical engineering consultancy working mainly on road and transport infrastructure, founded in 2019.",
+    "enriched_source": "https://recordowl.com/company/redot-engineers-pte-ltd"
   },
   {
     "code": "acc5c7d32158d31e1527479ab193ad4f",
@@ -229406,7 +229453,9 @@
         "expiry_date": "12 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufacturer of conventional and specialty chemicals for marine and offshore industries in Southeast Asia.",
+    "enriched_source": "https://recordowl.com/company/redox-chemical-pte-ltd"
   },
   {
     "code": "f22d51eada1be96399c45e8aff9a5377",
@@ -229473,7 +229522,7 @@
     "uen": "Y305655",
     "name": "Reed Smith LLP",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.reedsmith.com",
     "country": "UNITED STATES",
     "city": "",
     "address_1": "Reed Smith Centre",
@@ -229492,7 +229541,9 @@
         "expiry_date": "25 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Law firm headquartered in Pittsburgh, with more than 1,600 lawyers across its global offices.",
+    "enriched_source": "https://www.reedsmith.com/de/offices/pittsburgh"
   },
   {
     "code": "07b392423fa867808654677184775596",
@@ -229561,7 +229612,9 @@
         "expiry_date": "11 Oct 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Fitness equipment wholesaler and distributor operating since 1985.",
+    "enriched_source": "https://recordowl.com/company/reflex-o-recreations-pte-ltd"
   },
   {
     "code": "9f02e1d59483a42ec1d9c33d24cbc0d1",
@@ -230099,7 +230152,9 @@
         "expiry_date": "02 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributor of Mitutoyo precision tools and measuring instruments.",
+    "enriched_source": "https://recordowl.com/company/regional-tech-pte-ltd"
   },
   {
     "code": "2aabb99b576cacd4b8bf0357f3f01de9",
@@ -230200,7 +230255,9 @@
         "expiry_date": "23 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures and supplies vending machines, and leases, sells and custom builds them and supports vending operations.",
+    "enriched_source": "https://recordowl.com/company/reinvend-solutions-pte-ltd"
   },
   {
     "code": "ebeee54ff0d67f2295118e1943e74d89",
@@ -230242,7 +230299,9 @@
         "expiry_date": "29 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Queue management solutions specialist headquartered in Singapore with a regional office in Kuala Lumpur.",
+    "enriched_source": "https://recordowl.com/company/rel-systems-pte-ltd"
   },
   {
     "code": "25bad568b583c52e2cd5a64636bd6ac6",
