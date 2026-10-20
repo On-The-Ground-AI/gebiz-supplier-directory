@@ -171897,7 +171897,9 @@
         "expiry_date": "20 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Creative communications and PR agency with a Singapore office offering public relations, social media, content production and influencer engagement.",
+    "enriched_source": "https://marketech-apac.com/?p=140410"
   },
   {
     "code": "6a1b63495df70df98f35ced923f0df4d",
@@ -171977,7 +171979,9 @@
         "expiry_date": "02 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Boutique Singapore law firm founded in 2023 with a technology and telecommunications practice, based at 6 Shenton Way.",
+    "enriched_source": "https://acrawatch.sg/company/magellan-law-llp"
   },
   {
     "code": "ce705427eeca845c988ceb1835bf062e",
@@ -172038,7 +172042,9 @@
         "expiry_date": "08 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Builds custom virtual reality, augmented reality and serious-gaming solutions for businesses.",
+    "enriched_source": "https://sgpgrid.com/company/mages-studio-ID0000"
   },
   {
     "code": "28a9e278999371f7f959c96b00e99978",
@@ -172288,7 +172294,9 @@
         "expiry_date": "04 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes specialty chemicals to coatings, construction, printing ink, plastics, personal care, food and pharma industries from Tuas West Drive.",
+    "enriched_source": "https://craft.co/maha-chemicals"
   },
   {
     "code": "ebe8f4977ef02b59f476004caabae741",
@@ -172558,7 +172566,7 @@
     "uen": "201539829D",
     "name": "MAKER LAB PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://wearemakerlab.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "SOMERSET ROAD, 03 -09",
@@ -172585,7 +172593,9 @@
         "expiry_date": "03 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore-headquartered marketing consultancy, founded 2015, that builds in-house micro-agencies for clients across content, social, CRM and influencer work.",
+    "enriched_source": "https://lbbonline.com/news/KFC-Singapore-Appoints-Maker-Lab-for-Creative-and-Social"
   },
   {
     "code": "5d8eadf3f5049ba8cdedbdc2ac46ac9b",
@@ -172611,7 +172621,9 @@
         "expiry_date": "23 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makino's Asian headquarters, building and selling metal-cutting machine tools such as milling and electrical discharge machines from Gul Avenue.",
+    "enriched_source": "https://www.plantautomation-technology.com/suppliers/makino-asia-pte-ltd"
   },
   {
     "code": "342949ff1f1f4467040e6a2dd4042c45",
@@ -172884,7 +172896,9 @@
         "expiry_date": "16 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Licensed distributor of ophthalmic and other medical and opto-medic equipment, operating since 1967 from Kaki Bukit Crescent.",
+    "enriched_source": "https://www.streetdirectory.com/businessfinder/company/10084/Optical_Shop/"
   },
   {
     "code": "ecc927547c02672c5f29535b0cfb8920",
@@ -172958,7 +172972,9 @@
         "expiry_date": "18 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Marketing communications agency offering brand, campaign, media, social and content strategy plus creative design and media buying.",
+    "enriched_source": "https://recordowl.com/company/mandate-communications-s-pte-ltd"
   },
   {
     "code": "be006f0a243b608696739b2e1a2e87a7",
@@ -173233,7 +173249,9 @@
         "expiry_date": "25 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "SGX-listed capital equipment supplier for the semiconductor and solar industries, with customised automation and contract equipment manufacturing.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/1537"
   },
   {
     "code": "c96f21197c8b0efd8aef818e2e402fdc",
@@ -173459,7 +173477,7 @@
     "uen": "201614171D",
     "name": "MARINA SOUTH FERRIES PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://marinasouthferries.com",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "31 Marina Coastal Drive, #01-03",
@@ -173478,7 +173496,9 @@
         "expiry_date": "20 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates ferry transport with public and private charters to Singapore's Southern Islands, with daily trips from Marina South Pier.",
+    "enriched_source": "https://marinasouthferries.com/pages/about"
   },
   {
     "code": "084d15d3c4f509b70802060648ffee54",
@@ -173538,7 +173558,9 @@
         "expiry_date": "22 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "In-house marine electrical engineering contractor serving Singapore shipyards, classed under ship building and repair, at Tuas South Avenue 1.",
+    "enriched_source": "https://recordowl.com/company/marineaid-and-engineering-pte-ltd"
   },
   {
     "code": "227993def31099f3b4036320f481f772",
@@ -173815,7 +173837,9 @@
         "expiry_date": "26 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Insurance broker and risk advisory firm, part of Marsh McLennan, holding an MAS Exempt Financial Adviser licence, registered in 1972.",
+    "enriched_source": "https://recordowl.com/company/marsh-singapore-pte-ltd"
   },
   {
     "code": "6ac0f3f7c98ce6bc38814d6ea52916b2",
@@ -173939,7 +173963,7 @@
     "uen": "197301589M",
     "name": "MARSHALL CAVENDISH BUSINESS INFORMATION PRIVATE LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.timesdirectories.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 New Industrial Road",
@@ -173990,7 +174014,9 @@
         "expiry_date": "21 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Publishes trade directories as a Times Publishing Group subsidiary, including the Singapore Environmental Management Industry Directory.",
+    "enriched_source": "https://www.timesdirectories.com/about-us"
   },
   {
     "code": "2d646ca6013867078c7d28a159bd9e4f",
@@ -174080,7 +174106,9 @@
         "expiry_date": "05 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Publishes educational content and digital learning platforms for pre-school to secondary levels, including MOE co-published textbooks, from 1 New Industrial Road.",
+    "enriched_source": "https://eorder.marshallcavendish.com/Information/aboutUs.aspx"
   },
   {
     "code": "ad779cefbbdcd3d07ff362b5d5402dec",
@@ -174441,7 +174469,9 @@
         "expiry_date": "21 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes mascots, parade costumes and props in-house, with animatronics, merchandising, maintenance and storage services.",
+    "enriched_source": "https://iaapa.org/node/387836"
   },
   {
     "code": "b359ed9d07e4671522f8d1f8890af507",
@@ -175240,7 +175270,9 @@
         "expiry_date": "21 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Environmental engineering design and consultancy firm incorporated in 1981, listed in the ACRA registry at Suntec Tower Three.",
+    "enriched_source": "https://acrawatch.sg/company/mastermark-pte-ltd"
   },
   {
     "code": "1cb154ad09d43b84e4785293f3df06cd",
@@ -175266,7 +175298,9 @@
         "expiry_date": "21 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells cloud-based ERP software for schools, colleges and universities, based in Nagpur, India.",
+    "enriched_source": "https://m.indiamart.com/mastersoft-erp-solutions/aboutus.html"
   },
   {
     "code": "9c044f6ed7fc1d6d7142f2b062847486",
@@ -175319,7 +175353,9 @@
         "expiry_date": "15 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Failure analysis, asset integrity, engineering consultancy and training specialist with an aerospace focus; part of the Cetim group.",
+    "enriched_source": "https://sg.jobstreet.com/companies/matcor-technology-n-services-pte-ltd-168557934888681"
   },
   {
     "code": "4d35c7eff8d305572f7b98ce7ed40df0",
@@ -175422,7 +175458,9 @@
         "expiry_date": "16 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Electrical works contractor and wholesaler of electronic components at Ubi Techpark, registered 1998.",
+    "enriched_source": "https://recordowl.com/company/matrix-resource"
   },
   {
     "code": "e0e8000b541035c5a44466282819191c",
@@ -175579,7 +175617,9 @@
         "expiry_date": "23 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Integration and consulting firm founded in 2004 offering end-to-end solutions built on integration technologies and professional consulting.",
+    "enriched_source": "https://nodeflair.com/companies/maventree-technology"
   },
   {
     "code": "60146f48fc574d2f44379ebae9e1422a",
@@ -175741,7 +175781,9 @@
         "expiry_date": "19 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Constructs communications and power lines and installs fire protection and security alarm systems, incorporated in 2013 after starting as fibre installer.",
+    "enriched_source": "https://recordowl.com/company/maxi-morrie-engineering-pte-ltd"
   },
   {
     "code": "0f1790db625dab2495c4a7f45021635a",
@@ -176078,7 +176120,9 @@
         "expiry_date": "01 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures bread, cakes and confectionery and wholesales bakery goods from Tuas Bay Walk, and runs the Kopi & Tarts outlet.",
+    "enriched_source": "https://recordowl.com/company/mayson-bakery-pte-ltd"
   },
   {
     "code": "b96e7109e1b112b9096a4ee80bc8daf5",
@@ -176130,7 +176174,9 @@
         "expiry_date": "25 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes indoor maps and wayfinding software for large buildings such as campuses, hospitals and offices, with space booking and 3D visualisation.",
+    "enriched_source": "https://www.cbinsights.com/company/mazemap"
   },
   {
     "code": "b5776da2b883dd64d0a4073f509504a5",
@@ -176257,7 +176303,9 @@
         "expiry_date": "08 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore office of the McCann Worldgroup advertising network, covering advertising and digital and relationship marketing for clients such as Mastercard.",
+    "enriched_source": "https://partners.adforum.com/agency/8499"
   },
   {
     "code": "c08f2d83df4f99e01cc4faddabdfd24b",
@@ -176556,7 +176604,7 @@
     "uen": "199802795R",
     "name": "MCKINSEY & COMPANY SINGAPORE, PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.mckinsey.com/sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 Raffles Quay South Tower",
@@ -176583,7 +176631,9 @@
         "expiry_date": "16 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Management consulting firm with a Singapore office at One Raffles Quay South Tower that has supported the Singapore Government on national priorities.",
+    "enriched_source": "https://www.mckinsey.com/sg"
   },
   {
     "code": "2b444a5b0f756027f1a330f3d12086f7",
@@ -176616,7 +176666,7 @@
     "uen": "197301285E",
     "name": "MCLARENS SINGAPORE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.mclarens.com/singapore/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "61 Robinson Road",
@@ -176635,7 +176685,9 @@
         "expiry_date": "31 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides loss adjusting and claims services from Singapore, overseeing major losses including large construction and infrastructure projects.",
+    "enriched_source": "https://www.mclarens.com/singapore/"
   },
   {
     "code": "8bf130d98ae954b7d287ad90b69f8c9d",
@@ -176696,7 +176748,9 @@
         "expiry_date": "30 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Markets, sells and distributes pharmaceuticals and healthcare products in Singapore and some ASEAN countries.",
+    "enriched_source": "https://www.pharmacompass.com/about/md-pharmaceutical"
   },
   {
     "code": "6520bff65b56f925177cf5a6527a3f44",
@@ -176818,7 +176872,9 @@
         "expiry_date": "17 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides environmental engineering design and consultancy, aimed at simplifying waste management.",
+    "enriched_source": "https://recordowl.com/company/mea-environment-asia-pacific-pte-ltd"
   },
   {
     "code": "61f328682c5b2a8111eda0daa315e079",
@@ -178142,14 +178198,16 @@
         "expiry_date": "04 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales Western medicinal and pharmaceutical products in Singapore.",
+    "enriched_source": "https://acrawatch.sg/company/medochemie-singapore-pte-ltd"
   },
   {
     "code": "97572dd7d8f6133b840ee11560b5600b",
     "uen": "200105963D",
     "name": "MEDQUEST MARKETING PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "http://www.medquest.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "65 Ubi Road 1,",
@@ -178216,7 +178274,9 @@
         "expiry_date": "05 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes medical and surgical products, drug delivery products and healthcare IT such as medication dispensing systems in Singapore.",
+    "enriched_source": "https://www.cbinsights.com/company/medquest"
   },
   {
     "code": "538ad153db46ae8c1d68e1c64f85e622",
@@ -178601,7 +178661,9 @@
         "expiry_date": "22 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides specialty chemical solutions, mainly chemical distribution plus contract manufacturing, including adhesives, resins, polymers and surfactants.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/1790"
   },
   {
     "code": "a356dfdcb74f87a7eb52ebf3650c0f5a",
@@ -178730,7 +178792,9 @@
         "expiry_date": "06 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Computer network systems integrator serving clients in retail, education, logistics and hospitality.",
+    "enriched_source": "https://recordowl.com/company/megatron-technology-pte-ltd"
   },
   {
     "code": "e2bce3f92893da59b982164b8d77f5ca",
@@ -178791,7 +178855,9 @@
         "expiry_date": "14 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes protective vests and accessories, including covert vests, plate carriers, helmets and backpacks.",
+    "enriched_source": "https://www.zonebourse.com/insider/SIEGFRIED-WILL-A20HHT/"
   },
   {
     "code": "b67c4df1a0ac3ebd58c2892ca5cc556f",
@@ -179098,7 +179164,9 @@
         "expiry_date": "17 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Asia Pacific regional headquarters of Merck KGaA in Singapore, supporting its life science, healthcare and electronics businesses.",
+    "enriched_source": "https://www.ipos.gov.sg/news/events/inta-2023-annual-meeting-live/inta-2023-annual-meeting-live-brands/merck/"
   },
   {
     "code": "36e9499866e633dc8ff4dc1c4496597c",
@@ -179487,7 +179555,9 @@
         "expiry_date": "10 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes robotic wire-arc additive manufacturing (WAAM) systems for metal 3D printing.",
+    "enriched_source": "https://www.metal-am.com/metalworm-introduces-its-range-of-robotic-wire-arc-additive-manufacturing-machines/"
   },
   {
     "code": "796a03469d9ab76317dd5132122f89e4",
@@ -179539,7 +179609,9 @@
         "expiry_date": "04 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops metaphactory, a platform for building enterprise knowledge graph management applications.",
+    "enriched_source": "https://campusjaeger.de/unternehmen/6241-metaphacts-gmbh"
   },
   {
     "code": "f9990383cd7bc2f170d8a4d4dc8b12ea",
@@ -179618,7 +179690,9 @@
         "expiry_date": "14 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides interior design and construction services.",
+    "enriched_source": "https://recordowl.com/company/metaphor-designworkz-pte-ltd"
   },
   {
     "code": "caf7b137d8aba5d2ac73caad7edb96d9",
@@ -179670,7 +179744,9 @@
         "expiry_date": "24 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides instrument calibration, validation, repair and preventive maintenance services, and supplies MadgeTech data loggers.",
+    "enriched_source": "https://recordowl.com/company/metcal-technologies-s-pte-ltd"
   },
   {
     "code": "ad38e40bb24a14349d807a3baa019368",
@@ -179744,7 +179820,7 @@
     "uen": "S81SS0088H",
     "name": "METHODIST WELFARE SERVICES",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.mws.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "70 BARKER ROAD",
@@ -179771,7 +179847,9 @@
         "expiry_date": "12 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs family service centres, marriage and divorce support, student care, active ageing centres, nursing homes and home care for disadvantaged groups.",
+    "enriched_source": "https://www.methodist.org.sg/what-we-do/methodist-welfare-services/"
   },
   {
     "code": "d77b94e87bc2bfbff8740fb7b10e3187",
@@ -179883,14 +179961,16 @@
         "expiry_date": "01 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates car parks, offering short-term garage parking on hourly, daily or monthly terms.",
+    "enriched_source": "https://nodeflair.com/companies/metro-parking"
   },
   {
     "code": "59e883a79ec71fdc34bd0ed54c59d192",
     "uen": "199608513N",
     "name": "METROHM SINGAPORE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.metrohm.com/en_sg/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "31 TOH GUAN ROAD EAST #06-08",
@@ -179917,7 +179997,9 @@
         "expiry_date": "10 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Regional support centre for Asia of Metrohm AG, supplying analytical instruments such as auto-titrators, ion chromatography and Raman systems.",
+    "enriched_source": "https://www.metrohm.com/en_sg/company/how-to-find-us.html"
   },
   {
     "code": "9442229b4b068d75288c557cafbaa9ca",
@@ -179943,7 +180025,9 @@
         "expiry_date": "17 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides air traffic flow management systems and services, including the Metron Harmony ATFM/CDM product, to air navigation providers, airlines and airports.",
+    "enriched_source": "https://www.atc-network.com/atc-news/airbus-completes-acquisition-of-metron-aviation"
   },
   {
     "code": "8d8af615d5b42fa328d8d22c8b876259",
@@ -180806,7 +180890,9 @@
         "expiry_date": "29 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Conducts research and experimental development on electronics and manufactures and repairs process control equipment.",
+    "enriched_source": "https://recordowl.com/company/microcircuit-systems-pte-ltd"
   },
   {
     "code": "b3c98effdc843e484c9a73380ff883b8",
@@ -180848,7 +180934,9 @@
         "expiry_date": "10 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales optical equipment and office machines and equipment, including microfilm reader-scanners.",
+    "enriched_source": "https://acrawatch.sg/company/microimage-systems-pte-ltd"
   },
   {
     "code": "e57b3003c68ff3f8aad8e0e7c1038000",
@@ -180916,7 +181004,9 @@
         "expiry_date": "13 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales computer hardware and peripheral equipment and provides IT consultancy, per its registry listing.",
+    "enriched_source": "https://recordowl.com/company/microsoft-regional-sales-pte-ltd"
   },
   {
     "code": "e49c65f4b78d0e83076cf6408c462d1e",
@@ -181074,7 +181164,9 @@
         "expiry_date": "24 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Undertakes building construction and general contracting works.",
+    "enriched_source": "https://recordowl.com/company/mie-tech-engineering-construction-pte-ltd"
   },
   {
     "code": "4b4502d2a7de069087c02f618f5659f7",
@@ -181127,7 +181219,9 @@
         "expiry_date": "24 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Installs and repairs air-conditioning systems.",
+    "enriched_source": "https://recordowl.com/company/mighty-airconditioning-pte-ltd"
   },
   {
     "code": "6ef3797d01d41ed4f2a516779277264d",
@@ -181506,7 +181600,7 @@
     "uen": "201633090D",
     "name": "MILIEU INSIGHT PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.mili.eu/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "20 CAIRNHILL ROAD",
@@ -181533,7 +181627,9 @@
         "expiry_date": "03 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a market research platform delivering online consumer surveys and insights across Southeast Asia.",
+    "enriched_source": "https://techcrunch.com/2019/10/29/market-research-platform-milieu-insight-raises-2-4-million-to-launch-in-more-southeast-asian-countries/"
   },
   {
     "code": "df4ce7fcaebf25585c09f152d6c95bf7",
@@ -181665,7 +181761,9 @@
         "expiry_date": "07 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Installs plumbing, heating and air-conditioning systems.",
+    "enriched_source": "https://acrawatch.sg/company/mille-green-m-e-pte-ltd"
   },
   {
     "code": "f3411dddac49c3d210dccbece0dc0070",
@@ -181691,7 +181789,9 @@
         "expiry_date": "28 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore subsidiary of Sri Lankan firm MillenniumIT ESP, serving as a hub for its international IT operations, particularly in ASEAN.",
+    "enriched_source": "https://www.dailynews.lk/2021/09/13/business/259095/millenniumit-esp-gears-global-expansion-singapore-office"
   },
   {
     "code": "d4b1187fa54b3e0cc6f0be0b977a962a",
@@ -181814,7 +181914,9 @@
         "expiry_date": "23 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates school bus transport services, listed as a school bus operator by the Ministry of Education.",
+    "enriched_source": "https://www.aitong.moe.edu.sg/files/DETAILS_OF_BUS_OPERATORS_AND_BUS_FARES.pdf"
   },
   {
     "code": "9fc4064c123bb0e49fee9cb79d7d0469",
@@ -182064,7 +182166,9 @@
         "expiry_date": "11 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures envelopes.",
+    "enriched_source": "https://es.panjiva.com/Min-Hwa-Envelope-Manufacturers/1183951"
   },
   {
     "code": "42119a572c3b7f8e159b306ee9e37f8b",
@@ -182152,7 +182256,9 @@
         "expiry_date": "16 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides training in mind mapping, professional development, leadership and people management, led by principal trainer Dr Tan Buck Chye.",
+    "enriched_source": "https://recordowl.com/company/mind-map-training-centre-pte-ltd"
   },
   {
     "code": "67945c4d39db22f30ec9b72135de104a",
@@ -182359,7 +182465,9 @@
         "expiry_date": "26 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore office of the global Mindshare media agency network, offering media planning and advertising services.",
+    "enriched_source": "https://act.adforum.com/agency/8501/profile/mindshare-asia-pacific"
   },
   {
     "code": "1e244b042c42149b39679e49aae17ec5",
@@ -182521,7 +182629,9 @@
         "expiry_date": "05 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Carries out electrical installation work.",
+    "enriched_source": "https://acrawatch.sg/company/mine-its-pte-ltd"
   },
   {
     "code": "dbab5ab43221ff460341bbf10cdcca3b",
@@ -183334,7 +183444,9 @@
         "expiry_date": "12 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates a restaurant, registered under the restaurants activity code.",
+    "enriched_source": "https://acrawatch.sg/company/mismatch-sg-pte-ltd"
   },
   {
     "code": "70a469571513457101bf79afcc6977e0",
@@ -183376,7 +183488,7 @@
     "uen": "Y303370",
     "name": "Mistral AI",
     "description": "",
-    "company_url": "",
+    "company_url": "https://mistral.ai/",
     "country": "FRANCE",
     "city": "",
     "address_1": "15 rue des halles, Paris",
@@ -183395,7 +183507,9 @@
         "expiry_date": "02 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops large language models, both open-weight and proprietary, and the Le Chat assistant.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Mistral_AI"
   },
   {
     "code": "a490824735a6b3850db4aab7c273b506",
@@ -183593,7 +183707,9 @@
         "expiry_date": "30 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Organises events and concerts.",
+    "enriched_source": "https://recordowl.com/company/mjd-pro-group-pte-ltd"
   },
   {
     "code": "7a6321f7373ef96f097fb8a1ee7a1779",
@@ -183712,7 +183828,9 @@
         "expiry_date": "02 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Architecture and master-planning practice founded in 1995, master plan architect for Bidadari Estate and parts of the Rail Corridor.",
+    "enriched_source": "https://www.edgeprop.sg/property-news/mkpls-siew-man-kok-man-behind-bidadari-estate-master-plan"
   },
   {
     "code": "454bd91a4f01d489575f9f919ba3975f",
@@ -183813,7 +183931,9 @@
         "expiry_date": "29 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures military and police protective gear such as ballistic helmets, body armour and ballistic shields, based in Kanpur.",
+    "enriched_source": "https://en.wikipedia.org/wiki/MKU_(company)"
   },
   {
     "code": "5760b656b00b7ae2e2cd62ef37fbc22c",
@@ -183906,7 +184026,9 @@
         "expiry_date": "07 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides recruitment consultancy (employment agency) services.",
+    "enriched_source": "https://acrawatch.sg/company/ml-consulting-pte-ltd"
   },
   {
     "code": "ebe5698c8a64d360178c5db33f0b6aff",
@@ -184149,7 +184271,9 @@
         "expiry_date": "12 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs, installs, maintains and operates AC and DC electric vehicle chargers as an LTA-recognised EV charging operator.",
+    "enriched_source": "https://evtech.news/ev-companies-singapore/mnl-solutions-pte-ltd-toh-guan-rd-centre-608609.html"
   },
   {
     "code": "760b018f335135419f42a4a035c0a451",
@@ -184440,7 +184564,9 @@
         "expiry_date": "27 Oct 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Treats and disposes of hazardous and toxic industrial waste, including metal waste recycling and waste collection, and operates an incinerator.",
+    "enriched_source": "https://recordowl.com/company/modern-asia-environmental-holdings-pte-ltd"
   },
   {
     "code": "8be5f464f8495c28dd83d83d68ecae49",
@@ -184768,7 +184894,9 @@
         "expiry_date": "14 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Boutique public relations consultancy in Singapore focused on science communications.",
+    "enriched_source": "https://www.biospace.com/archive/2024-09-06?p=1"
   },
   {
     "code": "f6cbe13fc341869a24308823e0d15b0c",
@@ -185087,7 +185215,9 @@
         "expiry_date": "21 Sep 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Trades and supplies marine fuels to ships, with Singapore as its top supply location and its own bunker tanker operations since 2023.",
+    "enriched_source": "https://monjasa.com/news-archive/monjasa-expands-supply-logistics-into-the-port-of-singapore/"
   },
   {
     "code": "7a906c8fb5f153642dbfaed8013be7cf",
@@ -185291,7 +185421,9 @@
         "expiry_date": "18 May 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies and services transport refrigeration, builds insulated containers and distributes Thermo King truck and trailer refrigeration units.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Monzone-Group-Pte-Ltd-1"
   },
   {
     "code": "2d6bb9314f2c74c7d89dcd3f248bc016",
@@ -185344,7 +185476,9 @@
         "expiry_date": "02 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore office of Moog; registered principal activity is wholesale of aircraft equipment and supplies.",
+    "enriched_source": "https://recordowl.com/company/moog-singapore-pte-ltd"
   },
   {
     "code": "a3a7ec452da00182aa208a2a672cae3e",
@@ -185751,7 +185885,7 @@
     "uen": "C18002241C",
     "name": "MOSEN LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://mosen.global",
     "country": "UNITED KINGDOM",
     "city": "",
     "address_1": "Unit 15, Riverview Business Park",
@@ -185770,7 +185904,9 @@
         "expiry_date": "07 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering consultancy covering fire safety engineering, tunnel ventilation, risk management and computational fluid dynamics.",
+    "enriched_source": "https://www.great.gov.uk/international/buy-from-the-uk/find-a-supplier/supplier/06266181"
   },
   {
     "code": "6c99e6f119f2c77f4c3ab3e1d182b15f",
@@ -186000,7 +186136,9 @@
         "expiry_date": "09 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides mission-critical communications, video security, access control and command center solutions, serving public safety agencies, infrastructure operators and enterprises.",
+    "enriched_source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-celebrates-50-years-of-innovation-singapore.html"
   },
   {
     "code": "5a2d39e299f429cb1f0b7cba32b10a09",
@@ -186103,7 +186241,9 @@
         "expiry_date": "08 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Owns and operates wake halls at the Mount Vernon funeral parlour area in Singapore.",
+    "enriched_source": "https://marketplace-guruland-proxy.propertyguru.com.sg/property-management-news/2016/12/142649/mount-vernon-funeral-parlours-remain-anxious-despite-lease-extensions"
   },
   {
     "code": "989c6b25438a7956aa63f5848f13b7e9",
@@ -186144,7 +186284,7 @@
     "uen": "198904033G",
     "name": "MOVA AUTOMOTIVE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.mova.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "22, Jalan Kilang",
@@ -186163,7 +186303,9 @@
         "expiry_date": "02 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates car workshops and a 24-hour towing service from its Jalan Kilang building.",
+    "enriched_source": "https://www.mova.com.sg/?p=1152"
   },
   {
     "code": "476f3910ef78f05fa6a353d9bffe0abd",
@@ -186232,7 +186374,9 @@
         "expiry_date": "19 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Hybrid marketing agency with creative, production and post-production teams, registered for movie production.",
+    "enriched_source": "https://recordowl.com/company/moving-bits-pte-ltd"
   },
   {
     "code": "b54ceae5eacf10c081d38e353d4113c6",
@@ -186496,7 +186640,9 @@
         "expiry_date": "09 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Design agency offering websites and brand identities, registered for art and graphic design services.",
+    "enriched_source": "https://recordowl.com/company/moxie-design-pte-ltd"
   },
   {
     "code": "18f9e92beb5a4b24af883093ecc71522",
@@ -187376,7 +187522,7 @@
     "uen": "201921225W",
     "name": "MULTIABLE PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.multiable.com.sg/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "10 Anson Road, #17-17, International Plaza, Singapore 079903",
@@ -187395,7 +187541,9 @@
         "expiry_date": "29 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops business application software including ERP (aiM18), HCM, CRM, POS and eCommerce for Singapore and regional companies.",
+    "enriched_source": "https://www.multiable.com.sg/"
   },
   {
     "code": "a74b8b95931c7d5a25f17dac07e1ab28",
@@ -187499,7 +187647,7 @@
     "uen": "198100294H",
     "name": "MUN HEAN SINGAPORE PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.munhean.com/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "51 KIM KEAT ROAD, UNIT 05-02",
@@ -187526,7 +187674,9 @@
         "expiry_date": "07 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Markets industrial electrical products including power quality, electrical protection, energy storage and lightning protection; established 1981.",
+    "enriched_source": "https://www.munhean.com/corporate-profile/the-mun-hean-group/"
   },
   {
     "code": "9d252db1766ce16d46437b9864a4761c",
@@ -187708,7 +187858,7 @@
     "uen": "S80SS0037D",
     "name": "MUSLIM CONVERTS' ASSOCIATION OF SINGAPORE",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.darul-arqam.org.sg/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "32 ONAN ROAD",
@@ -187735,7 +187885,9 @@
         "expiry_date": "20 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Registered charity (Darul Arqam Singapore) providing public education, social welfare and religious support for Muslim converts, and MUIS's One-Stop Centre for Converts.",
+    "enriched_source": "https://darul-arqam.org.sg/history"
   },
   {
     "code": "fae93112f89bac6a78e98d7e3f8181ac",
@@ -188076,7 +188228,9 @@
         "expiry_date": "08 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Retails clothing, footwear and leather articles as a sole proprietorship registered in 2024.",
+    "enriched_source": "https://acrawatch.sg/company/my-collab-co"
   },
   {
     "code": "1957bf2d45238fea3135010a223062c6",
@@ -188145,7 +188299,7 @@
     "uen": "202125011N",
     "name": "MYREPUBLIC BROADBAND PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://myrepublic.net/sg/",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "11 LORONG 3 TOA PAYOH",
@@ -188180,7 +188334,9 @@
         "expiry_date": "11 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells fibre broadband to residential, gaming and enterprise customers in Singapore, including 10Gbps plans; a StarHub subsidiary since 2025.",
+    "enriched_source": "https://ontology.point-topic.com/profiles/operators/myrepublic-broadband-singapore"
   },
   {
     "code": "cf1e759756c85708cc40d5bd2a6b3b44",
@@ -188477,7 +188633,9 @@
         "expiry_date": "25 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies laboratory products, particularly for the dental sector, from recognised brands, with training and product consultancy; founded 1985.",
+    "enriched_source": "https://pharmchoices.com/list-of-medical-equipment-suppliers-in-singapore/5/"
   },
   {
     "code": "a2c19f2eed85d91ada2f579a955529b9",
@@ -188572,7 +188730,9 @@
         "expiry_date": "13 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides general cleaning, housekeeping, refuse disposal and horticulture services; established 1988.",
+    "enriched_source": "https://sg.jobstreet.com/companies/nafa-system-services-168541147363251"
   },
   {
     "code": "c574d0c12653b2fe1d39868e9b9b52d6",
@@ -188734,7 +188894,9 @@
         "expiry_date": "24 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a travel agency and tour operation, mainly outbound, plus chartered bus services including school buses; incorporated 1963.",
+    "enriched_source": "https://scam.sg/companies/196300182R/nam-ho-travel-service-singapore-private-limited"
   },
   {
     "code": "c3cf30c268bd4020b070732999fde7ff",
@@ -189986,7 +190148,9 @@
         "expiry_date": "18 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides student care and kindergarten care services for school-going children in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-omega-pte-ltd"
   },
   {
     "code": "20a6952022c6563477c5a8e697667277",
@@ -190144,7 +190308,9 @@
         "expiry_date": "21 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Trains and develops early childhood educators in Singapore through courses across four campuses.",
+    "enriched_source": "https://sgpgrid.com/company-details/national-institute-of-early-childhood-development"
   },
   {
     "code": "6c7aa78594be0e11592d5620d5caefba",
@@ -190186,7 +190352,9 @@
         "expiry_date": "14 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates a golf, resort and beachside bungalow country club at Changi Coast Walk, open to national servicemen and visitors.",
+    "enriched_source": "https://www.timeout.com/singapore/sport-and-fitness/national-service-resort-country-club"
   },
   {
     "code": "05b894cffe8cca1273177116e0623c38",
@@ -190212,14 +190380,16 @@
         "expiry_date": "24 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates National University Hospital, a tertiary referral hospital and academic medical centre in Kent Ridge, Singapore.",
+    "enriched_source": "https://aphn.org/services/national-university-hospital/"
   },
   {
     "code": "d2ecc03755b4046f13857eaf8f7728df",
     "uen": "200604346E",
     "name": "NATIONAL UNIVERSITY OF SINGAPORE",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.nus.edu.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "21 Lower Kent Ridge Road",
@@ -190286,7 +190456,9 @@
         "expiry_date": "14 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore's flagship university, offering degree programmes and research across three Singapore campuses, with close to 40,000 students.",
+    "enriched_source": "https://www.nus.edu.sg/nusbulletin/ay202627/general-information/"
   },
   {
     "code": "5a45f54592ec8fb9a3b3f53759b98ef1",
@@ -190506,7 +190678,9 @@
         "expiry_date": "18 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides maintenance, support, project management and logistics services for the Republic of Singapore Navy's Formidable-class frigates and floating sea barrier.",
+    "enriched_source": "https://sgpgrid.com/company-details/naval-group-far-east-pte-ltd"
   },
   {
     "code": "822cfcd353b7392987d35611855111f9",
@@ -191205,7 +191379,7 @@
     "uen": "Y303857",
     "name": "NEC Corporation",
     "description": "",
-    "company_url": "",
+    "company_url": "https://group.nec/global/en/",
     "country": "JAPAN",
     "city": "",
     "address_1": "7-1, Shiba 5-chome",
@@ -191224,7 +191398,9 @@
         "expiry_date": "24 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Japanese multinational IT and electronics company supplying cloud, AI, IoT and telecom equipment, software and services to enterprises, carriers and governments.",
+    "enriched_source": "https://group.nec/global/en/about/corporate/profile/"
   },
   {
     "code": "835b2fc458c61c06f7de247778250a81",
@@ -191277,7 +191453,9 @@
         "expiry_date": "17 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Software development company in Wheelers Hill, Melbourne, Australia, part of the Nelnet group.",
+    "enriched_source": "https://prospeo.io/c/nelnet-international"
   },
   {
     "code": "910065066c05314dfc6a2d50e41c2dcd",
@@ -191430,7 +191608,9 @@
         "expiry_date": "17 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Data and AI services firm covering data engineering, cloud, analytics, governance and generative AI.",
+    "enriched_source": "https://themanifest.com/company/neostats"
   },
   {
     "code": "0c7b69144d693a9e3cc1bf201471d2ab",
@@ -191598,7 +191778,9 @@
         "expiry_date": "21 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and manufactures customised corporate workwear for businesses, and imports, exports and wholesales apparel.",
+    "enriched_source": "https://sg.jobstreet.com/companies/neptune-work-wear-168557730435823"
   },
   {
     "code": "118f15775b611852c2ca0705a2e52979",
@@ -191640,7 +191822,7 @@
     "uen": "197802690R",
     "name": "NERA TELECOMMUNICATIONS LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.nera.net",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "19 Tai Seng Avenue #06-01",
@@ -191699,7 +191881,9 @@
         "expiry_date": "14 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "IT network infrastructure provider offering end-to-end wireless and network infrastructure solutions; listed on SGX.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/1601"
   },
   {
     "code": "e2b9b56722d402f6caffc76cbeab3ca5",
