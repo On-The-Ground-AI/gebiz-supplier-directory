@@ -208762,7 +208762,9 @@
         "expiry_date": "02 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures armoured vehicles in Hämeenlinna, Finland, as part of Patria's land systems operations.",
+    "enriched_source": "https://www.patriagroup.com/newsroom/news/2022/change-negotiations-finalised-in-patrias-land-operations-unit"
   },
   {
     "code": "f1cdf97853085623f7bdcb1aa59983fc",
@@ -210996,7 +210998,7 @@
     "uen": "53127321X",
     "name": "PERFORMICS",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.performics.com/sg/",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "60 Anson Road",
@@ -211031,7 +211033,9 @@
         "expiry_date": "02 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Performance marketing specialist for global brands, with search, SEO and affiliate heritage, operating from Mapletree Anson in Singapore.",
+    "enriched_source": "https://www.performics.com/sg/"
   },
   {
     "code": "3cd003b50cbe6f5973d242e9ce15c8c3",
@@ -211065,7 +211069,9 @@
         "expiry_date": "14 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides enterprise document imaging and workflow solutions.",
+    "enriched_source": "https://www.cbinsights.com/company/pericom-singapore"
   },
   {
     "code": "d6e07ffecfb695905bfd4b8dab9ca704",
@@ -211126,7 +211132,9 @@
         "expiry_date": "11 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures, services and sells analytical instruments from the JTC MedTech Hub in Tukang Innovation Grove.",
+    "enriched_source": "https://recordowl.com/company/perkinelmer-scientific-singapore-pte-ltd"
   },
   {
     "code": "837df7a818d3cbe46b8af04ecc85931d",
@@ -212378,7 +212386,9 @@
         "expiry_date": "01 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes healthcare products to clinics, hospitals and pharmacies in Singapore and Malaysia.",
+    "enriched_source": "https://www.mims.com/singapore/company/info/pharmaforte/about"
   },
   {
     "code": "f6f7364d2504c4be05ce1c3b4a835471",
@@ -212412,7 +212422,9 @@
         "expiry_date": "16 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells, markets and distributes ethical and over-the-counter pharmaceuticals in Singapore.",
+    "enriched_source": "https://sgpgrid.com/company-details/pharmazen-medicals-pte-ltd"
   },
   {
     "code": "50bc101934a718f86485b88d5f5bb827",
@@ -212547,7 +212559,9 @@
         "expiry_date": "22 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Media planning and buying agency whose Singapore clients include Singapore Airlines and StarHub.",
+    "enriched_source": "https://www.campaignasia.com/article/sia-retains-phd-as-media-agency-of-record/496767"
   },
   {
     "code": "0ea20eb77cad84d9e655e240bd1674e7",
@@ -212667,7 +212681,9 @@
         "expiry_date": "26 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells Philips Healthcare products and services in Singapore from its Lorong 1 Toa Payoh site.",
+    "enriched_source": "https://www.philips.ro/healthcare/services/maintenance-services/customer-care-center/distributors-asia-pacific"
   },
   {
     "code": "ce8086a64bbd79642db9a5ba6f96e12c",
@@ -212783,14 +212799,16 @@
         "expiry_date": "04 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates a group of primary care clinics in Singapore offering family medicine, childhood immunisation, chronic disease management and health screening.",
+    "enriched_source": "https://recordowl.com/company/phoenix-medical-group-pte-ltd"
   },
   {
     "code": "411671936c320d1d4e561a7036a4bcd1",
     "uen": "Y281243",
     "name": "Photon Spot, Inc.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://photonspot.com",
     "country": "UNITED STATES",
     "city": "",
     "address_1": "142 W Olive Ave",
@@ -212809,7 +212827,9 @@
         "expiry_date": "02 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes superconducting nanowire single-photon detectors (SNSPD) and sub-Kelvin cryogenic systems for quantum research.",
+    "enriched_source": "https://photonspot.com/about"
   },
   {
     "code": "e990d0fb0b18388f2c29a373da9fe46e",
@@ -213375,7 +213395,9 @@
         "expiry_date": "31 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Event marketing services company based at Pico Creative Centre, 20 Kallang Avenue, Singapore.",
+    "enriched_source": "https://marketplace.aviationweek.com/company/pico-art-international-pte-ltd"
   },
   {
     "code": "0027dd3de6bc91562d2b7a36fd327108",
@@ -213409,7 +213431,9 @@
         "expiry_date": "15 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides physical security services covering security consulting, manpower and technology.",
+    "enriched_source": "https://aeroleads.com/c/pico-guards"
   },
   {
     "code": "e363ca3aeda0bc61029cca7a695342ef",
@@ -213695,7 +213719,9 @@
         "expiry_date": "07 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides BIM engineering, digital design and construction management services from the BCA Braddell Campus.",
+    "enriched_source": "https://magicpin.com/singapore/Singapore/Toa-Payoh/Other/Pinnacle-Bim-Technology-Pte.-Ltd./store/2331ba3"
   },
   {
     "code": "b16efb3e2db37dd40367c17c165f80d6",
@@ -213892,7 +213918,9 @@
         "expiry_date": "07 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Intellectual property boutique covering patents, trademarks, industrial designs, copyrights and trade secrets.",
+    "enriched_source": "https://www.gobusiness.gov.sg/intellectual-property/ip-grow/pintas-iphouse-pte-ltd"
   },
   {
     "code": "288800b3722ea33300930f2d82dad2d3",
@@ -213926,7 +213954,9 @@
         "expiry_date": "04 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Publishes horse-racing media across print, digital, mobile and social platforms, including the magazine Punters' Way.",
+    "enriched_source": "https://sg.jobstreet.com/companies/pioneers-n-leaders-publishers-pte-ltd-168550628510179"
   },
   {
     "code": "1027ef3b31d10419fdef4c38ce1a6a7c",
@@ -214296,7 +214326,9 @@
         "expiry_date": "03 Jul 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides pipeline rehabilitation services including sewer rehabilitation, leak detection, pipe inspection, cleaning, lining and flow monitoring.",
+    "enriched_source": "https://thewaternetwork.com/organization-c6k/pipeline-services-vGNv451URxj-YrkrDIrXrA/home"
   },
   {
     "code": "7aff5ec48a6e5b7aa3a36181c842a5d6",
@@ -214476,7 +214508,9 @@
         "expiry_date": "25 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Event management and conference organiser offering planning, technical production, live-stream and hybrid events, video production and booth construction.",
+    "enriched_source": "https://recordowl.com/company/pixo-events-asia-private-limited"
   },
   {
     "code": "5b2543db94396a3bf0cf3569f0e72796",
@@ -214795,7 +214829,9 @@
         "expiry_date": "06 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops project portfolio management software, including Planisware Enterprise and the SaaS Planisware Orchestra.",
+    "enriched_source": "https://craft.co/planisware"
   },
   {
     "code": "455b13f2b693b4149f6c4699db9a64c4",
@@ -214864,7 +214900,9 @@
         "expiry_date": "16 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Asian subsidiary of Planon, supplying integrated workplace management (IWMS) and facility management software.",
+    "enriched_source": "https://recordowl.com/company/planon-asia-pte-ltd"
   },
   {
     "code": "f0179df21e32038ca35fe2cda8d27a16",
@@ -214941,7 +214979,9 @@
         "expiry_date": "31 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Neutral system integrator supplying software and integrated systems for data-based early crisis recognition.",
+    "enriched_source": "https://targikielce.pl/en/mspo/list-of-exhibitors/plath-gmbh-co-kg,2270348"
   },
   {
     "code": "14d176ea687b92ba50591915d5c3406f",
@@ -215344,7 +215384,9 @@
         "expiry_date": "24 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Corporate travel management provider offering a travel programme, optimisation tools and mobile and web booking apps.",
+    "enriched_source": "https://www.cbinsights.com/company/plover-trip"
   },
   {
     "code": "07fc86dce38692256003f0940143d326",
@@ -215635,7 +215677,9 @@
         "expiry_date": "16 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Publishers services company at Toa Payoh North, listed among IMDA registered importers of publications.",
+    "enriched_source": "https://pubhtml5.com/xyqa/qdhr/basic/101-104"
   },
   {
     "code": "dcc687029b98e40032fb1c20ba551fcb",
@@ -216055,7 +216099,9 @@
         "expiry_date": "18 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes bottled water and beverages, including Polar Natural Mineral Water and Sportade.",
+    "enriched_source": "https://recordowl.com/company/polar-water-distributor-pte-ltd"
   },
   {
     "code": "ff5c5efb9b809a803502eb0d74c26305",
@@ -216823,7 +216869,9 @@
         "expiry_date": "21 Oct 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "BCA-registered contractor for electrical, mechanical engineering and air-conditioning works.",
+    "enriched_source": "https://www1.bca.gov.sg/bca-directory/company/Details/198104254D"
   },
   {
     "code": "7534137528f60fbebdc1d42ccdb3af27",
@@ -216905,7 +216953,9 @@
         "expiry_date": "09 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides grid and utility automation, including SCADA, energy management, substation automation and protection systems.",
+    "enriched_source": "https://sg.jobstreet.com/companies/power-automation-pte-ltd-168556724784777"
   },
   {
     "code": "4927264b43077e4ecf23ffd9ac7e499c",
@@ -216947,7 +216997,9 @@
         "expiry_date": "22 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies electric golf buggies, utility vehicles and trams, plus airport ground support equipment and military equipment servicing.",
+    "enriched_source": "https://sg.jobstreet.com/companies/power-force-technologies-pte-ltd-168553715963534"
   },
   {
     "code": "3d9086144354977df5cdf4e7ef2f8f25",
@@ -217516,7 +217568,9 @@
         "expiry_date": "05 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Communications agency offering public relations and branding, including lifestyle marketing, corporate reputation and crisis management.",
+    "enriched_source": "https://www.cbinsights.com/company/pr-communications"
   },
   {
     "code": "d9470775ee62deda75c1f7329d03daf1",
@@ -217593,7 +217647,9 @@
         "expiry_date": "29 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies medical and scientific equipment, consumables and disposables in Singapore.",
+    "enriched_source": "https://pharmchoices.com/list-of-medical-equipment-suppliers-in-singapore/6/"
   },
   {
     "code": "eda2c090145ab89161587af97482022f",
@@ -217859,7 +217915,9 @@
         "expiry_date": "27 Dec 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering provider for defence, homeland security and construction, offering fabrication, maintenance and repair, and hostile vehicle mitigation.",
+    "enriched_source": "https://sg.jobstreet.com/companies/precision-fabricators-s-pte-ltd-168554512213357"
   },
   {
     "code": "894cfdb3a6dcc56a9429cf0193f903a0",
@@ -218079,7 +218137,9 @@
         "expiry_date": "15 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes scientific and biomedical instruments in Singapore, including as BIOPAC distributor.",
+    "enriched_source": "https://www.biopac.com/?p=42203"
   },
   {
     "code": "b66cc2078f7cf02e796722efe609d9f8",
@@ -218193,7 +218253,9 @@
         "expiry_date": "19 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Security co-operative providing guarding, cash-in-transit, goods escort, patrol car services, security audits and training courses.",
+    "enriched_source": "https://sncf.coop/newsletters/know-our-co-ops-series-singapore-s-first-security-co-operative"
   },
   {
     "code": "5db789c3b67adc09d321037c6afe846f",
@@ -218440,7 +218502,9 @@
         "expiry_date": "20 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Retails motor vehicles in Singapore, including Audi cars and Zeekr, XPENG and Deepal electric vehicles.",
+    "enriched_source": "https://recordowl.com/company/premium-automobiles-pte-ltd"
   },
   {
     "code": "c0b8000ac496175773f37e80b732635c",
