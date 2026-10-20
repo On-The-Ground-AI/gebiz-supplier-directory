@@ -187092,7 +187092,9 @@
         "expiry_date": "04 Mar 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Land Transport Authority-owned firm providing advisory, project management, systems assurance and integration, and training for land transport projects.",
+    "enriched_source": "https://recordowl.com/company/msi-global-private-limited"
   },
   {
     "code": "32456ee6bf34fcf3abb2b89cab55a3b8",
@@ -187347,7 +187349,7 @@
     "uen": "199306485G",
     "name": "MULLENLOWE SINGAPORE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://singapore.mullenlowe.com/",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "40A ORCHARD ROAD",
@@ -187414,7 +187416,9 @@
         "expiry_date": "04 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Integrated advertising and creative agency in Singapore, being merged with McCann Singapore under the McCann brand.",
+    "enriched_source": "https://www.campaignasia.com/article/mullenlowe-and-mccann-merge-in-singapore-under-mccann-banner/506481"
   },
   {
     "code": "a7c8fd49d2ef1e479fe8717776b64a8e",
@@ -188572,7 +188576,7 @@
     "uen": "Y306775",
     "name": "N.IN.E. - Nuclear and INdustrial Engineering S.r.l.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.nineeng.com",
     "country": "ITALY",
     "city": "",
     "address_1": "Via della Chiesa XXXII, 759",
@@ -188591,7 +188595,9 @@
         "expiry_date": "15 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering studies and consultancy firm in Lucca, Italy, working in nuclear and industrial engineering including decommissioning and severe accident analysis.",
+    "enriched_source": "https://www.aziende.it/nine-nuclear-and-industrial-engineering-s-r-l"
   },
   {
     "code": "5e28b8ef52964446067a021c881e742a",
@@ -189136,7 +189142,9 @@
         "expiry_date": "09 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore social enterprise providing professional nannies, childminding and respite care for children, including those with special needs.",
+    "enriched_source": "https://www.raise.sg/directory/nannypro-pte-ltd/"
   },
   {
     "code": "dbb6f730b0aea11071d63f25f956468d",
@@ -189255,7 +189263,7 @@
     "uen": "201314738E",
     "name": "NANOSERV PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://nanoserv.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "47 Kallang Pudding",
@@ -189290,7 +189298,9 @@
         "expiry_date": "25 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributor of scientific laboratory instruments and consumables, including vibration isolation systems, field cancellation equipment and sputter coaters.",
+    "enriched_source": "https://recordowl.com/company/nanoserv-pte-ltd"
   },
   {
     "code": "0800fed82fc355e6c9152cb006872545",
@@ -189435,7 +189445,7 @@
     "uen": "201006523M",
     "name": "NANYANG ACADEMY OF FINE ARTS",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.nafa.edu.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "80 Bencoolen Street",
@@ -189454,7 +189464,9 @@
         "expiry_date": "17 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Arts institution offering diploma, bachelor's and master's programmes in art, design and performing arts, plus a School of Young Talents and lifelong education.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Nanyang_Academy_of_Fine_Arts"
   },
   {
     "code": "d881f23157e13bc41ebbbd0c2d0b88ab",
@@ -189725,7 +189737,9 @@
         "expiry_date": "30 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Rents tents, marquees, stages, furniture, flooring, cooling and lighting for outdoor events.",
+    "enriched_source": "https://recordowl.com/company/nanyang-inc-pte-ltd"
   },
   {
     "code": "80dc0216a56a91b718fe32e2b27e7758",
@@ -189751,7 +189765,9 @@
         "expiry_date": "09 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Boutique Singapore law practice covering corporate and commercial work, intellectual property and technology, litigation, dispute resolution and real estate.",
+    "enriched_source": "https://recordowl.com/company/nanyang-law-llc"
   },
   {
     "code": "72168e87b2c491eacbf39946ee473a7f",
@@ -189777,7 +189793,9 @@
         "expiry_date": "13 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Land surveying firm listed with the Land Surveyors Board of Singapore at 3 Soon Lee Street.",
+    "enriched_source": "https://lsb.mlaw.gov.sg/find-a-surveyor/list-of-corporations-partnerships-limited-liability-partnerships/"
   },
   {
     "code": "0cce72393a43559d1a234867e57b7dbd",
@@ -189811,7 +189829,7 @@
     "uen": "200604393R",
     "name": "NANYANG TECHNOLOGICAL UNIVERSITY",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.ntu.edu.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "50 Nanyang Avenue",
@@ -189862,7 +189880,9 @@
         "expiry_date": "28 Nov 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Public research university in Singapore with colleges in engineering, business, science, medicine, humanities, arts and social sciences.",
+    "enriched_source": "https://en.wikipedia.org/wiki/Nanyang_Technological_University"
   },
   {
     "code": "5c0b8126acc450cb0d9c83ef71f0721a",
@@ -189974,7 +189994,9 @@
         "expiry_date": "29 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides school-based and community-based student care for school-going children in Singapore.",
+    "enriched_source": "https://acrawatch.sg/company/nascans-alpha-pte-ltd"
   },
   {
     "code": "447a5a85723cc497c68775a2ceb0a3bc",
@@ -190000,7 +190022,9 @@
         "expiry_date": "24 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at centres in partner MOE schools.",
+    "enriched_source": "https://recordowl.com/company/nascans-boltzmann-pte-ltd"
   },
   {
     "code": "183879ceef8465f01eeb6211c0c8e7c3",
@@ -190026,7 +190050,9 @@
         "expiry_date": "26 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at school-based centres in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-coulomb-pte-ltd"
   },
   {
     "code": "c60afc7a6dd41b0f0c5020f48334d2a0",
@@ -190052,7 +190078,9 @@
         "expiry_date": "29 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at school-based centres in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-digamma-pte-ltd"
   },
   {
     "code": "9b9c1aa78c96749a9816e30586bacb76",
@@ -190078,7 +190106,9 @@
         "expiry_date": "29 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at school-based centres in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-faraday-pte-ltd"
   },
   {
     "code": "a7a61595b4562415bb69cec62ae06021",
@@ -190104,7 +190134,9 @@
         "expiry_date": "02 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at school-based centres in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-fermi-pte-ltd"
   },
   {
     "code": "46236f8d8c0e1209e46731d624b419fd",
@@ -190130,7 +190162,9 @@
         "expiry_date": "18 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides child and student care for school-going children at school-based centres in Singapore.",
+    "enriched_source": "https://recordowl.com/company/nascans-nu-pte-ltd"
   },
   {
     "code": "91013bfe1d9326e8d841a659ba003829",
@@ -192563,7 +192597,9 @@
         "expiry_date": "05 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs Singapore national electronic payments network, including the national debit scheme, and issues NETS FlashPay and prepaid cards.",
+    "enriched_source": "https://en.wikipedia.org/wiki/NETS_(company)"
   },
   {
     "code": "5f84b62ef09f837a5f04ce93fddf5d94",
@@ -192616,7 +192652,9 @@
         "expiry_date": "22 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes dry grinding and classifying equipment (fine-impact, jet and classifier mills) in Hanau, Germany, for chemicals, minerals, ceramics, pharma and food uses.",
+    "enriched_source": "https://grinding.netzsch.com/en/meta-nav/about-us/business-unit-grinding-and-dispersing-of-the-netzsch-group/netzsch-trockenmahltechnik"
   },
   {
     "code": "9c27f3485f200690e848871e5a796cd4",
@@ -193072,7 +193110,7 @@
     "uen": "201411304Z",
     "name": "NEW LIFE STORIES LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://newlifestories.org.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "64 Kallang Bahru,",
@@ -193091,7 +193129,9 @@
         "expiry_date": "06 Jul 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs programmes for families of prisoners and their children to prevent intergenerational incarceration, as a Singapore voluntary welfare organisation.",
+    "enriched_source": "https://ngobase.org/profile/28292"
   },
   {
     "code": "248d6b6a03bef239880e0b014ef1b750",
@@ -193991,7 +194031,9 @@
         "expiry_date": "11 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides long-read sequencing (Oxford Nanopore, PacBio Revio) and spatial multi-omics services from a Biopolis lab in Singapore.",
+    "enriched_source": "https://nanoporetech.com/about/partners/sequencing-service-providers/next-level-genomics"
   },
   {
     "code": "4a2701e9c90b52be11272212de2e605b",
@@ -194067,7 +194109,9 @@
         "expiry_date": "22 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Distributes scientific research instruments in Southeast Asia, such as spectroscopy, thermal analysis, particle characterisation and viscometry equipment.",
+    "enriched_source": "https://sgpgrid.com/company-details/nexus-analytics-pte-ltd"
   },
   {
     "code": "fc086e8bacabb57b124a8793e8d6c483",
@@ -194662,7 +194706,9 @@
         "expiry_date": "01 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore polytechnic whose CET Academy offers part-time diplomas, WSQ programmes and short courses for working adults.",
+    "enriched_source": "https://cet.np.edu.sg/?p=349"
   },
   {
     "code": "5c9f3d8af76cd5caeac0aa3b8e724517",
