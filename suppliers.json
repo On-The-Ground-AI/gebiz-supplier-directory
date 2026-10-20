@@ -245960,7 +245960,9 @@
         "expiry_date": "10 Sep 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Listed as the Singapore distributor of MicroStrain sensor products, based at EPL Building, 1100 Lower Delta Road.",
+    "enriched_source": "https://microstrain.com/support/distributors"
   },
   {
     "code": "18dc3045b20481e0f868bce571443843",
@@ -246126,7 +246128,9 @@
         "expiry_date": "19 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Civil engineering and tunnelling contractor in Singapore, undertaking Land Transport Authority MRT line contracts.",
+    "enriched_source": "https://www.stecs.com.sg/contact-us"
   },
   {
     "code": "3ea75d97d9159e7679352ac0487188f8",
@@ -246200,7 +246204,9 @@
         "expiry_date": "14 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Owns and operates the Shangri-La Hotel Singapore at 22 Orange Grove Road; registered primary activity is hotels.",
+    "enriched_source": "https://ssicdata.com/company/shangri-la-hotel-limited-196200040E"
   },
   {
     "code": "9f428e0c0bfe93baf1d4b5fceb488ca8",
@@ -246268,7 +246274,9 @@
         "expiry_date": "11 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells Sharp electronic components such as LCD panels, sensors and solar panels in Singapore and the region from Alexandra Technopark.",
+    "enriched_source": "https://www.plantautomation-technology.com/suppliers/sharp-singapore-electronics-corporation-pte-ltd"
   },
   {
     "code": "b6b5c0bb8f431aab1d639dac703f09a2",
@@ -246513,7 +246521,9 @@
         "expiry_date": "24 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and produces construction machinery for building-surface processing such as mixing, compaction, crushing, grinding and excavation.",
+    "enriched_source": "https://www.cbinsights.com/company/dafang-intelligent-technology"
   },
   {
     "code": "99010d2692e34fdececf4222e7f3863c",
@@ -246652,7 +246662,9 @@
         "expiry_date": "09 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore-headquartered Shimadzu entity for Asia Pacific, registered as wholesaler of scientific and precision equipment, at Science Park Drive.",
+    "enriched_source": "https://www.pharmaceutical-tech.com/suppliers/shimadzu"
   },
   {
     "code": "49fc3aee74d6af169d26ed34374f50dc",
@@ -247057,7 +247069,9 @@
         "expiry_date": "29 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales medicinal and pharmaceutical products, registered at The Adelphi, 1 Coleman Street.",
+    "enriched_source": "https://recordowl.com/company/shoei-universal-corporation-pte-ltd"
   },
   {
     "code": "f131b9d517fa2fe8192b1ddc3dbcac15",
@@ -247099,7 +247113,9 @@
         "expiry_date": "07 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides 3D digital technology, advanced manufacturing and robotic automation system integration, and resells Artec 3D scanners; spun off from Shonan Design (S).",
+    "enriched_source": "https://www.artec3d.com/reseller/shonan-3d-solutions"
   },
   {
     "code": "c50eb5bbd687180f3d5e3ff2761799c6",
@@ -247125,7 +247141,9 @@
         "expiry_date": "10 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Prototyping service bureau and supplier of 3D scanning and CAD/CAM solutions, operating in Singapore since 1996.",
+    "enriched_source": "https://artec3d.com/reseller/shonan-design-s-pte-ltd"
   },
   {
     "code": "1486c7ebe3e0150092cafcb66915a025",
@@ -247396,7 +247414,9 @@
         "expiry_date": "15 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides landscape architecture consultancy including master planning, landscape architecture and urban design.",
+    "enriched_source": "https://recordowl.com/company/shubin-tan-landscape-architecture-private-limited"
   },
   {
     "code": "8a9c9115dba8d96a45dad95cfdbf09c4",
@@ -247555,7 +247575,7 @@
     "uen": "198105883N",
     "name": "SIA HUAT PRIVATE LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.siahuat.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "9 TEMPLE STREET",
@@ -247590,7 +247610,9 @@
         "expiry_date": "19 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a retail store at 7, 9 and 11 Temple Street and a service centre at 20 Pandan Road, with subsidiaries in Malaysia and Indonesia.",
+    "enriched_source": "https://www.siahuat.com/?p=309"
   },
   {
     "code": "90f95e49a49109d0b4bedff945235d78",
@@ -247683,7 +247705,9 @@
         "expiry_date": "05 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Acoustic engineering firm supplying noise and vibration control products for industrial and commercial applications.",
+    "enriched_source": "https://recordowl.com/company/siac-pte-ltd"
   },
   {
     "code": "82e095e9280e8002ec2542dfef93f728",
@@ -247784,7 +247808,7 @@
     "uen": "199103107G",
     "name": "SICK PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.sick.com/sg/en/about-sick/about-sick-singapore/w/sick",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 NORTH COAST AVENUE",
@@ -247803,7 +247827,9 @@
         "expiry_date": "26 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Regional sales and service centre for SICK sensors and automation products across ASEAN, with a regional product centre developing sensors.",
+    "enriched_source": "https://www.sick.com/sg/en/about-sick/about-sick-singapore/w/sick"
   },
   {
     "code": "7f218fe1a1d8bc0c76cdd6a3043dadf4",
@@ -247880,7 +247906,9 @@
         "expiry_date": "12 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Energy technology company supplying gas and steam turbines, HVDC transmission systems and wind turbines, headquartered at Otto-Hahn-Ring 6, Munich.",
+    "enriched_source": "https://uk.finance.yahoo.com/quote/SMEGF/profile?p=SMEGF"
   },
   {
     "code": "0457f7997ce4671b7eeb467d6c69a778",
@@ -247965,7 +247993,9 @@
         "expiry_date": "17 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wholesales medical and scientific equipment and provides healthcare management consultancy; Siemens Healthineers office at The Siemens Centre.",
+    "enriched_source": "https://companieshouse.sg/siemens-healthcare-201504514R"
   },
   {
     "code": "2132df1858927d9d865c95b8eef518df",
@@ -247991,7 +248021,9 @@
         "expiry_date": "04 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops software and applications; Singapore employer entity of Siemens Digital Industries Software (product design, simulation and manufacturing software).",
+    "enriched_source": "https://recordowl.com/company/siemens-industry-software-pte-ltd"
   },
   {
     "code": "ce96c54c173b7f04b4bd006a0964a90c",
@@ -248171,7 +248203,9 @@
         "expiry_date": "14 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells automation, control and electrical equipment, software and services; BCA-registered contractor for electrical engineering and building automation.",
+    "enriched_source": "https://www1.bca.gov.sg/bca-directory/company/Details/199605166D"
   },
   {
     "code": "9505ec84c57bcdb466a9cb924f334fea",
@@ -248221,7 +248255,9 @@
         "expiry_date": "15 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Enterprise software and analytics provider offering predictive analytics, business intelligence and enterprise planning and budgeting.",
+    "enriched_source": "https://www.sgpbusiness.com/company/Sift-Analytics-Group-Pte-Ltd"
   },
   {
     "code": "469c3a32c80fd718c68c6fd9eb00629d",
@@ -248460,7 +248496,9 @@
         "expiry_date": "07 Jun 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Imports and exports fresh fruits and vegetables, supplied mainly from China.",
+    "enriched_source": "https://www.foodcodirectory.com/2020/12/siji-trading-pte-ltd-singapore.html"
   },
   {
     "code": "1fd1c1c99f02aded283332eb342950f2",
@@ -248502,7 +248540,9 @@
         "expiry_date": "16 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "UK manufacturer of surveillance camera platforms (thermal, HD, 4K, low-light) for land and maritime defence and security use.",
+    "enriched_source": "https://great.gov.uk/international/trade/suppliers/04556945/silent-sentinel-limited"
   },
   {
     "code": "f03a33d67669d9d41e498b66f6486c30",
@@ -248647,7 +248687,9 @@
         "expiry_date": "13 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates self-service laundromats and distributes laundry machinery in Singapore, from Tagore Industrial Avenue.",
+    "enriched_source": "https://recordowl.com/company/silkare-pte-ltd"
   },
   {
     "code": "618b99e99c4b8352f8da2b2da1c6f42c",
@@ -249070,7 +249112,9 @@
         "expiry_date": "23 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells Simmons-brand mattresses and bedding in Singapore and Southeast Asia, as the regional arm of Japan's Simmons Co., Ltd.",
+    "enriched_source": "https://prospeo.io/c/simmons-southeast-asia-email-format"
   },
   {
     "code": "2ec36fc70629060183a226f965a77f48",
@@ -249403,7 +249447,9 @@
         "expiry_date": "04 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides graphic design and printing, plus promotional products such as bags, corporate gifts, signs, lanyards and flash drives.",
+    "enriched_source": "https://recordowl.com/company/simply-graphics-services"
   },
   {
     "code": "8fc22178a97ac0e0b45e9cab72be6f11",
@@ -249928,7 +249974,9 @@
         "expiry_date": "18 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes LoRaWAN smart IoT meters for solar, gas, water and electricity metering.",
+    "enriched_source": "https://asiatechxsg.com/sponsors/sponsors/sindcon-singapore-iot-technology/"
   },
   {
     "code": "02b5e786c91e304bb03a0b3a546dca3f",
@@ -250529,7 +250577,9 @@
         "expiry_date": "16 May 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates amphibious DUCKtours sightseeing tours of Singapore by land and water, departing from Suntec City.",
+    "enriched_source": "https://www.ducktours.com.sg/duck"
   },
   {
     "code": "f6a3a0637368d10b59eff484ed49f984",
@@ -250864,7 +250914,9 @@
         "expiry_date": "17 Dec 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Operates Singapore General Hospital, the flagship public acute-care hospital of the SingHealth cluster, wholly owned by the Singapore government.",
+    "enriched_source": "https://bolddata.nl/en/companies/singapore/hospitals-singapore"
   },
   {
     "code": "44808f968a5e1112f9386228c4d73634",
@@ -250898,7 +250950,9 @@
         "expiry_date": "20 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Promotes and organises the Formula 1 Singapore Grand Prix night race.",
+    "enriched_source": "https://sgpgrid.com/company-details/singapore-gp-pte-ltd"
   },
   {
     "code": "41acbaeab3a36d42b2b29e2cd36fe25b",
@@ -251082,7 +251136,9 @@
         "expiry_date": "28 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides life, health and general insurance in Singapore as Singlife, a MAS-licensed composite insurer formerly named Aviva Ltd.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/singapore-life-ltd"
   },
   {
     "code": "24f8178a9d89b18627dfa3dae395a1a0",
@@ -251240,14 +251296,16 @@
         "expiry_date": "21 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides pain care and primary care medical services in Singapore, including chronic pain treatment, general consultations and dermatology; listed on SGX Catalist.",
+    "enriched_source": "https://links.sgx.com/1.0.0/corporate-information/2903"
   },
   {
     "code": "e5e81ec4be7af4711c7aa203cca46084",
     "uen": "196900291N",
     "name": "SINGAPORE PETROLEUM COMPANY LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://spc.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "One Temasek Avenue",
@@ -251266,7 +251324,9 @@
         "expiry_date": "25 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Refines, trades and distributes petroleum products including aviation fuel; wholly owned subsidiary of PetroChina International (Singapore).",
+    "enriched_source": "https://spc.com.sg/about-us/history-milestones"
   },
   {
     "code": "fce5da15116c265cde337c933d44f8b6",
@@ -251418,7 +251478,7 @@
     "uen": "198303427W",
     "name": "SINGAPORE SAFETY DRIVING CENTRE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://ssdcl.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "2 Woodlands Industrial Park E4",
@@ -251445,7 +251505,9 @@
         "expiry_date": "14 Apr 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs a driving centre in Woodlands offering training and testing for all licence classes, plus defensive driving and riding courses.",
+    "enriched_source": "https://ssdcl.com.sg/wp-content/uploads/2026/07/E-brochure-Motorcar-01072026.pdf"
   },
   {
     "code": "b7e5789b5f2b060b933a4784c08cf5d3",
@@ -251556,7 +251618,9 @@
         "expiry_date": "02 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides security officer services, deploying guards to sites such as Balestier Road.",
+    "enriched_source": "https://sg.jobstreet.com/job/91153704"
   },
   {
     "code": "b18358212cca77ea12e3b6aaa57a43b1",
@@ -251615,7 +251679,7 @@
     "uen": "199201624D",
     "name": "SINGAPORE TELECOMMUNICATIONS LIMITED",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.singtel.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "10 Eunos Road 8",
@@ -251674,7 +251738,9 @@
         "expiry_date": "04 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides mobile, fibre broadband and TV services to consumers, and 5G, IoT, cloud, data hosting and cybersecurity services to enterprises.",
+    "enriched_source": "https://www.singtel.com/about-us/company"
   },
   {
     "code": "3e8b3439cac1eddf465ddc7498d81e85",
