@@ -304893,7 +304893,9 @@
         "expiry_date": "28 Sep 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Develops, manufactures and markets marine aids to navigation, aviation obstruction lights and traffic lighting.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3801"
   },
   {
     "code": "f72e97404ec06afeef18aa7fe45d8f38",
@@ -308797,7 +308799,7 @@
     "uen": "200311442N",
     "name": "WOHA ARCHITECTS PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://woha.net",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "29 HongKong Street",
@@ -308816,7 +308818,9 @@
         "expiry_date": "16 Jun 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Architecture practice founded in 1994 by Wong Mun Summ and Richard Hassell, based in a converted shophouse at 29 Hongkong Street.",
+    "enriched_source": "https://world-architects.com/en/architecture-news/insight/studio-visit-woha"
   },
   {
     "code": "6e4d7b77ad09a5c5b6ed586267d57c6e",
@@ -310933,7 +310937,9 @@
         "expiry_date": "18 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides heavy vehicle maintenance and repair, operating workshops at Gul Circle and Kaki Bukit as a Woodlands Transport Group subsidiary.",
+    "enriched_source": "https://recordowl.com/company/wts-engineering-pte-ltd"
   },
   {
     "code": "cf56fca527eec508335cadf30f6f7b49",
@@ -310959,7 +310965,9 @@
         "expiry_date": "19 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore travel agency offering cruises, package tours, hotel bookings, air tickets and coach services, incorporated in 1989.",
+    "enriched_source": "https://event.e2i.com.sg/company-profile/eyJpdiI6InZnQ2xlaWNCcjdMcjlvK2VXUFBjM2c9PSIsInZhbHVlIjoiN1FVaXR6dGNPTFZYT3FnMEMxN0pUdz09IiwibWFjIjoiZDRmMWQ5ZTgzOTQzOTU0OGU3MmYxMjZkZmM4Y2VjMmRhOTc1YmFlNTgzZDkzYTFhYTZiOTgwY2FiYTljMTM0MCIsInRhZyI6IiJ9/eyJpdiI6Imk0d2hNTzE4UjQ0ak9HWGJuanRZYVE9PSIsInZhbHVlIjoibnZFMzdZU1dkR0UzcWRDK1J3eVN3UT09IiwibWFjIjoiMDFmNWUwMzJkYWY2OWJmZjI0ZTIxMzIwMjExMzVhNjU1ODZjNTFhMDYyNGEyMjRjZWViYWNlZGE0NDAyNjczMSIsInRhZyI6IiJ9"
   },
   {
     "code": "2ad4147dc23409d5804b87c289cfe468",
@@ -312146,7 +312154,9 @@
         "expiry_date": "17 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore branch of AXA XL, underwriting general insurance and reinsurance lines such as casualty, property, cyber and professional liability.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/xl-insurance-company-se-singapore-branch"
   },
   {
     "code": "db5eeca8103a0c224bc7614700d170ae",
@@ -312214,7 +312224,9 @@
         "expiry_date": "27 Nov 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Supplies microscopy solutions to industrial customers and has been the exclusive distributor for Olympus' Industrial Microscope Division since 2006.",
+    "enriched_source": "https://recordowl.com/company/xmicro-solution-pte-ltd"
   },
   {
     "code": "cf25a07ef73d52b98125d157c1f0d9a6",
@@ -314331,7 +314343,9 @@
         "expiry_date": "18 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Imports, exports and distributes automotive tyres, rims and industrial products.",
+    "enriched_source": "https://recordowl.com/company/yhi-corporation-singapore-pte-ltd"
   },
   {
     "code": "59efae6178130f9b94c67c94bd757851",
@@ -314442,7 +314456,9 @@
         "expiry_date": "16 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Smart building, facility management and infrastructure specialist covering datacentre IT infrastructure, physical security and IT managed services.",
+    "enriched_source": "https://www.ecommerceexpo-dmexco.asia/exhibitors/yi-ke-innovations-pte-ltd"
   },
   {
     "code": "10563a99dc74e5a7c5a2cb4e31425f7b",
@@ -314571,7 +314587,9 @@
         "expiry_date": "20 Oct 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Land surveying firm registered with Singapore's Land Surveyors Board and listed among MPA-registered hydrographic surveyors.",
+    "enriched_source": "https://lsb.mlaw.gov.sg/find-a-surveyor/list-of-corporations-partnerships-limited-liability-partnerships/"
   },
   {
     "code": "d9a4be2e44ad3653f199cee4e3c6d68e",
@@ -315227,7 +315245,7 @@
     "uen": "S61SS0045E",
     "name": "Young Men's Christian Association of Singapore",
     "description": "",
-    "company_url": "",
+    "company_url": "https://ymca.org.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1, Orchard Road",
@@ -315262,7 +315280,8 @@
         "expiry_date": "08 Aug 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "enriched_source": "https://ymca.org.sg/wp-content/uploads/2025/05/YMCA-Annual-Report-2023.pdf"
   },
   {
     "code": "9055f9c09fad6624c277968b369df5f0",
@@ -315348,7 +315367,9 @@
         "expiry_date": "03 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides landscaping and pest control works, conservancy, contract cleaning, grass cutting and maintenance services.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3934"
   },
   {
     "code": "a90249bb98ca9c576c7eb723e64c499d",
@@ -315374,7 +315395,9 @@
         "expiry_date": "22 Aug 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Quantity surveying and management consultancy providing quantity surveying services.",
+    "enriched_source": "https://scam.sg/companies/201204322G/ysca-consultancy-singapore-pte-ltd"
   },
   {
     "code": "48f20d6c4af434821ee2148e4da2552b",
@@ -315669,7 +315692,9 @@
         "expiry_date": "19 Oct 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering consultancy providing building engineering design and consultancy services.",
+    "enriched_source": "https://www.scam.sg/companies/199804921E/ywl-engineering-pte-ltd"
   },
   {
     "code": "b7b68a8ee75c0c748285e337295f69ee",
@@ -316609,7 +316634,9 @@
         "expiry_date": "21 May 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Roasts coffee and offers accessible, quality coffee.",
+    "enriched_source": "https://recordowl.com/company/zero-coffee-limited-liability-partnership"
   },
   {
     "code": "c22fb7a65bf507f009dcfed391bf47cd",
