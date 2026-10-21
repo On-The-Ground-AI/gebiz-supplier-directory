@@ -311177,7 +311177,9 @@
         "expiry_date": "12 May 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures and sells container handling equipment and intelligent CNC machine tools in China; listed on the Shenzhen exchange (002685).",
+    "enriched_source": "https://es.finance.yahoo.com/quote/002685.SZ/profile"
   },
   {
     "code": "eaac3911c3f71bae57df4bb7e85f8d27",
@@ -312163,7 +312165,7 @@
     "uen": "200202241H",
     "name": "XLT SYSTEMS PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "http://www.xltsystems.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "BLOCK 1091 LOWER DELTA ROAD, 03 -03 MAPLE TREE INDUSTRIAL ESTATE",
@@ -312190,7 +312192,9 @@
         "expiry_date": "16 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Makes mounting brackets for audio-visual equipment such as TVs, speakers, LCD monitors and projectors, with a factory in Malaysia.",
+    "enriched_source": "https://sgpgrid.com/company/xlt-systems-pte-ltd-ID0001"
   },
   {
     "code": "ff21b02b6f036c31d703214e843fa503",
@@ -314187,7 +314191,7 @@
     "uen": "197500270H",
     "name": "YEW CHOON PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://yewchoon.com.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "8,  PIONEER SECTOR 1",
@@ -314206,7 +314210,9 @@
         "expiry_date": "16 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides heavy and oversized load services including marine and land transport, Ro-Ro, jacking, skidding, craneage, warehousing and engineering.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3910"
   },
   {
     "code": "970c7eb1443d99fb0b31f5515385718c",
@@ -316307,7 +316313,9 @@
         "expiry_date": "15 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Singapore branch office dealing in navigational aids such as marine lanterns, beacons and light buoys.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3947"
   },
   {
     "code": "e6782830a67679b7650fd1c6079e3a72",
@@ -316662,14 +316670,16 @@
         "expiry_date": "26 Sep 2026",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Engineering consulting firm helping commercial and industrial facilities optimise material use and cut costs; services include waste audits and grant funding.",
+    "enriched_source": "https://recordowl.com/company/zero-waste-city-pte-ltd"
   },
   {
     "code": "2813660a57ac8af78b475c6265fd3afa",
     "uen": "201830133M",
     "name": "ZERO WASTE SOLUTION PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://zero-waste.biz",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "5014 ANG MO KIO AVE 5",
@@ -316712,7 +316722,9 @@
         "expiry_date": "25 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Designs and manufactures on-site food waste recycling and treatment systems in Singapore, turning food waste into liquid nutrients, recycled water and compost.",
+    "enriched_source": "https://recordowl.com/company/zero-waste-solution-pte-ltd"
   },
   {
     "code": "0bf41f92651351b61d36549306b94a81",
@@ -316890,7 +316902,9 @@
         "expiry_date": "04 Apr 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells and services mobile X-ray C-arm and intraoperative imaging systems in Singapore; principal activity is sales of medical equipment.",
+    "enriched_source": "https://recordowl.com/company/ziehm-imaging-singapore-pte-ltd"
   },
   {
     "code": "7924cb47dfdee40527fd2148bf831ecc",
