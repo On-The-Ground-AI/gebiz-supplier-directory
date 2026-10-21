@@ -295904,7 +295904,9 @@
         "expiry_date": "05 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides hydrographic surveying services and is on the Maritime and Port Authority's list of registered hydrographic surveyors.",
+    "enriched_source": "https://www.mpa.gov.sg/api/media/2fbc1a97-d45a-4320-b676-1d11102609b7/mpa-registered-hydrographic-surveyors-nov-2025.pdf"
   },
   {
     "code": "c1b8bbacde82c348ca72a703b45a41a8",
@@ -302264,7 +302266,9 @@
         "expiry_date": "02 Nov 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "EdTech provider of coding, robotics and smart-classroom services, including instructor supply to schools.",
+    "enriched_source": "https://recordowl.com/company/vm-education-pte-ltd"
   },
   {
     "code": "bae9ef2aca50a65278fca65ef6197c9f",
@@ -302920,7 +302924,7 @@
     "uen": "199204583D",
     "name": "VULKAN INDUSTRIES FAR EAST PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.vulkan.com/en/locations/singapore",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "37C Benoi Road",
@@ -302939,7 +302943,9 @@
         "expiry_date": "04 Apr 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Sells and services couplings, composite shafts and clutches for marine and industrial use.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3775"
   },
   {
     "code": "d674edf628ae92c7746ff12179f4ed23",
@@ -303138,7 +303144,9 @@
         "expiry_date": "16 Jul 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "BCA-certified, ISO-accredited construction contractor.",
+    "enriched_source": "https://sg.jobstreet.com/companies/wray-construction-pte-ltd-168555349670772"
   },
   {
     "code": "d74d3c8a8542f88dd39d1bc8fd9ffeab",
@@ -303236,7 +303244,9 @@
         "expiry_date": "12 Dec 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Markets, services and assembles marine, aviation, fire and safety equipment.",
+    "enriched_source": "https://recordowl.com/company/w-h-brennan-company-private-limited"
   },
   {
     "code": "c02107b3582dc518c1a3418ed902526d",
@@ -303758,7 +303768,9 @@
         "expiry_date": "07 Mar 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Independent branding and marketing consultancy.",
+    "enriched_source": "https://recordowl.com/company/wam-bam-mam-pte-ltd"
   },
   {
     "code": "a6ec242a55d213fc0e8a19304bcc20eb",
@@ -303971,7 +303983,7 @@
     "uen": "198102876E",
     "name": "WARTSILA SINGAPORE PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://www.wartsila.com",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "No. 11 Pandan Cresent",
@@ -304054,7 +304066,9 @@
         "expiry_date": "15 Jan 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Provides marine engine repair, reconditioning and maintenance services and trades engine spares.",
+    "enriched_source": "https://recordowl.com/company/wartsila-singapore-pte-ltd"
   },
   {
     "code": "898176316aa31dd4dbc244719ce6cba4",
@@ -304201,7 +304215,9 @@
         "expiry_date": "26 Feb 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Offers tailor-made water and wastewater treatment solutions from concept to operation.",
+    "enriched_source": "https://recordowl.com/company/waterchem-envirotech-pte-ltd"
   },
   {
     "code": "f37644de83716a4840d1c962dc8e5575",
@@ -304822,7 +304838,7 @@
     "uen": "202025818D",
     "name": "WEALTH MANAGEMENT INSTITUTE INTERNATIONAL PTE. LTD.",
     "description": "",
-    "company_url": "",
+    "company_url": "https://wmi.edu.sg",
     "country": "SINGAPORE",
     "city": "",
     "address_1": "1 MARINA BOULEVARD, #16-01",
@@ -304841,7 +304857,9 @@
         "expiry_date": "04 Jun 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Runs wealth management certification and diploma training programmes.",
+    "enriched_source": "https://wmi.edu.sg/wp-content/uploads/2024/07/ADIWM-Faculty-vApr26.pdf"
   },
   {
     "code": "447f72edede0eff53d025413527425db",
@@ -304998,7 +305016,9 @@
         "expiry_date": "07 Feb 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Multi-channel outsourced contact centre providing customer relationship management solutions.",
+    "enriched_source": "https://recordowl.com/company/webcall-pte-ltd"
   },
   {
     "code": "b4ec4b0577eae39d26bc18e487efa7a6",
@@ -305683,7 +305703,9 @@
         "expiry_date": "25 Jan 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "MAS-licensed fund manager covering Asian ex-Japan fixed-income mandates and investment advice.",
+    "enriched_source": "https://wealthmanagement.sg/firms/western-asset-management-company"
   },
   {
     "code": "d84327c4cc64fd088870f0c978a9e590",
@@ -306605,7 +306627,9 @@
         "expiry_date": "30 Sep 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "MAS-licensed registered insurance broker.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/willis-towers-watson-brokers-singapore-pte-ltd"
   },
   {
     "code": "1aa004feb95334c79823bf8e406e093c",
@@ -306697,7 +306721,9 @@
         "expiry_date": "06 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Exempt financial adviser licensed by MAS to advise on investment products and arrange life policies.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/willis-towers-watson-health-benefits-sg-pte-ltd"
   },
   {
     "code": "b987866f6f497a759a8f81c456121891",
@@ -306872,7 +306898,9 @@
         "expiry_date": "10 Dec 2027",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Insurance broker licensed by MAS as an exempt financial adviser, arranging life policies and advising on investment products.",
+    "enriched_source": "https://capitalmarkets.sg/insurance/willy-insurance-brokers-pte-ltd"
   },
   {
     "code": "19e9cfa6eabfe1d3325ca96c5e9d57a9",
@@ -307590,7 +307618,9 @@
         "expiry_date": "21 Feb 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Wind engineering consultancy producing pedestrian wind assessments for proposed building developments.",
+    "enriched_source": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE PEC-DPE-EP-WORK PP-2020-47!20200912T081523.004 GMT"
   },
   {
     "code": "ce992b334a566fecfde39360647a9fe0",
@@ -307711,7 +307741,9 @@
         "expiry_date": "25 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Steel structure fabrication and installation, and steel and fibreglass piping and tank work for petroleum products.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3846"
   },
   {
     "code": "744452d81f69c07079644832722e72a3",
@@ -307874,7 +307906,9 @@
         "expiry_date": "18 Jan 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "ISO 17025 accredited laboratory testing building facades, windows, doors and handrails.",
+    "enriched_source": "https://recordowl.com/company/winwall-technology-pte-ltd"
   },
   {
     "code": "0bfeaffe7c28fd7575afcbd3b3cd1480",
@@ -308877,7 +308911,9 @@
         "expiry_date": "18 Oct 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Manufactures, assembles and repairs load, waste and special-purpose handling equipment; engineering arm of Wong Fong Industries.",
+    "enriched_source": "https://straitsdata.com/buildings/sg/629107"
   },
   {
     "code": "aa9687c99c14af23aaf985fd4713f2dc",
@@ -309116,7 +309152,7 @@
     "uen": "198102721M",
     "name": "WOODLANDS TRANSPORT SERVICE PTE LTD",
     "description": "",
-    "company_url": "",
+    "company_url": "https://woodlandstransport.com.sg",
     "country": "SINGAPORE",
     "city": "Singapore",
     "address_1": "8 Gul Circle",
@@ -309183,7 +309219,9 @@
         "expiry_date": "18 Sep 2029",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Charter and rental buses, lorry hire, concrete mixer transport and factory worker shuttles to Johor Bahru.",
+    "enriched_source": "https://www.hcisingapore.gov.in/traders_directory?page=3863"
   },
   {
     "code": "5035a281a3ea0588d4091ea9caefd14b",
@@ -309978,7 +310016,9 @@
         "expiry_date": "27 Mar 2028",
         "status": "APPROVED"
       }
-    ]
+    ],
+    "description_short": "Payment institution licensed by MAS for merchant acquisition, domestic money transfer and cross-border money transfer services.",
+    "enriched_source": "https://capitalmarkets.sg/payment-gateways/worldpay-pte-ltd"
   },
   {
     "code": "88d21bded59eb9e701d655468b9db5fa",
